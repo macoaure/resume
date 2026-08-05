@@ -320,6 +320,10 @@
   .resume-sheet {
     @apply px-5 py-6;
   }
+
+  .resume-nav__button--toggle {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
