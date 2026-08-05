@@ -192,6 +192,14 @@
     @apply mt-4 mb-1 text-left font-serif text-[0.98rem] font-semibold text-stone-900;
   }
 
+  .resume-content > h3 + h4 {
+    @apply mt-1;
+  }
+
+  .resume-content > h4 {
+    @apply mt-3 mb-1 text-left font-serif text-[0.9rem] font-semibold text-stone-700;
+  }
+
   .resume-content p {
     @apply my-0 text-[0.96rem] leading-6 text-stone-800;
   }
@@ -275,6 +283,10 @@
 
   .resume-content > h3 {
     @apply mt-4 text-[11.25pt];
+  }
+
+  .resume-content > h4 {
+    @apply mt-3 text-[10.25pt];
   }
 
   .resume-content a {

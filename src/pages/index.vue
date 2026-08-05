@@ -219,6 +219,15 @@ const downloadPdf = async () => {
       return
     }
 
+    if (tag === 'h4') {
+      doc.setFont('helvetica', 'bold')
+      doc.setFontSize(10.25)
+      ensureSpace(7)
+      doc.text(text, marginX, cursorY)
+      cursorY += 4.2
+      return
+    }
+
     if (tag === 'p') {
       if (!text) {
         return
