@@ -1,5 +1,20 @@
-# Vue 3 + TypeScript + Vite
+# Resume
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 + TypeScript + Vite app that reads language-specific markdown files from `resumes/` and renders the resume as HTML, styled with Tailwind CSS.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Structure
+
+- `resumes/resume-{langCode}.md` is the content source pattern
+- `src/pages/index.ts` resolves the active language file and converts the content into HTML
+- `src/pages/index.vue` renders the parsed resume
+- `src/router/index.ts` keeps the app on the single resume route
+- `src/style.css` imports Tailwind, defines the resume shell, and includes print styles for paper/PDF output
+- the navigation rail includes a PDF download action
+- the web view uses the `?lang=` query parameter for the active language switch
+- document metadata is updated from the active language and route title
+
+## Scripts
+
+- `npm run dev`
+- `npm run build`
+- `npm run preview`
