@@ -19,10 +19,9 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 
 ## Experiência Profissional
 
-### Engenheiro de Software Backend Sênior
+### Engenheiro de Software Backend Sênior - 1Doc
 
-1Doc
-Outubro de 2025 - Atual, Londrina, PR, Brasil
+<time datetime="2025-10-01"></time> até <time datetime="present"></time>, remoto, Londrina, PR, Brasil
 
 * Desenvolve e mantém serviços backend em produção para o contexto de GovTech utilizando PHP, Laravel, Symfony, Go, AWS e AWS Lambda.
 * Projeta e evolui APIs REST, integrações entre serviços e cargas de trabalho serverless com contratos e limites de responsabilidade claramente definidos.
@@ -30,20 +29,18 @@ Outubro de 2025 - Atual, Londrina, PR, Brasil
 * Moderniza código legado para reduzir débitos técnicos, melhorar a testabilidade e aumentar a manutenibilidade.
 * Apoia a segurança das entregas, a escalabilidade e a continuidade operacional de serviços baseados em AWS Lambda.
 
-### Professor de Ciência da Computação e Engenharia de Software
+### Professor de Ciência da Computação e Engenharia de Software - UniFil – Centro Universitário Filadélfia
 
-UniFil – Centro Universitário Filadélfia
-Julho de 2025 - Abril de 2026, Londrina, PR, Brasil
+<time datetime="2025-07-01"></time> até <time datetime="2026-04-01"></time>, presencial, Londrina, PR, Brasil
 
 * Ministrou disciplinas de graduação sobre Java, Spring Boot, programação orientada a objetos, MVC, desenvolvimento backend e engenharia de software.
 * Elaborou atividades baseadas em projetos utilizando Java, Spring Boot, Git e padrões MVC.
 * Orientou estudantes em design de software, organização de código, testes, refatoração, depuração e documentação técnica.
 * Introduziu fluxos de trabalho baseados em controle de versão, pull requests, revisão de código, entrega contínua e colaboração.
 
-### Engenheiro de Produto
+### Engenheiro de Produto - Farmbits, Grupo Belagrícola
 
-Farmbits, Grupo Belagrícola
-Abril de 2024 - Agosto de 2025, Londrina, PR, Brasil
+<time datetime="2024-04-01"></time> até <time datetime="2025-08-01"></time>, presencial, Londrina, PR, Brasil
 
 * Foi responsável pela entrega de ponta a ponta de uma plataforma de comércio eletrônico AgTech desenvolvida com Magento 2 e PHP, abrangendo arquitetura, desenvolvimento, infraestrutura, implantação, monitoramento e suporte.
 * Reduziu os incidentes em produção em mais de 90% e manteve uma disponibilidade de 99,9% por meio da reestruturação da infraestrutura da plataforma na AWS e no Kubernetes.
@@ -52,10 +49,9 @@ Abril de 2024 - Agosto de 2025, Londrina, PR, Brasil
 * Implementou integrações com Magento 2, ERP Bling, CORBAN, Santander e Itaú.
 * Automatizou fluxos de vendas, pagamentos e faturamento para reduzir atividades operacionais manuais.
 
-### Arquiteto de Software
+### Arquiteto de Software - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-Março de 2022 - Abril de 2024, Londrina, PR, Brasil
+<time datetime="2022-03-01"></time> até <time datetime="2024-04-01"></time>, presencial, Londrina, PR, Brasil
 
 * Modernizou a arquitetura da plataforma de comércio eletrônico, contribuindo para uma redução de 15% no tempo de indisponibilidade e melhorando a escalabilidade e a manutenibilidade.
 * Liderou a migração da AWS para a Huawei Cloud com o objetivo de reduzir custos operacionais e melhorar o desempenho da infraestrutura.
@@ -64,10 +60,9 @@ Março de 2022 - Abril de 2024, Londrina, PR, Brasil
 * Projetou integrações entre plataformas de comércio eletrônico, sistemas internos, serviços de terceiros e aplicações empresariais.
 * Entregou iniciativas de SaaS e automação que reduziram atividades manuais e aceleraram a entrega de projetos.
 
-### Gerente de Engenharia
+### Gerente de Engenharia - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-Março de 2021 - Março de 2022, Londrina, PR, Brasil
+<time datetime="2021-03-01"></time> até <time datetime="2022-03-01"></time>, presencial, Londrina, PR, Brasil
 
 * Consolidou as equipes de frontend e backend em uma organização de engenharia composta por aproximadamente 40 desenvolvedores.
 * Estruturou cinco frentes de trabalho: suporte, implementação, integrações, solicitações urgentes e manutenção.
@@ -76,10 +71,9 @@ Março de 2021 - Março de 2022, Londrina, PR, Brasil
 * Modernizou aplicações Magento 1 e PHP para compatibilidade com PHP 7.x e entregou microsserviços de integração com marketplaces baseados em Laravel.
 * Estruturou programas de integração, treinamento e desenvolvimento profissional para melhorar o crescimento técnico e o compartilhamento de conhecimento.
 
-### Líder Técnico
+### Líder Técnico - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-Novembro de 2020 - Março de 2021, Londrina, PR, Brasil
+<time datetime="2020-11-01"></time> até <time datetime="2021-03-01"></time>, presencial, Londrina, PR, Brasil
 
 * Liderou aproximadamente 20 desenvolvedores distribuídos entre as frentes de frontend, backend, integrações, manutenção e suporte.
 * Supervisionou cerca de 1.200 projetos e contribuiu para a resolução de aproximadamente 800 chamados técnicos por mês.
@@ -87,10 +81,9 @@ Novembro de 2020 - Março de 2021, Londrina, PR, Brasil
 * Padronizou pacotes reutilizáveis para Magento e PHP, reduzindo a duplicação de trabalho nas implementações.
 * Participou de processos de recrutamento técnico, integração de profissionais e planejamento de desenvolvimento.
 
-### Engenheiro de Software
+### Engenheiro de Software - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-Novembro de 2019 - Novembro de 2020, Londrina, PR, Brasil
+<time datetime="2019-11-01"></time> até <time datetime="2020-11-01"></time>, presencial, Londrina, PR, Brasil
 
 * Resolveu aproximadamente 3.200 chamados técnicos e funcionais relacionados a suporte, implementação, correção de defeitos e melhoria contínua.
 * Entregou soluções personalizadas para aproximadamente 500 projetos de comércio eletrônico.
@@ -99,10 +92,9 @@ Novembro de 2019 - Novembro de 2020, Londrina, PR, Brasil
 * Melhorou o desempenho e a disponibilidade do Magento 1 utilizando cache com Redis, arquitetura MySQL com replicação primário-réplica e integração com a ELK Stack.
 * Cocriou o Corsair, uma ferramenta interna de virtualização de ambientes desenvolvida com Docker, Docker Compose e Bash.
 
-### Desenvolvedor Full-Stack Júnior
+### Desenvolvedor Full-Stack Júnior - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-Setembro de 2018 - Novembro de 2019, Londrina, PR, Brasil
+<time datetime="2018-09-01"></time> até <time datetime="2019-11-01"></time>, presencial, Londrina, PR, Brasil
 
 * Atendeu chamados de implementação e contribuiu para o cumprimento dos SLAs e para a continuidade operacional.
 * Contribuiu com aproximadamente 300 projetos de comércio eletrônico, incluindo módulos personalizados, customizações de plataforma, rotinas backend e integrações com terceiros.
@@ -115,22 +107,22 @@ Setembro de 2018 - Novembro de 2019, Londrina, PR, Brasil
 ### UEL – Universidade Estadual de Londrina
 
 Mestrado em Ciência da Computação
-Janeiro de 2025
+<time datetime="2025-01-01"></time>
 
 ### UEL – Universidade Estadual de Londrina
 
 Especialização em Engenharia de Software
-Março de 2023 - Dezembro de 2024
+<time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
 
 ### SENAI, Londrina
 
 Técnico em Sistemas de Informação, Programador
-2017 - 2019
+<time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
 
 ### Faculdade Pitágoras
 
 Comunicação, Publicidade e Marketing
-Janeiro de 2014 - Dezembro de 2017
+<time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
 
 ## Certificações e Cursos
 

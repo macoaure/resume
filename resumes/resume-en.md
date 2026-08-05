@@ -19,10 +19,9 @@ Backend software engineer with more than eight years of experience building, mod
 
 ## Experience
 
-### Senior Backend Software Engineer
+### Senior Backend Software Engineer - 1Doc
 
-1Doc
-October 2025 - Present, Londrina, Paraná, Brazil
+<time datetime="2025-10-01"></time> until <time datetime="present"></time>, remote, Londrina, Paraná, Brazil
 
 * Build and maintain production backend services in a GovTech environment using PHP, Laravel, Symfony, Go, AWS, and AWS Lambda.
 * Design and evolve REST APIs, service integrations, and serverless workloads with clearly defined contracts and boundaries.
@@ -30,20 +29,18 @@ October 2025 - Present, Londrina, Paraná, Brazil
 * Modernize legacy code to reduce technical debt, improve testability, and increase maintainability.
 * Support release safety, scalability, and operational continuity for AWS Lambda-based services.
 
-### Computer Science and Software Engineering Professor
+### Computer Science and Software Engineering Professor - UniFil – Centro Universitário Filadélfia
 
-UniFil – Centro Universitário Filadélfia
-July 2025 - April 2026, Londrina, Paraná, Brazil
+<time datetime="2025-07-01"></time> until <time datetime="2026-04-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Taught undergraduate courses in Java, Spring Boot, object-oriented programming, MVC, backend development, and software engineering.
 * Created project-based assignments using Java, Spring Boot, Git, and MVC patterns.
 * Mentored students in software design, code organization, testing, refactoring, debugging, and technical documentation.
 * Introduced workflows based on version control, pull requests, code reviews, continuous delivery, and team collaboration.
 
-### Product Engineer
+### Product Engineer - Farmbits, Belagrícola Group
 
-Farmbits, Belagrícola Group
-April 2024 - August 2025, Londrina, Paraná, Brazil
+<time datetime="2024-04-01"></time> until <time datetime="2025-08-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Owned end-to-end delivery for an AgTech e-commerce platform built with Magento 2 and PHP, covering architecture, development, infrastructure, deployment, monitoring, and support.
 * Reduced production incidents by more than 90% and sustained 99.9% uptime by redesigning the platform infrastructure on AWS and Kubernetes.
@@ -52,10 +49,9 @@ April 2024 - August 2025, Londrina, Paraná, Brazil
 * Delivered integrations with Magento 2, Bling ERP, CORBAN, Santander, and Itaú.
 * Automated sales, payment, and invoicing workflows to reduce manual operational work.
 
-### Software Architect
+### Software Architect - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-March 2022 - April 2024, Londrina, Paraná, Brazil
+<time datetime="2022-03-01"></time> until <time datetime="2024-04-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Modernized the e-commerce platform architecture, contributing to a 15% reduction in downtime while improving scalability and maintainability.
 * Led a cloud migration from AWS to Huawei Cloud to reduce operational costs and improve infrastructure performance.
@@ -64,10 +60,9 @@ March 2022 - April 2024, Londrina, Paraná, Brazil
 * Designed integrations between e-commerce platforms, internal systems, third-party services, and business applications.
 * Delivered SaaS and automation initiatives that reduced manual work and accelerated project delivery.
 
-### Engineering Manager
+### Engineering Manager - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-March 2021 - March 2022, Londrina, Paraná, Brazil
+<time datetime="2021-03-01"></time> until <time datetime="2022-03-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Consolidated frontend and backend teams into an engineering organization of approximately 40 developers.
 * Structured five workstreams: support, implementation, integrations, urgent requests, and maintenance.
@@ -76,10 +71,9 @@ March 2021 - March 2022, Londrina, Paraná, Brazil
 * Modernized Magento 1 and PHP applications for PHP 7.x compatibility and delivered Laravel-based marketplace integration microservices.
 * Built onboarding, training, and professional development programs to improve technical growth and knowledge sharing.
 
-### Technical Lead
+### Technical Lead - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-November 2020 - March 2021, Londrina, Paraná, Brazil
+<time datetime="2020-11-01"></time> until <time datetime="2021-03-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Led approximately 20 developers across frontend, backend, integration, maintenance, and support workstreams.
 * Oversaw approximately 1,200 projects and helped resolve approximately 800 technical tickets per month.
@@ -87,10 +81,9 @@ November 2020 - March 2021, Londrina, Paraná, Brazil
 * Standardized reusable Magento and PHP packages to reduce duplicated implementation work.
 * Participated in technical recruiting, onboarding, and professional development planning.
 
-### Software Engineer
+### Software Engineer - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-November 2019 - November 2020, Londrina, Paraná, Brazil
+<time datetime="2019-11-01"></time> until <time datetime="2020-11-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Resolved approximately 3,200 technical and functional tickets across support, implementation, bug fixing, and continuous improvement.
 * Delivered custom solutions across approximately 500 e-commerce projects.
@@ -99,10 +92,9 @@ November 2019 - November 2020, Londrina, Paraná, Brazil
 * Improved Magento 1 performance and availability using Redis caching, a MySQL primary-replica architecture, and ELK Stack integration.
 * Co-created Corsair, an internal environment virtualization tool built with Docker, Docker Compose, and Bash.
 
-### Junior Full-Stack Developer
+### Junior Full-Stack Developer - Bis2Bis E-commerce
 
-Bis2Bis E-commerce
-September 2018 - November 2019, Londrina, Paraná, Brazil
+<time datetime="2018-09-01"></time> until <time datetime="2019-11-01"></time>, on-site, Londrina, Paraná, Brazil
 
 * Handled implementation tickets and contributed to SLA compliance and operational continuity.
 * Contributed to approximately 300 e-commerce projects, including custom modules, platform customizations, backend routines, and third-party integrations.
@@ -115,22 +107,22 @@ September 2018 - November 2019, Londrina, Paraná, Brazil
 ### UEL – Universidade Estadual de Londrina
 
 Master’s Degree in Computer Science
-January 2025
+<time datetime="2025-01-01"></time>
 
 ### UEL – Universidade Estadual de Londrina
 
 Postgraduate Specialization in Software Engineering
-March 2023 - December 2024
+<time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
 
 ### SENAI, Londrina
 
 Technical Diploma in Information Systems and Programming
-2017 - 2019
+<time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
 
 ### Faculdade Pitágoras
 
 Communication, Advertising, and Marketing
-January 2014 - December 2017
+<time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
 
 ## Certifications and Courses
 
