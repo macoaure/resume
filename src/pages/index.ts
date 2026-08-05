@@ -31,7 +31,7 @@ export type ResumeNavigationItem = {
 export function createResumePageModel(languageCode = resolvePreferredLanguageCode()): ResumePageModel {
   const resumeMarkdown = resolveResumeMarkdown(languageCode)
   const resolvedLanguageCode = extractLanguageCode(resumeMarkdown.path)
-  const { renderedHtml, navigation } = renderMarkdownToHtml(resumeMarkdown.markdown)
+  const { renderedHtml, navigation } = renderMarkdownToHtml(resumeMarkdown.markdown, resolvedLanguageCode)
   const isPortuguese = resolvedLanguageCode.toLowerCase().startsWith('pt')
 
   return {
@@ -138,17 +138,47 @@ function escapeHtml(source: string): string {
     .replaceAll("'", '&#39;')
 }
 
-function renderInlineMarkdown(source: string): string {
-  const linkPattern = /\[([^\]]+)\]\(([^)]+)\)/g
+// Configurable date rendering: one format style + one locale/label table govern every <time> tag.
+const DATE_DISPLAY_FORMAT: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long' }
+const LOCALE_BY_LANGUAGE_CODE: Record<string, string> = { en: 'en-US', 'pt-br': 'pt-BR' }
+const PRESENT_LABEL_BY_LANGUAGE_CODE: Record<string, string> = { en: 'Present', 'pt-br': 'Atual' }
+
+function resolveByLanguageCode<T>(table: Record<string, T>, languageCode: string, fallback: T): T {
+  const normalized = languageCode.toLowerCase()
+
+  return table[normalized] ?? table[normalized.split('-')[0]] ?? fallback
+}
+
+function renderTimeTag(datetimeValue: string, languageCode: string): string {
+  if (datetimeValue === 'present') {
+    const label = resolveByLanguageCode(PRESENT_LABEL_BY_LANGUAGE_CODE, languageCode, 'Present')
+
+    return `<time datetime="${datetimeValue}">${label}</time>`
+  }
+
+  const locale = resolveByLanguageCode(LOCALE_BY_LANGUAGE_CODE, languageCode, 'en-US')
+  const [year, month, day] = datetimeValue.split('-').map(Number)
+  const date = new Date(Date.UTC(year, (month || 1) - 1, day || 1))
+  const formatted = new Intl.DateTimeFormat(locale, { ...DATE_DISPLAY_FORMAT, timeZone: 'UTC' }).format(date)
+  const capitalized = formatted.charAt(0).toUpperCase() + formatted.slice(1)
+
+  return `<time datetime="${datetimeValue}">${capitalized}</time>`
+}
+
+function renderInlineMarkdown(source: string, languageCode: string): string {
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)|<time datetime="([^"]+)">([^<]*)<\/time>/g
   let result = ''
   let lastIndex = 0
 
-  for (const match of source.matchAll(linkPattern)) {
+  for (const match of source.matchAll(pattern)) {
     const index = match.index ?? 0
-    const [fullMatch, linkText, href] = match
+    const [fullMatch, linkText, href, datetimeValue] = match
 
     result += renderInlineText(source.slice(lastIndex, index))
-    result += `<a href="${escapeHtml(href)}">${renderInlineText(linkText)}</a>`
+    result +=
+      datetimeValue !== undefined
+        ? renderTimeTag(datetimeValue, languageCode)
+        : `<a href="${escapeHtml(href)}">${renderInlineText(linkText)}</a>`
     lastIndex = index + fullMatch.length
   }
 
@@ -166,7 +196,10 @@ function renderInlineText(source: string): string {
     .replace(/`([^`]+)`/g, '<code>$1</code>')
 }
 
-export function renderMarkdownToHtml(source: string): {
+export function renderMarkdownToHtml(
+  source: string,
+  languageCode: string = DEFAULT_LANGUAGE_CODE,
+): {
   renderedHtml: string
   navigation: ResumeNavigationItem[]
 } {
@@ -182,7 +215,7 @@ export function renderMarkdownToHtml(source: string): {
       return
     }
 
-    blocks.push(`<p>${renderInlineMarkdown(paragraphBuffer.join(' '))}</p>`)
+    blocks.push(`<p>${renderInlineMarkdown(paragraphBuffer.join(' '), languageCode)}</p>`)
     paragraphBuffer = []
   }
 
@@ -192,7 +225,7 @@ export function renderMarkdownToHtml(source: string): {
     }
 
     blocks.push(
-      `<ul>${listItems.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join('')}</ul>`,
+      `<ul>${listItems.map((item) => `<li>${renderInlineMarkdown(item, languageCode)}</li>`).join('')}</ul>`,
     )
     listItems = []
   }
@@ -225,7 +258,7 @@ export function renderMarkdownToHtml(source: string): {
         })
       }
       blocks.push(
-        `<h${level} id="${headingId}">${renderInlineMarkdown(content)}</h${level}>`,
+        `<h${level} id="${headingId}">${renderInlineMarkdown(content, languageCode)}</h${level}>`,
       )
       continue
     }
@@ -243,7 +276,7 @@ export function renderMarkdownToHtml(source: string): {
     if (looksLikeDefinitionList) {
       flushAll()
 
-      const items: string[] = [renderInlineMarkdown(line)]
+      const items: string[] = [renderInlineMarkdown(line, languageCode)]
 
       while (index + 1 < lines.length) {
         const candidate = lines[index + 1].trim()
@@ -254,7 +287,7 @@ export function renderMarkdownToHtml(source: string): {
           break
         }
 
-        items.push(renderInlineMarkdown(candidate.replace(/^:\s*/, '')))
+        items.push(renderInlineMarkdown(candidate.replace(/^:\s*/, ''), languageCode))
         index += 1
       }
 
