@@ -19,7 +19,9 @@ Backend software engineer with more than eight years of experience building, mod
 
 ## Experience
 
-### Senior Backend Software Engineer - 1Doc
+### 1Doc
+
+#### Senior Backend Software Engineer
 
 <time datetime="2025-10-01"></time> until <time datetime="present"></time>, remote, Londrina, Paraná, Brazil
 
@@ -29,7 +31,9 @@ Backend software engineer with more than eight years of experience building, mod
 * Modernize legacy code to reduce technical debt, improve testability, and increase maintainability.
 * Support release safety, scalability, and operational continuity for AWS Lambda-based services.
 
-### Computer Science and Software Engineering Professor - UniFil – Centro Universitário Filadélfia
+### UniFil – Centro Universitário Filadélfia
+
+#### Computer Science and Software Engineering Professor
 
 <time datetime="2025-07-01"></time> until <time datetime="2026-04-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -38,7 +42,9 @@ Backend software engineer with more than eight years of experience building, mod
 * Mentored students in software design, code organization, testing, refactoring, debugging, and technical documentation.
 * Introduced workflows based on version control, pull requests, code reviews, continuous delivery, and team collaboration.
 
-### Product Engineer - Farmbits, Belagrícola Group
+### Farmbits, Belagrícola Group
+
+#### Product Engineer
 
 <time datetime="2024-04-01"></time> until <time datetime="2025-08-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -49,7 +55,9 @@ Backend software engineer with more than eight years of experience building, mod
 * Delivered integrations with Magento 2, Bling ERP, CORBAN, Santander, and Itaú.
 * Automated sales, payment, and invoicing workflows to reduce manual operational work.
 
-### Software Architect - Bis2Bis E-commerce
+### Bis2Bis E-commerce
+
+#### Software Architect
 
 <time datetime="2022-03-01"></time> until <time datetime="2024-04-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -60,7 +68,7 @@ Backend software engineer with more than eight years of experience building, mod
 * Designed integrations between e-commerce platforms, internal systems, third-party services, and business applications.
 * Delivered SaaS and automation initiatives that reduced manual work and accelerated project delivery.
 
-### Engineering Manager - Bis2Bis E-commerce
+#### Engineering Manager
 
 <time datetime="2021-03-01"></time> until <time datetime="2022-03-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -71,7 +79,7 @@ Backend software engineer with more than eight years of experience building, mod
 * Modernized Magento 1 and PHP applications for PHP 7.x compatibility and delivered Laravel-based marketplace integration microservices.
 * Built onboarding, training, and professional development programs to improve technical growth and knowledge sharing.
 
-### Technical Lead - Bis2Bis E-commerce
+#### Technical Lead
 
 <time datetime="2020-11-01"></time> until <time datetime="2021-03-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -81,7 +89,7 @@ Backend software engineer with more than eight years of experience building, mod
 * Standardized reusable Magento and PHP packages to reduce duplicated implementation work.
 * Participated in technical recruiting, onboarding, and professional development planning.
 
-### Software Engineer - Bis2Bis E-commerce
+#### Software Engineer
 
 <time datetime="2019-11-01"></time> until <time datetime="2020-11-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -92,7 +100,7 @@ Backend software engineer with more than eight years of experience building, mod
 * Improved Magento 1 performance and availability using Redis caching, a MySQL primary-replica architecture, and ELK Stack integration.
 * Co-created Corsair, an internal environment virtualization tool built with Docker, Docker Compose, and Bash.
 
-### Junior Full-Stack Developer - Bis2Bis E-commerce
+#### Junior Full-Stack Developer
 
 <time datetime="2018-09-01"></time> until <time datetime="2019-11-01"></time>, on-site, Londrina, Paraná, Brazil
 

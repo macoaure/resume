@@ -19,7 +19,9 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 
 ## Experiência Profissional
 
-### Engenheiro de Software Backend Sênior - 1Doc
+### 1Doc
+
+#### Engenheiro de Software Backend Sênior
 
 <time datetime="2025-10-01"></time> até <time datetime="present"></time>, remoto, Londrina, PR, Brasil
 
@@ -29,7 +31,9 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Moderniza código legado para reduzir débitos técnicos, melhorar a testabilidade e aumentar a manutenibilidade.
 * Apoia a segurança das entregas, a escalabilidade e a continuidade operacional de serviços baseados em AWS Lambda.
 
-### Professor de Ciência da Computação e Engenharia de Software - UniFil – Centro Universitário Filadélfia
+### UniFil – Centro Universitário Filadélfia
+
+#### Professor de Ciência da Computação e Engenharia de Software
 
 <time datetime="2025-07-01"></time> até <time datetime="2026-04-01"></time>, presencial, Londrina, PR, Brasil
 
@@ -38,7 +42,9 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Orientou estudantes em design de software, organização de código, testes, refatoração, depuração e documentação técnica.
 * Introduziu fluxos de trabalho baseados em controle de versão, pull requests, revisão de código, entrega contínua e colaboração.
 
-### Engenheiro de Produto - Farmbits, Grupo Belagrícola
+### Farmbits, Grupo Belagrícola
+
+#### Engenheiro de Produto
 
 <time datetime="2024-04-01"></time> até <time datetime="2025-08-01"></time>, presencial, Londrina, PR, Brasil
 
@@ -49,7 +55,9 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Implementou integrações com Magento 2, ERP Bling, CORBAN, Santander e Itaú.
 * Automatizou fluxos de vendas, pagamentos e faturamento para reduzir atividades operacionais manuais.
 
-### Arquiteto de Software - Bis2Bis E-commerce
+### Bis2Bis E-commerce
+
+#### Arquiteto de Software
 
 <time datetime="2022-03-01"></time> até <time datetime="2024-04-01"></time>, presencial, Londrina, PR, Brasil
 
@@ -60,7 +68,7 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Projetou integrações entre plataformas de comércio eletrônico, sistemas internos, serviços de terceiros e aplicações empresariais.
 * Entregou iniciativas de SaaS e automação que reduziram atividades manuais e aceleraram a entrega de projetos.
 
-### Gerente de Engenharia - Bis2Bis E-commerce
+#### Gerente de Engenharia
 
 <time datetime="2021-03-01"></time> até <time datetime="2022-03-01"></time>, presencial, Londrina, PR, Brasil
 
@@ -71,7 +79,7 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Modernizou aplicações Magento 1 e PHP para compatibilidade com PHP 7.x e entregou microsserviços de integração com marketplaces baseados em Laravel.
 * Estruturou programas de integração, treinamento e desenvolvimento profissional para melhorar o crescimento técnico e o compartilhamento de conhecimento.
 
-### Líder Técnico - Bis2Bis E-commerce
+#### Líder Técnico
 
 <time datetime="2020-11-01"></time> até <time datetime="2021-03-01"></time>, presencial, Londrina, PR, Brasil
 
@@ -81,7 +89,7 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Padronizou pacotes reutilizáveis para Magento e PHP, reduzindo a duplicação de trabalho nas implementações.
 * Participou de processos de recrutamento técnico, integração de profissionais e planejamento de desenvolvimento.
 
-### Engenheiro de Software - Bis2Bis E-commerce
+#### Engenheiro de Software
 
 <time datetime="2019-11-01"></time> até <time datetime="2020-11-01"></time>, presencial, Londrina, PR, Brasil
 
@@ -92,7 +100,7 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 * Melhorou o desempenho e a disponibilidade do Magento 1 utilizando cache com Redis, arquitetura MySQL com replicação primário-réplica e integração com a ELK Stack.
 * Cocriou o Corsair, uma ferramenta interna de virtualização de ambientes desenvolvida com Docker, Docker Compose e Bash.
 
-### Desenvolvedor Full-Stack Júnior - Bis2Bis E-commerce
+#### Desenvolvedor Full-Stack Júnior
 
 <time datetime="2018-09-01"></time> até <time datetime="2019-11-01"></time>, presencial, Londrina, PR, Brasil
 
