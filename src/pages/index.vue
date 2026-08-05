@@ -50,6 +50,18 @@ const languageGroupLabel = computed(() =>
   page.value.languageCode === 'pt-BR' ? 'Alternar idioma' : 'Language switch',
 )
 
+const navToggleLabel = computed(() => {
+  if (page.value.languageCode === 'pt-BR') {
+    return isNavPinned.value ? 'Recolher' : 'Expandir'
+  }
+
+  return isNavPinned.value ? 'Collapse' : 'Expand'
+})
+
+const pdfButtonLabel = computed(() =>
+  page.value.languageCode === 'pt-BR' ? 'Baixar PDF' : 'Download PDF',
+)
+
 const navClass = computed(() => ({
   'resume-nav--pinned': isNavPinned.value,
 }))
@@ -314,7 +326,7 @@ const toggleNav = () => {
             {{ isNavPinned ? '−−' : '≡' }}
           </span>
           <span class="resume-nav__label">
-            {{ isNavPinned ? 'Recolher' : 'Expandir' }}
+            {{ navToggleLabel }}
           </span>
         </button>
         <button
@@ -323,7 +335,7 @@ const toggleNav = () => {
           @click="downloadPdf"
         >
           <span class="resume-nav__index" aria-hidden="true">PDF</span>
-          <span class="resume-nav__label">Baixar PDF</span>
+          <span class="resume-nav__label">{{ pdfButtonLabel }}</span>
         </button>
       </nav>
 
