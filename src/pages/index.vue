@@ -5,7 +5,6 @@ import { createResumePageModel } from './index.ts'
 
 const route = useRoute()
 const router = useRouter()
-const isNavPinned = ref(false)
 const resumeSheetRef = ref<HTMLDivElement | null>(null)
 
 const selectedLanguageCode = computed(() => {
@@ -50,21 +49,9 @@ const languageGroupLabel = computed(() =>
   page.value.languageCode === 'pt-BR' ? 'Alternar idioma' : 'Language switch',
 )
 
-const navToggleLabel = computed(() => {
-  if (page.value.languageCode === 'pt-BR') {
-    return isNavPinned.value ? 'Recolher' : 'Expandir'
-  }
-
-  return isNavPinned.value ? 'Collapse' : 'Expand'
-})
-
 const pdfButtonLabel = computed(() =>
   page.value.languageCode === 'pt-BR' ? 'Baixar PDF' : 'Download PDF',
 )
-
-const navClass = computed(() => ({
-  'resume-nav--pinned': isNavPinned.value,
-}))
 
 watchEffect(() => {
   document.title = `${page.value.pageTitle} | ${String(route.meta.title ?? 'Marcos Aurelio Costa de Oliveira')}`
@@ -278,9 +265,6 @@ const downloadPdf = async () => {
   URL.revokeObjectURL(url)
 }
 
-const toggleNav = () => {
-  isNavPinned.value = !isNavPinned.value
-}
 </script>
 
 <template>
@@ -288,8 +272,7 @@ const toggleNav = () => {
     <div class="resume-layout">
       <nav
         v-if="navigationItems.length || languageItems.length"
-        class="resume-nav group"
-        :class="navClass"
+        class="resume-nav"
         :aria-label="navAriaLabel"
       >
         <p class="resume-nav__title">{{ navTitleLabel }}</p>
@@ -326,18 +309,6 @@ const toggleNav = () => {
           </span>
           <span class="resume-nav__label">{{ item.label }}</span>
         </a>
-        <button
-          type="button"
-          class="resume-nav__button resume-nav__button--toggle"
-          @click="toggleNav"
-        >
-          <span class="resume-nav__index" aria-hidden="true">
-            {{ isNavPinned ? '−−' : '≡' }}
-          </span>
-          <span class="resume-nav__label">
-            {{ navToggleLabel }}
-          </span>
-        </button>
         <button
           type="button"
           class="resume-nav__button resume-nav__button--pdf"

@@ -1,12 +1,20 @@
 # Marcos Aurelio Costa de Oliveira
 
-### Engenheiro de Software Backend
+### Software Architect | Software Engineer | Tech Lead | Backend & Cloud | AWS, Kubernetes, Go e PHP
 
-Londrina, Paraná, Brazil, [macosaures@gmail.com](mailto:macosaures@gmail.com), +55 43 9 99123-6680, LinkedIn: https://www.linkedin.com/in/macoaure
+Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [https://www.linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
-## Resumo Profissional  
+Telefone: [+55 43 9 99123-6680](tel:+55439991236680) | Endereço: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
 
-Engenheiro de software backend com mais de oito anos de experiência no desenvolvimento, modernização e sustentação de sistemas de comércio eletrônico, plataformas e integrações. Possui sólida experiência com PHP, Laravel, Symfony, Go, AWS, Kubernetes, Docker, CI/CD, observabilidade e arquitetura de sistemas. Atua com foco em arquiteturas backend escaláveis, estabilidade em produção, manutenibilidade e automação de entregas.
+## Resumo Profissional
+
+Atuo entre Software Architecture, Product Engineering e Backend Engineering, transformando problemas de escala, confiabilidade, integração e complexidade operacional em sistemas mais simples de evoluir, operar e sustentar. Minha experiência combina System Design, Distributed Systems, Backend Architecture, Integration Architecture, Cloud Architecture, Platform Engineering e Legacy Modernization com atuação hands-on em PHP, Go, Laravel, Symfony, AWS, AWS Lambda, Kubernetes, Docker, CI/CD, GitOps, APIs REST, MySQL e Redis. Ao longo da carreira, trabalhei desde a implementação e operação de sistemas em produção até decisões de arquitetura com impacto transversal sobre plataformas utilizadas por aproximadamente 1.200 projetos ativos.
+
+Também construí uma trajetória forte em Engineering Leadership, passando por Tech Lead, Engineering Manager e Software Architect. Liderei estruturas com até 40 desenvolvedores, utilizando Agile, Scrum, Sprint Planning, Backlog Refinement, Capacity Planning, SLA Management, 1:1s, mentoring, Performance Management, Hiring e Technical Leadership para conectar qualidade técnica, desenvolvimento das pessoas e previsibilidade de entrega.
+
+Mais recentemente, passei a atuar também na evolução do processo de desenvolvimento com AI-Assisted e Agentic Software Engineering, utilizando Cursor, Claude Code e OpenAI Codex, além de estruturar práticas de Context Engineering, TDD e Spec-Driven Development (SDD) e capacitar times de Engenharia e QA no uso dessas abordagens dentro do SDLC.
+Entre os resultados que ajudam a dimensionar essa atuação estão a redução de mais de 90% dos incidentes de produção, sustentação de 99,9% de disponibilidade, redução do deployment de 40 para 12 minutos (-70%) e redução de um backlog operacional de aproximadamente 900 para 300 chamados (-67%).
+Meu foco está em problemas que exigem combinação de arquitetura, profundidade técnica, produto e liderança, especialmente em posições de Software Architect, Product Engineer, Senior/Staff Backend Engineer e Technical Lead.
 
 ## Principais Competências
 
@@ -21,26 +29,30 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 
 ### 1Doc
 
-#### Engenheiro de Software Backend Sênior
+#### Senior Backend Software Engineer | GovTech
 
 <time datetime="2025-10-01"></time> até <time datetime="present"></time>, remoto, Londrina, PR, Brasil
 
-* Desenvolve e mantém serviços backend em produção para o contexto de GovTech utilizando PHP, Laravel, Symfony, Go, AWS e AWS Lambda.
-* Projeta e evolui APIs REST, integrações entre serviços e cargas de trabalho serverless com contratos e limites de responsabilidade claramente definidos.
-* Investiga incidentes em produção, problemas de desempenho e falhas de aplicação em sistemas legados e serverless.
-* Moderniza código legado para reduzir débitos técnicos, melhorar a testabilidade e aumentar a manutenibilidade.
-* Apoia a segurança das entregas, a escalabilidade e a continuidade operacional de serviços baseados em AWS Lambda.
+* Atuei no ciclo end-to-end de funcionalidades de produto em um ambiente GovTech com sistemas legados e workloads serverless, do refinamento técnico ao rollout e sustentação em produção, utilizando PHP, Laravel, Symfony, Go, AWS e AWS Lambda.
+* Para reduzir acoplamento e aumentar a capacidade de evolução das aplicações, projetei REST APIs, integrações, módulos backend e Service Boundaries, trabalhando com Product, QA e Engineering na definição de requisitos, acceptance criteria e technical trade-offs.
+* Em incidentes, falhas recorrentes e gargalos de performance, apliquei Root Cause Analysis, debugging, profiling, MySQL, Redis e caching, transformando problemas operacionais em melhorias de confiabilidade, performance e continuidade da operação.
+* Na evolução de sistemas legados de maior risco, utilizei refatoração incremental, TDD, testabilidade e isolamento de responsabilidades, reduzindo technical debt e tornando mudanças críticas mais seguras, previsíveis e fáceis de manter.
+* Estruturei práticas de AI-Assisted e Agentic Software Development com Cursor, Claude Code e OpenAI Codex, criando workflows baseados em Context Engineering, TDD e Spec-Driven Development (SDD) para conectar requisitos, specifications, acceptance criteria, planejamento, implementação, testes e validação automatizada.
+* Em conjunto com a liderança técnica, apoiei a evolução do time através de mentoring, code review, technical guidance e knowledge sharing, além de conduzir treinamentos e sessões hands-on com Engenharia e QA sobre coding agents, testes, debugging, refactoring e integração responsável de IA ao SDLC.
 
 ### UniFil – Centro Universitário Filadélfia
 
-#### Professor de Ciência da Computação e Engenharia de Software
+#### Professor de Ciência da Computação | Engenharia de Software | Java | Spring boot
 
 <time datetime="2025-07-01"></time> até <time datetime="2026-04-01"></time>, presencial, Londrina, PR, Brasil
 
-* Ministrou disciplinas de graduação sobre Java, Spring Boot, programação orientada a objetos, MVC, desenvolvimento backend e engenharia de software.
-* Elaborou atividades baseadas em projetos utilizando Java, Spring Boot, Git e padrões MVC.
-* Orientou estudantes em design de software, organização de código, testes, refatoração, depuração e documentação técnica.
-* Introduziu fluxos de trabalho baseados em controle de versão, pull requests, revisão de código, entrega contínua e colaboração.
+* Planejei e ministrei disciplinas de Engenharia de Software e Backend Development para aproximadamente 60+ alunos, utilizando Java, Spring Boot, OOP e MVC para conectar fundamentos técnicos a problemas próximos da realidade de produtos e sistemas em produção.
+* Estruturei cerca de 20 projetos práticos em equipe, cobrindo requirements, software design, desenvolvimento, integração, testing, code review e delivery, proporcionando experiência completa com o Software Development Lifecycle (SDLC).
+* Para desenvolver autonomia técnica, conduzi mentoring, technical guidance e mais de 100 revisões de código e projetos, trabalhando problem-solving, Object-Oriented Design, refactoring, debugging, testability e maintainability.
+* Introduzi workflows profissionais com Git, Pull Requests, Code Review e Continuous Delivery, transformando atividades acadêmicas em ciclos colaborativos de desenvolvimento com responsabilidade compartilhada sobre qualidade e entrega.
+* Em discussões de arquitetura e evolução dos projetos, trabalhei technical trade-offs, scalability, reliability, maintainability, technical debt e Software Quality, demonstrando como decisões locais de implementação impactam a evolução de sistemas no longo prazo.
+* Avaliei entregas com base não apenas na correção funcional, mas em design, qualidade de código, testes, documentação e decisões técnicas, utilizando feedback contínuo para reduzir problemas recorrentes e elevar progressivamente a qualidade das soluções.
+
 
 ### Farmbits, Grupo Belagrícola
 
@@ -48,12 +60,12 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 
 <time datetime="2024-04-01"></time> até <time datetime="2025-08-01"></time>, presencial, Londrina, PR, Brasil
 
-* Foi responsável pela entrega de ponta a ponta de uma plataforma de comércio eletrônico AgTech desenvolvida com Magento 2 e PHP, abrangendo arquitetura, desenvolvimento, infraestrutura, implantação, monitoramento e suporte.
-* Reduziu os incidentes em produção em mais de 90% e manteve uma disponibilidade de 99,9% por meio da reestruturação da infraestrutura da plataforma na AWS e no Kubernetes.
-* Reduziu o tempo de implantação de 40 para 12 minutos por meio de pipelines com GitHub Actions e Argo CD.
-* Reduziu o tempo de resposta a incidentes para menos de seis minutos utilizando Grafana, Loki, Promtail, Prometheus e AlertManager.
-* Implementou integrações com Magento 2, ERP Bling, CORBAN, Santander e Itaú.
-* Automatizou fluxos de vendas, pagamentos e faturamento para reduzir atividades operacionais manuais.
+* Assumi end-to-end ownership de uma plataforma de e-commerce AgTech em Magento 2 e PHP, cobrindo arquitetura, desenvolvimento, infraestrutura, CI/CD, observabilidade e Production Support, conectando evolução de produto à confiabilidade da operação.
+* Diante de incidentes recorrentes e baixa previsibilidade operacional, redesenhei a infraestrutura com AWS e Kubernetes, reduzindo em mais de 90% os incidentes em produção e sustentando 99,9% de disponibilidade da plataforma.
+* Para eliminar gargalos no release process, reestruturei o Software Delivery Lifecycle com GitHub Actions, GitOps e Argo CD, automatizando build, validação e deployment e reduzindo o tempo de implantação de 40 para 12 minutos (-70%).
+* Com pouca visibilidade sobre falhas e comportamento da aplicação, implementei uma stack de Observability & Incident Management com Grafana, Prometheus, Loki, Promtail e AlertManager, reduzindo o tempo de identificação e resposta a incidentes para menos de 6 minutos.
+* Projetei e mantive integrações críticas entre Magento 2, ERP Bling, CORBAN, Santander e Itaú, automatizando fluxos de vendas, pagamentos, faturamento e documentos, reduzindo intervenção manual e aumentando consistência e rastreabilidade transacional.
+* Conduzi planejamento e priorização contínua no Jira, utilizando Agile, backlog management e KPIs de negócio para equilibrar novas funcionalidades, technical debt, reliability e risco operacional ao longo de mais de 70 ciclos de entrega.
 
 ### Bis2Bis E-commerce
 
@@ -61,54 +73,55 @@ Engenheiro de software backend com mais de oito anos de experiência no desenvol
 
 <time datetime="2022-03-01"></time> até <time datetime="2024-04-01"></time>, presencial, Londrina, PR, Brasil
 
-* Modernizou a arquitetura da plataforma de comércio eletrônico, contribuindo para uma redução de 15% no tempo de indisponibilidade e melhorando a escalabilidade e a manutenibilidade.
-* Liderou a migração da AWS para a Huawei Cloud com o objetivo de reduzir custos operacionais e melhorar o desempenho da infraestrutura.
-* Implementou práticas de implantação GitOps com Argo CD para aumentar a consistência e a rastreabilidade das entregas.
-* Definiu a adoção de Golang, Ruby on Rails, Node.js, Symfony e Laravel de acordo com as necessidades dos produtos e das integrações.
-* Projetou integrações entre plataformas de comércio eletrônico, sistemas internos, serviços de terceiros e aplicações empresariais.
-* Entregou iniciativas de SaaS e automação que reduziram atividades manuais e aceleraram a entrega de projetos.
+* Com uma plataforma sustentando aproximadamente 1.200 projetos ativos, passei a responder pela evolução arquitetural transversal do ecossistema, definindo System Design, Service Boundaries, Integration Architecture, APIs e padrões compartilhados com impacto sobre toda a operação.
+* A partir de limitações de escalabilidade, disponibilidade e custo, defini a Target Architecture e liderei a migração de workloads da AWS para Huawei Cloud, avaliando NFRs e technical trade-offs entre performance, reliability, scalability, security, cost optimization e complexidade operacional.
+* Evoluí a plataforma de decisões isoladas por aplicação para uma abordagem de Architecture Governance, conduzindo Design Reviews, Technology Selection e Technical Standards utilizados por aproximadamente 40 desenvolvedores em diferentes produtos e integrações.
+* Redesenhei fluxos e responsabilidades entre aplicações, APIs e integrações externas, reduzindo acoplamento sistêmico e contribuindo para aproximadamente 15% de redução na indisponibilidade da plataforma.
+* Estruturei GitOps e Continuous Delivery com Argo CD para dezenas de aplicações, padronizando configuração, deployment, rollback e rastreabilidade e reduzindo aproximadamente 40% das falhas relacionadas a releases.
+* Conduzi decisões envolvendo Go, Node.js, Symfony, Laravel e Ruby on Rails a partir do contexto arquitetural e dos workloads, transformando technology selection em uma decisão baseada em maintainability, performance, capacidade do time e custo de operação.
+
 
 #### Gerente de Engenharia
 
 <time datetime="2021-03-01"></time> até <time datetime="2022-03-01"></time>, presencial, Londrina, PR, Brasil
 
-* Consolidou as equipes de frontend e backend em uma organização de engenharia composta por aproximadamente 40 desenvolvedores.
-* Estruturou cinco frentes de trabalho: suporte, implementação, integrações, solicitações urgentes e manutenção.
-* Migrou ambientes legados de desenvolvimento para Docker e substituiu processos manuais de entrega por pipelines do GitLab CI/CD.
-* Liderou a migração do Bitbucket para o GitLab e do Redmine para o Jira Software.
-* Modernizou aplicações Magento 1 e PHP para compatibilidade com PHP 7.x e entregou microsserviços de integração com marketplaces baseados em Laravel.
-* Estruturou programas de integração, treinamento e desenvolvimento profissional para melhorar o crescimento técnico e o compartilhamento de conhecimento.
+* Ampliei minha responsabilidade de liderança técnica para uma organização com aproximadamente 40 desenvolvedores, passando a responder por People Management, Engineering Delivery e saúde técnica de uma operação que sustentava cerca de 1.200 projetos ativos.
+* Reestruturei frontend e backend em 5 workstreams, suporte, implementação, integrações, manutenção e demandas críticas, definindo ownership, SLAs, capacidade, prioridades e mecanismos de escalonamento para tornar a operação mais previsível.
+* Estruturei Agile Delivery com Scrum, Sprint Planning, Backlog Refinement, Retrospectives e Capacity Planning, equilibrando roadmap, Customer Support, incidentes e technical debt e elevando a previsibilidade dos compromissos planejados de aproximadamente 60% para mais de 80%.
+* Mantive rotinas de 1:1, feedback contínuo, mentoring, Performance Management e desenvolvimento de carreira, além de atuar em Hiring, Technical Interviews e Onboarding para ampliar capacidade sem perder qualidade técnica.
+* Mantive responsabilidade sobre decisões técnicas de maior impacto, conduzindo Design Reviews, modernização de legado, padrões de integração e evolução do SDLC, conectando arquitetura, capacidade dos times e necessidades de negócio.
+* Modernizei Developer Experience e Software Delivery com Docker, GitLab CI/CD, Code Review e automação de deployments, reduzindo aproximadamente 80% das intervenções manuais e cerca de 35% do lead time de entrega.
 
 #### Líder Técnico
 
 <time datetime="2020-11-01"></time> até <time datetime="2021-03-01"></time>, presencial, Londrina, PR, Brasil
 
-* Liderou aproximadamente 20 desenvolvedores distribuídos entre as frentes de frontend, backend, integrações, manutenção e suporte.
-* Supervisionou cerca de 1.200 projetos e contribuiu para a resolução de aproximadamente 800 chamados técnicos por mês.
-* Reduziu o backlog do ServiceDesk de aproximadamente 900 para 300 chamados por meio da reestruturação de módulos em pacotes reutilizáveis e da melhoria dos processos de build e implantação.
-* Padronizou pacotes reutilizáveis para Magento e PHP, reduzindo a duplicação de trabalho nas implementações.
-* Participou de processos de recrutamento técnico, integração de profissionais e planejamento de desenvolvimento.
+* Passei da execução individual para a liderança técnica de aproximadamente 20 desenvolvedores, assumindo responsabilidade sobre decisões de engenharia, qualidade das soluções e entrega técnica em uma operação com cerca de 1.200 projetos ativos.
+* Em uma operação próxima de 800 chamados técnicos mensais e backlog de aproximadamente 900 itens, estruturei SLA Management, Backlog Prioritization, Escalation Management e Root Cause Analysis, reduzindo a fila para cerca de 300 chamados (-67%).
+* Identifiquei que grande parte do esforço era consumida por customizações repetitivas e conduzi sua transformação em módulos e componentes reutilizáveis, levando decisões locais de implementação para soluções compartilhadas em todo o portfólio.
+* Passei a conduzir Technical Design, Code Reviews, Design Reviews e decisões de integração, avaliando performance, compatibility, maintainability, risco e impacto operacional antes da implementação.
+* Estruturei padrões de PHP e Magento para modularização, integração, build e deployment, reduzindo retrabalho e aumentando consistência entre diferentes equipes e projetos.
+* Utilizei mentoring, pair programming, technical coaching e onboarding para elevar autonomia técnica dos desenvolvedores e reduzir a concentração de conhecimento em poucas pessoas.
 
 #### Engenheiro de Software
 
 <time datetime="2019-11-01"></time> até <time datetime="2020-11-01"></time>, presencial, Londrina, PR, Brasil
 
-* Resolveu aproximadamente 3.200 chamados técnicos e funcionais relacionados a suporte, implementação, correção de defeitos e melhoria contínua.
-* Entregou soluções personalizadas para aproximadamente 500 projetos de comércio eletrônico.
-* Desenvolveu integrações com ERPs, gateways de pagamento, marketplaces, plataformas de cupons e transportadoras utilizando PHP e Magento.
-* Personalizou lojas Magento 1 e Magento 2 utilizando Sass, Less, Pug e Vue.js.
-* Melhorou o desempenho e a disponibilidade do Magento 1 utilizando cache com Redis, arquitetura MySQL com replicação primário-réplica e integração com a ELK Stack.
-* Cocriou o Corsair, uma ferramenta interna de virtualização de ambientes desenvolvida com Docker, Docker Compose e Bash.
+* Evoluí da implementação orientada a tarefas para assumir ownership técnico de soluções completas, desenvolvendo funcionalidades e integrações que alcançaram aproximadamente 500 projetos, cerca de 40% do portfólio ativo da empresa.
+* Resolvi aproximadamente 3.200 chamados técnicos e funcionais em 12 meses, cerca de 267 por mês, utilizando essa exposição a produção para aprofundar debugging, Root Cause Analysis e entendimento de padrões recorrentes de falha.
+* Passei a projetar integrações completas com ERPs, gateways de pagamento, marketplaces, cupons e transportadoras, definindo APIs, transformação de dados, regras de negócio, tratamento de erros e estratégias de sincronização.
+* Assumi problemas de performance e reliability utilizando Redis, MySQL Primary-Replica e ELK Stack, atuando além do código da funcionalidade para analisar comportamento da aplicação e infraestrutura em produção.
+* Cocriei o Corsair, ferramenta interna baseada em Docker, Docker Compose e Bash, reduzindo de aproximadamente 2–3 horas para menos de 30 minutos a preparação de ambientes de desenvolvimento e levando automação para além do escopo dos projetos individuais.
 
 #### Desenvolvedor Full-Stack Júnior
 
 <time datetime="2018-09-01"></time> até <time datetime="2019-11-01"></time>, presencial, Londrina, PR, Brasil
 
-* Atendeu chamados de implementação e contribuiu para o cumprimento dos SLAs e para a continuidade operacional.
-* Contribuiu com aproximadamente 300 projetos de comércio eletrônico, incluindo módulos personalizados, customizações de plataforma, rotinas backend e integrações com terceiros.
-* Desenvolveu módulos para Magento 1 e Magento 2 utilizando PHP 5.x, PHP 7.x e MySQL.
-* Contribuiu para a primeira implementação headless de Magento 2 da empresa utilizando Vue.js, Pug, GraphQL, Webpack e Node.js.
-* Melhorou a estabilidade e a manutenibilidade por meio de depuração, otimização de consultas SQL e alterações direcionadas ao desempenho.
+* Iniciei atuando na implementação de funcionalidades, correções e integrações para aproximadamente 300 projetos de e-commerce, desenvolvendo módulos em Magento 1, Magento 2, PHP e MySQL dentro de padrões previamente definidos pela equipe.
+* Trabalhei diretamente com Customer Support, tickets e SLAs, adquirindo experiência prática com debugging, manutenção de sistemas legados e impacto de mudanças em aplicações já utilizadas por clientes.
+* Evoluí de alterações pontuais para módulos e integrações reutilizáveis, trabalhando com OOP, SQL, APIs e modularização para reduzir duplicação entre implementações semelhantes.
+* Participei da primeira implementação Headless Magento 2 da empresa utilizando GraphQL, Vue.js, Node.js, Pug e Webpack, expandindo minha atuação de customizações tradicionais para integração entre diferentes camadas e tecnologias.
+* Atuei em SQL Query Optimization e troubleshooting, desenvolvendo uma base técnica orientada não apenas à entrega funcional, mas também a performance e estabilidade.
 
 ## Formação Acadêmica
 
@@ -134,68 +147,19 @@ Comunicação, Publicidade e Marketing
 
 ## Certificações e Cursos
 
-### Inteligência Artificial, Tecnologias Emergentes e Novas Linguagens
+### Áreas de Conhecimento Técnico
 
-* Inteligência Artificial com PHP-ML
-* Rust
-* Programação Blockchain
+Inteligência Artificial e Tecnologias Emergentes: Fundamentos e aplicações de Inteligência Artificial, adoção de novas linguagens e paradigmas de programação e exploração de tecnologias blockchain.
 
-### Backend, Go e Sistemas Distribuídos
+Backend e Engenharia de Sistemas: Experiência abrangente em plataformas backend, sistemas distribuídos e arquitetura de microsserviços, utilizando linguagens como Go para desenvolver soluções escaláveis e de fácil manutenção, além de integrações robustas entre sistemas.
 
-* Masterclass de Backend com Golang, PostgreSQL, Kubernetes e gRPC
-* Go (Golang): Explorando a Linguagem do Google
-* Go e Gin: Criando API REST com Simplicidade
-* Go: Validações, Testes e Páginas HTML
-* Go: Desenvolvendo uma API REST
-* Go: Crie uma Aplicação Web
-* Go: Orientação a Objetos
-* Go: A Linguagem do Google
-* Arquitetura de Software e Tecnologia de Sistemas de Grande Escala
-* Arquitetura de Software com Microsserviços: Padrões e Técnicas
-* Microsserviços: Padrões de Projeto
+Desenvolvimento Web e PHP: Conhecimento aprofundado em orientação a objetos e design modular com PHP, com ênfase em boas práticas de arquitetura, TDD/BDD, refatoração avançada e desenvolvimento web moderno, incluindo Magento, Composer e stacks web multidisciplinares.
 
-### PHP e Desenvolvimento Web
+DevOps e Colaboração: Experiência com ciclos profissionais de entrega de software, práticas de DevOps, automação, conteinerização, CI/CD e plataformas de colaboração para equipes ágeis.
 
-* Desenvolvimento de Módulos para Magento 2
-* Testes Unitários e TDD com PHP e PHPUnit
-* PHP 8: Curso de Desenvolvimento Web Completo
-* Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos
-* Curso Completo de PHP 7
-* SOLID – Os 5 Princípios para as Boas Práticas da POO
-* SOLID com PHP: Princípios da Programação Orientada a Objetos
-* PHP: Conceitos, Lidando com Dados, Loops e Mais
-* PHP: Dominando as Collections
-* PHP: Manipulando Coleções com Arrays
-* PHP Strings: Operações e Expressões Regulares
-* PHP Parallel: Processos, Threads e Channels
-* PHP I/O: Trabalhando com Arquivos e Streams
-* PHP Exceptions: Tratamento de Erros
-* PHP Composer: Dependências, Autoload e Publicação
-* PHP e Behavior Driven Development: BDD com Behat
-* PHP e Clean Architecture: Descomplicando a Arquitetura de Software
-* PHP e MySQL: Criando uma Aplicação Web
-* PHP Brasil: Validação de Dados no Padrão Nacional
-* Orientação a Objetos com PHP: Classes, Métodos e Atributos
-* Object Calisthenics: Exercitando a Orientação a Objetos
-* Metaprogramação com PHP: API de Reflection
-* Avançando com PHP: Arrays, Strings, Funções e Web
-* Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces
-
-### DevOps, Entrega e Colaboração
-
-* Curso Preparatório para Kubernetes Certified Application Developer – CKAD
-* Docker: Ferramenta Essencial para Desenvolvedores
-* GitLab CI: Pipelines, Entrega Contínua e Implantação
-* GitLab CI e Docker: Pipeline de Entrega Contínua
-* Jira Software
-* Jira Software: Criando Projetos Completos
-
-### Dados e Plataformas
-
-* Dominando Banco de Dados com MySQL
-* Ruby on Rails 4.x
+Bancos de Dados e Plataformas: Experiência com bancos de dados relacionais e frameworks web, com foco em MySQL e atuação em plataformas full-stack.
 
 ## Idiomas
 
-* Português
-* Inglês
+* Português (Nativo)
+* Inglês (Profissional Intermediário)

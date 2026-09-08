@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @theme {
-  --font-serif: Georgia, 'Times New Roman', Times, serif;
+    --font-serif: Arial, sans-serif;
 }
 
 @layer base {
@@ -35,37 +35,19 @@
   }
 
   .resume-layout {
-    @apply relative mx-auto flex w-full max-w-[calc(210mm+12rem)] items-start justify-center lg:justify-end;
+    @apply mx-auto grid w-full max-w-[calc(210mm+18rem)] items-start justify-center gap-6 xl:grid-cols-[14rem_minmax(0,210mm)];
   }
 
   .resume-nav {
-    @apply fixed right-4 top-1/2 z-20 flex w-16 -translate-y-1/2 flex-col gap-2 overflow-hidden border border-stone-300/70 bg-white/90 p-2 shadow-[0_20px_50px_rgba(15,23,42,0.10)] backdrop-blur-xl transition-[width,padding,transform,box-shadow] duration-300 ease-out;
-  }
-
-  .resume-nav:hover,
-  .resume-nav:focus-within,
-  .resume-nav--pinned {
-    @apply w-60 p-3 shadow-[0_24px_60px_rgba(15,23,42,0.12)];
+    @apply sticky top-6 z-20 flex max-h-[calc(100vh-3rem)] w-full flex-col gap-2 overflow-y-auto border border-stone-300/70 bg-white p-3 shadow-[0_18px_40px_rgba(15,23,42,0.08)];
   }
 
   .resume-nav__title {
     @apply px-2 text-[0.65rem] uppercase tracking-[0.32em] text-stone-500;
-    opacity: 0;
-    transform: translateX(-4px);
-    transition:
-      opacity 180ms ease,
-      transform 180ms ease;
   }
 
   .resume-nav__title--sections {
     @apply mt-2;
-  }
-
-  .resume-nav:hover .resume-nav__title,
-  .resume-nav:focus-within .resume-nav__title,
-  .resume-nav--pinned .resume-nav__title {
-    opacity: 1;
-    transform: translateX(0);
   }
 
   .resume-nav__language-switch {
@@ -86,7 +68,7 @@
 
   .resume-nav__link,
   .resume-nav__button {
-    @apply inline-flex h-10 items-center gap-3 overflow-hidden border border-stone-200 bg-stone-50 px-3 text-sm text-stone-700 transition duration-200 ease-out;
+    @apply inline-flex min-h-10 items-center gap-3 border border-stone-200 bg-stone-50 px-3 text-sm text-stone-700 transition duration-200 ease-out;
     min-width: 0;
   }
 
@@ -115,44 +97,7 @@
   }
 
   .resume-nav__label {
-    @apply whitespace-nowrap text-[0.92rem] font-medium text-stone-700;
-    opacity: 0;
-    transform: translateX(-4px);
-    transition:
-      opacity 180ms ease,
-      transform 180ms ease;
-  }
-
-  .resume-nav:hover .resume-nav__label,
-  .resume-nav:focus-within .resume-nav__label,
-  .resume-nav--pinned .resume-nav__label {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__link,
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__button {
-    @apply justify-center px-0;
-  }
-
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__label,
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__title,
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__language-switch,
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__button--pdf .resume-nav__label {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__index {
-    @apply mx-auto;
-  }
-
-  .resume-nav__button--toggle {
-    @apply bg-stone-900 text-white border-stone-900;
-  }
-
-  .resume-nav__button--toggle:hover {
-    @apply border-stone-950 bg-stone-800 text-white;
+    @apply min-w-0 text-[0.88rem] font-medium leading-snug text-stone-700;
   }
 
   .resume-nav__button--pdf {
@@ -294,47 +239,47 @@
   }
 }
 
+@media (max-width: 1279px) {
+  .resume-layout {
+    @apply block;
+  }
+
+  .resume-nav {
+    @apply sticky top-0 mb-3 max-h-none flex-row gap-2 overflow-x-auto overflow-y-hidden p-2;
+  }
+
+  .resume-nav__title {
+    @apply hidden;
+  }
+
+  .resume-nav__language-switch {
+    @apply flex-none px-0;
+  }
+
+  .resume-nav__link,
+  .resume-nav__button {
+    @apply flex-none whitespace-nowrap;
+  }
+
+  .resume-nav__link--level-3,
+  .resume-nav__link--level-4,
+  .resume-nav__link--level-5,
+  .resume-nav__link--level-6 {
+    @apply pl-3;
+  }
+
+  .resume-nav__label {
+    @apply whitespace-nowrap;
+  }
+}
+
 @media (max-width: 900px) {
   .resume-page {
     @apply px-3 py-3;
   }
 
-  .resume-layout {
-    @apply flex-col items-stretch justify-start gap-4;
-  }
-
-  .resume-nav,
-  .resume-nav:hover,
-  .resume-nav:focus-within,
-  .resume-nav--pinned {
-    @apply static w-full translate-y-0 p-3;
-  }
-
-  .resume-nav__title {
-    @apply opacity-100;
-    transform: none;
-  }
-
-  .resume-nav__label {
-    @apply opacity-100;
-    transform: none;
-  }
-
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__link,
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__button {
-    @apply justify-start px-3;
-  }
-
-  .resume-nav:not(:hover):not(:focus-within):not(.resume-nav--pinned) .resume-nav__index {
-    @apply mx-0;
-  }
-
   .resume-sheet {
     @apply px-5 py-6;
-  }
-
-  .resume-nav__button--toggle {
-    display: none;
   }
 }
 
