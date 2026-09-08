@@ -10,13 +10,13 @@ A Vue 3 + TypeScript + Vite app that renders language-specific markdown resumes 
 - [Vite](https://vite.dev/) — dev server and build
 - [Tailwind CSS](https://tailwindcss.com/) — layout, shell, and print styles
 - [vite-plugin-pwa](https://vite-pwa-org.netlify.app/) — installable manifest, icons, offline service worker
-- [jsPDF](https://github.com/parallax/jsPDF) — in-browser PDF export
 
 ## Project structure
 
 ```
 resumes/
-  resume-{langCode}.md   content source, one file per language
+  resume-{langCode}.md           full content source, one file per language
+  resume-compact-{langCode}.md   compact content source, optional per language
 src/
   pages/
     index.ts             resolves the active language file, parses markdown to HTML
@@ -32,10 +32,12 @@ public/
 
 ## Content
 
-- Add or edit a resume by creating/updating `resumes/resume-{langCode}.md`
+- Add or edit a full resume by creating/updating `resumes/resume-{langCode}.md`
+- Add or edit a compact resume by creating/updating `resumes/resume-compact-{langCode}.md`
 - The web view switches language via the `?lang=` query parameter, falling back to `pt-BR`
+- Compact mode uses `?compact=1` and falls back to the full file when a compact file is missing
 - Document title/description update to match the active language
-- The navigation rail includes a PDF download action that exports the rendered sheet
+- The navigation rail includes a PDF action that opens the browser print/save-as-PDF flow
 
 ## Development
 
