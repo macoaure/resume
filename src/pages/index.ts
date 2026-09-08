@@ -3,6 +3,7 @@ export type ResumePageModel = {
   navigation: ResumeNavigationItem[]
   languageCode: string
   availableLanguageCodes: string[]
+  isCompact: boolean
   pageTitle: string
   metaDescription: string
 }
@@ -20,6 +21,7 @@ const availableResumeEntries = Object.entries(resumeMarkdownModules).map(([path,
   markdown,
   languageCode: extractLanguageCode(path),
   normalizedLanguageCode: extractLanguageCode(path).toLowerCase(),
+  isCompact: path.includes('/resume-compact-'),
 }))
 
 export type ResumeNavigationItem = {
@@ -28,17 +30,21 @@ export type ResumeNavigationItem = {
   level: number
 }
 
-export function createResumePageModel(languageCode = resolvePreferredLanguageCode()): ResumePageModel {
-  const resumeMarkdown = resolveResumeMarkdown(languageCode)
+export function createResumePageModel(
+  languageCode = resolvePreferredLanguageCode(),
+  isCompact = false,
+): ResumePageModel {
+  const resumeMarkdown = resolveResumeMarkdown(languageCode, isCompact)
   const resolvedLanguageCode = extractLanguageCode(resumeMarkdown.path)
   const { renderedHtml, navigation } = renderMarkdownToHtml(resumeMarkdown.markdown, resolvedLanguageCode)
-  const isPortuguese = resolvedLanguageCode.toLowerCase().startsWith('pt')
+  const isPortuguese = isPortugueseLanguageCode(resolvedLanguageCode)
 
   return {
     renderedHtml,
     navigation,
     languageCode: resolvedLanguageCode,
     availableLanguageCodes: getAvailableLanguageCodes(),
+    isCompact: resumeMarkdown.isCompact,
     pageTitle: isPortuguese ? 'Currículo' : 'Resume',
     metaDescription: isPortuguese
       ? 'Currículo de Marcos Aurelio Costa de Oliveira, backend software engineer com foco em arquitetura, cloud e integração.'
@@ -46,24 +52,25 @@ export function createResumePageModel(languageCode = resolvePreferredLanguageCod
   }
 }
 
-function resolveResumeMarkdown(languageCode: string): {
+function resolveResumeMarkdown(languageCode: string, isCompact: boolean): {
   path: string
   markdown: string
+  isCompact: boolean
 } {
-  return findResumeEntry(languageCode) ?? getDefaultResumeEntry()
+  return findResumeEntry(languageCode, isCompact) ?? findResumeEntry(languageCode, false) ?? getDefaultResumeEntry()
 }
 
 function resolvePreferredLanguageCode(): string {
   if (typeof navigator !== 'undefined') {
     for (const candidate of navigator.languages ?? []) {
-      const matched = findResumeEntry(candidate)
+      const matched = findResumeEntry(candidate, false)
       if (matched) {
         return matched.languageCode
       }
     }
 
     if (navigator.language) {
-      const matched = findResumeEntry(navigator.language)
+      const matched = findResumeEntry(navigator.language, false)
       if (matched) {
         return matched.languageCode
       }
@@ -73,17 +80,19 @@ function resolvePreferredLanguageCode(): string {
   return DEFAULT_LANGUAGE_CODE
 }
 
-function findResumeEntry(languageCode: string):
+function findResumeEntry(languageCode: string, isCompact: boolean):
   | {
       path: string
       markdown: string
       languageCode: string
       normalizedLanguageCode: string
+      isCompact: boolean
     }
   | undefined {
   const normalizedLanguageCode = languageCode.toLowerCase()
   const exactMatch = availableResumeEntries.find(
-    (entry) => entry.normalizedLanguageCode === normalizedLanguageCode,
+    (entry) =>
+      entry.isCompact === isCompact && entry.normalizedLanguageCode === normalizedLanguageCode,
   )
 
   if (exactMatch) {
@@ -93,8 +102,9 @@ function findResumeEntry(languageCode: string):
   const primaryLanguageCode = normalizedLanguageCode.split('-')[0]
   const primaryMatch = availableResumeEntries.find(
     (entry) =>
-      entry.normalizedLanguageCode === primaryLanguageCode ||
-      entry.normalizedLanguageCode.startsWith(`${primaryLanguageCode}-`),
+      entry.isCompact === isCompact &&
+      (entry.normalizedLanguageCode === primaryLanguageCode ||
+        entry.normalizedLanguageCode.startsWith(`${primaryLanguageCode}-`)),
   )
 
   return primaryMatch
@@ -103,16 +113,20 @@ function findResumeEntry(languageCode: string):
 function getDefaultResumeEntry(): {
   path: string
   markdown: string
+  isCompact: boolean
 } {
   return (
     availableResumeEntries.find(
-      (entry) => entry.normalizedLanguageCode === DEFAULT_LANGUAGE_CODE.toLowerCase(),
+      (entry) =>
+        !entry.isCompact && entry.normalizedLanguageCode === DEFAULT_LANGUAGE_CODE.toLowerCase(),
     ) ?? availableResumeEntries[0]
   )
 }
 
 function getAvailableLanguageCodes(): string[] {
-  const codes = Array.from(new Set(availableResumeEntries.map((entry) => entry.languageCode)))
+  const codes = Array.from(
+    new Set(availableResumeEntries.filter((entry) => !entry.isCompact).map((entry) => entry.languageCode)),
+  )
   const defaultIndex = codes.indexOf(DEFAULT_LANGUAGE_CODE)
 
   if (defaultIndex > 0) {
@@ -124,9 +138,13 @@ function getAvailableLanguageCodes(): string[] {
 }
 
 function extractLanguageCode(path: string): string {
-  const match = path.match(/resume-([^/]+)\.md$/)
+  const match = path.match(/resume-(?:compact-)?([^/]+)\.md$/)
 
-  return match?.[1] ?? DEFAULT_LANGUAGE_CODE
+  return normalizeLanguageCode(match?.[1] ?? DEFAULT_LANGUAGE_CODE)
+}
+
+function normalizeLanguageCode(languageCode: string): string {
+  return languageCode.toLowerCase() === 'pt-br' ? 'pt-BR' : languageCode
 }
 
 function escapeHtml(source: string): string {
@@ -142,6 +160,12 @@ function escapeHtml(source: string): string {
 const DATE_DISPLAY_FORMAT: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long' }
 const LOCALE_BY_LANGUAGE_CODE: Record<string, string> = { en: 'en-US', 'pt-br': 'pt-BR' }
 const PRESENT_LABEL_BY_LANGUAGE_CODE: Record<string, string> = { en: 'Present', 'pt-br': 'Atual' }
+
+function isPortugueseLanguageCode(languageCode: string): boolean {
+  const normalized = languageCode.toLowerCase()
+
+  return normalized.startsWith('pt')
+}
 
 function resolveByLanguageCode<T>(table: Record<string, T>, languageCode: string, fallback: T): T {
   const normalized = languageCode.toLowerCase()

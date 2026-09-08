@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { createResumePageModel } from './index.ts'
 
 const route = useRoute()
 const router = useRouter()
-const resumeSheetRef = ref<HTMLDivElement | null>(null)
 
 const selectedLanguageCode = computed(() => {
   const value = route.query.lang
@@ -13,7 +12,9 @@ const selectedLanguageCode = computed(() => {
   return typeof value === 'string' && value.trim() ? value : undefined
 })
 
-const page = computed(() => createResumePageModel(selectedLanguageCode.value))
+const isCompactSelected = computed(() => route.query.compact === '1')
+
+const page = computed(() => createResumePageModel(selectedLanguageCode.value, isCompactSelected.value))
 
 const navigationItems = computed(() =>
   page.value.navigation.map((item, index) => ({
@@ -33,24 +34,38 @@ const languageItems = computed(() =>
   })),
 )
 
+const isPortuguesePage = computed(() => {
+  const code = page.value.languageCode.toLowerCase()
+
+  return code.startsWith('pt') || code.endsWith('pt-br')
+})
+
 const navTitleLabel = computed(() =>
-  page.value.languageCode === 'pt-BR' ? 'Idioma' : 'Language',
+  isPortuguesePage.value ? 'Idioma' : 'Language',
+)
+
+const formatTitleLabel = computed(() =>
+  isPortuguesePage.value ? 'Formato' : 'Format',
 )
 
 const navSectionsLabel = computed(() =>
-  page.value.languageCode === 'pt-BR' ? 'Seções' : 'Sections',
+  isPortuguesePage.value ? 'Seções' : 'Sections',
 )
 
 const navAriaLabel = computed(() =>
-  page.value.languageCode === 'pt-BR' ? 'Navegação do currículo' : 'Resume navigation',
+  isPortuguesePage.value ? 'Navegação do currículo' : 'Resume navigation',
 )
 
 const languageGroupLabel = computed(() =>
-  page.value.languageCode === 'pt-BR' ? 'Alternar idioma' : 'Language switch',
+  isPortuguesePage.value ? 'Alternar idioma' : 'Language switch',
+)
+
+const compactButtonLabel = computed(() =>
+  isPortuguesePage.value ? 'Compacto' : 'Compact',
 )
 
 const pdfButtonLabel = computed(() =>
-  page.value.languageCode === 'pt-BR' ? 'Baixar PDF' : 'Download PDF',
+  isPortuguesePage.value ? 'Baixar PDF' : 'Download PDF',
 )
 
 watchEffect(() => {
@@ -96,173 +111,20 @@ const switchLanguage = async (languageCode: string) => {
   })
 }
 
-const downloadPdf = async () => {
-  const element = resumeSheetRef.value?.querySelector('.resume-content')
-
-  if (!element) {
-    return
-  }
-
-  const { jsPDF } = await import('jspdf')
-  const doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' })
-  const parsed = new DOMParser().parseFromString(
-    `<div class="pdf-resume-root">${element.innerHTML}</div>`,
-    'text/html',
-  )
-  const root = parsed.querySelector('.pdf-resume-root')
-
-  if (!root) {
-    return
-  }
-
-  const pageWidth = 210
-  const pageHeight = 297
-  const marginX = 18
-  const marginTop = 18
-  const marginBottom = 20
-  const contentWidth = pageWidth - marginX * 2
-  let cursorY = marginTop
-  let hasRenderedSubtitle = false
-
-  const ensureSpace = (neededMm: number) => {
-    if (cursorY + neededMm > pageHeight - marginBottom) {
-      doc.addPage()
-      cursorY = marginTop
-    }
-  }
-
-  const drawParagraph = (text: string, fontSize = 11, indent = 0) => {
-    doc.setFont('helvetica', 'normal')
-    doc.setFontSize(fontSize)
-    const lines = doc.splitTextToSize(text, contentWidth - indent)
-    const lineHeight = fontSize * 0.3528 * 1.25
-    const blockHeight = lines.length * lineHeight
-    ensureSpace(blockHeight + 1.5)
-
-    lines.forEach((line: string, index: number) => {
-      doc.text(line, marginX + indent, cursorY + index * lineHeight)
-    })
-
-    cursorY += blockHeight
-  }
-
-  const drawBullet = (text: string) => {
-    doc.setFont('helvetica', 'normal')
-    doc.setFontSize(10.5)
-    const bulletIndent = 5
-    const textIndent = 9
-    const lines = doc.splitTextToSize(text, contentWidth - textIndent)
-    const lineHeight = 10.5 * 0.3528 * 1.25
-    const blockHeight = lines.length * lineHeight
-    ensureSpace(blockHeight + 1.5)
-
-    doc.text('•', marginX + bulletIndent, cursorY)
-    lines.forEach((line: string, index: number) => {
-      doc.text(line, marginX + textIndent, cursorY + index * lineHeight)
-    })
-
-    cursorY += blockHeight
-  }
-
-  Array.from(root.children).forEach((node) => {
-    const tag = node.tagName.toLowerCase()
-    const text = node.textContent?.trim() ?? ''
-
-    if (tag === 'h1') {
-      doc.setFont('helvetica', 'bold')
-      doc.setFontSize(18)
-      ensureSpace(8)
-      doc.text(text, marginX, cursorY)
-      cursorY += 6.5
-      return
-    }
-
-    if (tag === 'h2') {
-      const isSubtitle = !hasRenderedSubtitle
-      doc.setFont('helvetica', isSubtitle ? 'normal' : 'bold')
-      const fontSize = isSubtitle ? 11.5 : 13
-      doc.setFontSize(fontSize)
-      ensureSpace(fontSize * 0.3528 * 1.5 + 2)
-
-      doc.text(text, marginX, cursorY)
-      cursorY += fontSize * 0.3528 * (isSubtitle ? 1.35 : 1.1)
-
-      if (isSubtitle) {
-        hasRenderedSubtitle = true
-      } else {
-        doc.setDrawColor(208, 208, 208)
-        doc.line(marginX, cursorY, pageWidth - marginX, cursorY)
-        cursorY += 2.5
-      }
-      return
-    }
-
-    if (tag === 'h3') {
-      doc.setFont('helvetica', 'bold')
-      doc.setFontSize(11.25)
-      ensureSpace(8)
-      doc.text(text, marginX, cursorY)
-      cursorY += 4.8
-      return
-    }
-
-    if (tag === 'h4') {
-      doc.setFont('helvetica', 'bold')
-      doc.setFontSize(10.25)
-      ensureSpace(7)
-      doc.text(text, marginX, cursorY)
-      cursorY += 4.2
-      return
-    }
-
-    if (tag === 'p') {
-      if (!text) {
-        return
-      }
-      drawParagraph(text, 10.5)
-      cursorY += 1.5
-      return
-    }
-
-    if (tag === 'ul') {
-      Array.from(node.querySelectorAll('li')).forEach((item) => {
-        drawBullet(item.textContent?.trim() ?? '')
-      })
-      cursorY += 1.5
-      return
-    }
-
-    if (tag === 'dl') {
-      Array.from(node.children).forEach((child) => {
-        const childTag = child.tagName.toLowerCase()
-
-        if (childTag === 'dt') {
-          doc.setFont('helvetica', 'bold')
-          doc.setFontSize(10.5)
-          ensureSpace(5)
-          doc.text(child.textContent?.trim() ?? '', marginX, cursorY)
-          cursorY += 4.5
-        }
-
-        if (childTag === 'dd') {
-          drawParagraph(child.textContent?.trim() ?? '', 10.5, 4)
-        }
-      })
-      cursorY += 1
-      return
-    }
+const toggleCompact = async () => {
+  await router.replace({
+    path: route.path,
+    query: {
+      ...route.query,
+      lang: page.value.languageCode,
+      compact: page.value.isCompact ? undefined : '1',
+    },
+    hash: route.hash,
   })
+}
 
-  const blob = doc.output('blob')
-  const url = URL.createObjectURL(blob)
-  const anchor = document.createElement('a')
-  anchor.href = url
-  anchor.download = 'resume.pdf'
-  anchor.rel = 'noopener'
-  document.body.appendChild(anchor)
-  anchor.click()
-  anchor.remove()
-  URL.revokeObjectURL(url)
+const downloadPdf = () => {
+  window.print()
 }
 
 </script>
@@ -294,6 +156,19 @@ const downloadPdf = async () => {
             {{ item.label }}
           </button>
         </div>
+        <p class="resume-nav__title resume-nav__title--sections">
+          {{ formatTitleLabel }}
+        </p>
+        <button
+          type="button"
+          class="resume-nav__button"
+          :class="{ 'resume-nav__button--active': page.isCompact }"
+          :aria-pressed="page.isCompact"
+          @click="toggleCompact"
+        >
+          <span class="resume-nav__index" aria-hidden="true">1P</span>
+          <span class="resume-nav__label">{{ compactButtonLabel }}</span>
+        </button>
         <p v-if="navigationItems.length" class="resume-nav__title resume-nav__title--sections">
           {{ navSectionsLabel }}
         </p>
@@ -319,7 +194,7 @@ const downloadPdf = async () => {
         </button>
       </nav>
 
-      <div id="top" ref="resumeSheetRef" class="resume-sheet">
+      <div id="top" class="resume-sheet">
         <div class="resume-content" v-html="page.renderedHtml" />
       </div>
     </div>
