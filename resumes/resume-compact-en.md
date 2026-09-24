@@ -1,6 +1,6 @@
 # Marcos Aurelio Costa de Oliveira
 
-### Software Architect | Senior Backend Engineer | Tech Lead | Cloud & Platform
+### Software Architect | Senior Backend Engineer | Tech Lead | Backend & Cloud
 
 Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
@@ -8,18 +8,15 @@ Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Londrina, Paraná, Brazil
 
 ## Summary
 
-Software Architect and Senior Backend Engineer experienced in architecture, backend, cloud, integrations, and legacy modernization. Worked on platforms supporting up to 1,200 active projects, leading System Design, Service Boundaries, APIs, GitOps, observability, and reliability decisions. Hands-on with PHP, Laravel, Symfony, Go, AWS, AWS Lambda, Kubernetes, Docker, MySQL, Redis, CI/CD, and REST APIs.
-
-Also worked as Tech Lead and Engineering Manager, leading up to 40 developers with focus on technical quality, delivery predictability, mentoring, hiring, and product alignment. Results include reducing production incidents by more than 90%, sustaining 99.9% availability, cutting deployment time by 70%, and reducing an operational backlog from around 900 to 300 tickets.
+My work sits at software architecture, backend engineering, and technical leadership on systems that are already in production. The useful output is a boundary, an API, or a delivery path that lets a live platform change. That line runs from Magento and PHP, through leading engineering on a platform with about 1,200 live projects, to owning an AgTech store including its infrastructure, and now senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes.
 
 ## Skills
 
-* Backend: PHP, Laravel, Symfony, Go, Ruby on Rails, Node.js
-* Architecture: microservices, legacy modernization, REST APIs, GraphQL, system integration
-* Cloud and DevOps: AWS, AWS Lambda, Kubernetes, Docker, GitHub Actions, GitLab CI/CD, Argo CD, GitOps
-* Data and operations: MySQL, Redis, queues, observability, incident response, performance, caching
-* Leadership: Tech Lead, Engineering Management, mentoring, code review, capacity planning, hiring
-* AI Engineering: Cursor, Claude Code, OpenAI Codex, Context Engineering, TDD, Spec-Driven Development
+* Software architecture: target architecture, service boundaries, platform standards
+* Backend engineering: PHP, Go, Laravel, Symfony, REST APIs, critical-path integrations
+* Technical leadership: tech lead, engineering management, design review, mentoring, hiring
+* Cloud and delivery: AWS, Kubernetes, Docker, CI/CD, GitOps
+* Operations: MySQL, Redis, observability, incident work that becomes a design change
 
 ## Experience
 
@@ -29,10 +26,10 @@ Also worked as Tech Lead and Engineering Manager, leading up to 40 developers wi
 
 <time datetime="2025-10-01"></time> until <time datetime="present"></time>, remote
 
-* Backend development in PHP, Laravel, Symfony, Go, AWS, and AWS Lambda, covering technical refinement, rollout, and production support.
-* Designed APIs, integrations, backend modules, and service boundaries to reduce coupling and improve legacy-system evolution.
-* Worked on incidents, performance, MySQL, Redis, caching, incremental refactoring, TDD, and testability.
-* Structured AI-Assisted and Agentic Software Development practices with Cursor, Claude Code, and OpenAI Codex.
+Senior backend on a GovTech product where legacy systems and serverless workloads share one delivery cycle. PHP, Laravel, Symfony, Go, AWS, AWS Lambda.
+
+* New APIs and service boundaries so a feature no longer required touching half the application.
+* Root-cause work on recurring incidents until the fix was a design change, using MySQL, Redis, and caching.
 
 ### UniFil - Centro Universitario Filadelfia
 
@@ -40,8 +37,9 @@ Also worked as Tech Lead and Engineering Manager, leading up to 40 developers wi
 
 <time datetime="2025-07-01"></time> until <time datetime="2026-04-01"></time>, Londrina, PR
 
-* Taught Software Engineering and Backend Development to 60+ students using Java, Spring Boot, OOP, and MVC.
-* Guided around 20 practical projects and more than 100 code reviews focused on design, testing, debugging, and maintainability.
+Software Engineering and backend for more than 60 students, Java and Spring Boot, built around product-shaped problems rather than isolated exercises.
+
+* About 20 full-cycle team projects and more than 100 reviews, with Git and pull requests in the course.
 
 ### Farmbits, Belagricola Group
 
@@ -49,10 +47,11 @@ Also worked as Tech Lead and Engineering Manager, leading up to 40 developers wi
 
 <time datetime="2024-04-01"></time> until <time datetime="2025-08-01"></time>, Londrina, PR
 
-* Owned an AgTech Magento 2/PHP platform end to end, including architecture, infrastructure, CI/CD, observability, and production.
-* Redesigned infrastructure with AWS and Kubernetes, reducing incidents by more than 90% and sustaining 99.9% availability.
-* Automated delivery with GitHub Actions, GitOps, and Argo CD, reducing deployments from 40 to 12 minutes.
-* Maintained integrations with Bling ERP, CORBAN, Santander, and Itau for sales, payments, invoicing, and documents.
+End-to-end ownership of an AgTech Magento 2 / PHP store: product, infrastructure, and production.
+
+* A new AWS and Kubernetes setup. Incidents dropped by more than 90%; availability held at 99.9%.
+* A GitHub Actions / GitOps / Argo CD pipeline. Deploys went from about 40 minutes to 12.
+* Integrations that move money: Magento to Bling, CORBAN, Santander, and Itau.
 
 ### Bis2Bis E-commerce
 
@@ -60,26 +59,24 @@ Also worked as Tech Lead and Engineering Manager, leading up to 40 developers wi
 
 <time datetime="2022-03-01"></time> until <time datetime="2024-04-01"></time>, Londrina, PR
 
-* Led cross-cutting architecture for an ecosystem with approximately 1,200 active projects.
-* Defined target architecture, service boundaries, integration architecture, APIs, technical standards, and architecture governance.
-* Led workload migration from AWS to Huawei Cloud and GitOps adoption with Argo CD.
-* Contributed to around 15% less downtime and 40% fewer release-related failures.
+Architecture for a shared platform used by about 1,200 live projects and about 40 developers.
+
+* A target architecture and the move from AWS to Huawei Cloud, with the trade-offs written down.
+* Platform standards and GitOps with Argo CD. Release failures fell by about 40%; downtime by about 15%.
 
 #### Engineering Manager
 
 <time datetime="2021-03-01"></time> until <time datetime="2022-03-01"></time>, Londrina, PR
 
-* Led an engineering organization of around 40 developers across delivery, support, incidents, and technical health.
-* Reorganized workstreams, SLAs, backlog, capacity planning, 1:1s, mentoring, hiring, and onboarding.
-* Increased planned-commitment predictability from about 60% to more than 80%.
+An engineering organization of about 40 people, where planned work, incidents, and customer requests shared the same people.
+
+* Five workstreams with owners and SLAs. Planned work that actually shipped rose from about 60% to more than 80%.
 
 #### Technical Lead / Software Engineer
 
 <time datetime="2018-09-01"></time> until <time datetime="2021-03-01"></time>, Londrina, PR
 
-* Led around 20 developers in an operation supporting 1,200 active projects.
-* Reduced operational backlog from around 900 to 300 tickets through SLA management, prioritization, and root cause analysis.
-* Built modules, integrations, automations, Docker environments, and Magento 1/2 solutions with PHP, MySQL, Redis, GraphQL, and Vue.js.
+From Magento/PHP work on about 300 stores to leading about 20 developers. A new operating model brought a queue of about 900 tickets down to about 300. Shared modules replaced copied store customizations. Corsair, an internal Docker environment, cut local setup from hours to under 30 minutes.
 
 ## Education
 

@@ -3,25 +3,60 @@ export type ResumePageModel = {
   navigation: ResumeNavigationItem[]
   languageCode: string
   availableLanguageCodes: string[]
+  personId: string
+  availablePeople: ResumePerson[]
+  personDisplayName: string
   isCompact: boolean
   pageTitle: string
   metaDescription: string
 }
 
-const DEFAULT_LANGUAGE_CODE = 'pt-BR'
+export type ResumePerson = {
+  id: string
+  label: string
+}
 
-const resumeMarkdownModules = import.meta.glob<string>('../../resumes/resume-*.md', {
-  eager: true,
-  import: 'default',
-  query: '?raw',
-})
+const DEFAULT_LANGUAGE_CODE = 'pt-BR'
+const DEFAULT_PERSON_ID = 'marcos'
+
+const PERSON_PROFILE: Record<
+  string,
+  { label: string; displayName: string; metaPt: string; metaEn: string }
+> = {
+  marcos: {
+    label: 'Marcos',
+    displayName: 'Marcos Aurelio Costa de Oliveira',
+    metaPt:
+      'Currículo de Marcos Aurelio Costa de Oliveira, Software Architect e Senior Backend Engineer, com foco em arquitetura, cloud e integração.',
+    metaEn:
+      'Resume for Marcos Aurelio Costa de Oliveira, Software Architect and Senior Backend Engineer focused on architecture, cloud, and integration.',
+  },
+  camila: {
+    label: 'Camila',
+    displayName: 'Camila Costa de Oliveira',
+    metaPt:
+      'Currículo de Camila Costa de Oliveira, especialista em marketing digital e comunicação, com foco em conteúdo, redes sociais e trade marketing.',
+    metaEn:
+      'Resume for Camila Costa de Oliveira, a digital marketing and communications specialist focused on content, social media, and trade marketing.',
+  },
+}
+
+const resumeMarkdownModules = import.meta.glob<string>(
+  ['../../resumes/resume-*.md', '../../resumes/*/resume-*.md'],
+  {
+    eager: true,
+    import: 'default',
+    query: '?raw',
+  },
+)
 
 const availableResumeEntries = Object.entries(resumeMarkdownModules).map(([path, markdown]) => ({
   path,
   markdown,
+  personId: extractPersonId(path),
   languageCode: extractLanguageCode(path),
   normalizedLanguageCode: extractLanguageCode(path).toLowerCase(),
-  isCompact: path.includes('/resume-compact-'),
+  isCompact: path.includes('resume-compact-'),
 }))
 
 export type ResumeNavigationItem = {
@@ -31,46 +66,89 @@ export type ResumeNavigationItem = {
 }
 
 export function createResumePageModel(
-  languageCode = resolvePreferredLanguageCode(),
+  languageCode?: string,
   isCompact = false,
+  personId?: string,
 ): ResumePageModel {
-  const resumeMarkdown = resolveResumeMarkdown(languageCode, isCompact)
+  const resolvedPersonId = resolvePersonId(personId)
+  const resumeMarkdown = resolveResumeMarkdown(
+    languageCode ?? resolvePreferredLanguageCode(resolvedPersonId),
+    isCompact,
+    resolvedPersonId,
+  )
   const resolvedLanguageCode = extractLanguageCode(resumeMarkdown.path)
   const { renderedHtml, navigation } = renderMarkdownToHtml(resumeMarkdown.markdown, resolvedLanguageCode)
   const isPortuguese = isPortugueseLanguageCode(resolvedLanguageCode)
+  const profile = PERSON_PROFILE[resolvedPersonId] ?? PERSON_PROFILE[DEFAULT_PERSON_ID]
 
   return {
     renderedHtml,
     navigation,
     languageCode: resolvedLanguageCode,
-    availableLanguageCodes: getAvailableLanguageCodes(),
+    availableLanguageCodes: getAvailableLanguageCodes(resolvedPersonId),
+    personId: resolvedPersonId,
+    availablePeople: getAvailablePeople(),
+    personDisplayName: profile.displayName,
     isCompact: resumeMarkdown.isCompact,
     pageTitle: isPortuguese ? 'Currículo' : 'Resume',
-    metaDescription: isPortuguese
-      ? 'Currículo de Marcos Aurelio Costa de Oliveira, backend software engineer com foco em arquitetura, cloud e integração.'
-      : 'Resume for Marcos Aurelio Costa de Oliveira, a backend software engineer focused on architecture, cloud, and integration.',
+    metaDescription: isPortuguese ? profile.metaPt : profile.metaEn,
   }
 }
 
-function resolveResumeMarkdown(languageCode: string, isCompact: boolean): {
+function resolveResumeMarkdown(
+  languageCode: string,
+  isCompact: boolean,
+  personId: string,
+): {
   path: string
   markdown: string
   isCompact: boolean
 } {
-  return findResumeEntry(languageCode, isCompact) ?? findResumeEntry(languageCode, false) ?? getDefaultResumeEntry()
+  return (
+    findResumeEntry(languageCode, isCompact, personId) ??
+    findResumeEntry(languageCode, false, personId) ??
+    getDefaultResumeEntry(personId)
+  )
 }
 
-function resolvePreferredLanguageCode(): string {
+function resolvePersonId(personId?: string): string {
+  const availableIds = new Set(availableResumeEntries.map((entry) => entry.personId))
+
+  if (personId && availableIds.has(personId)) {
+    return personId
+  }
+
+  return availableIds.has(DEFAULT_PERSON_ID) ? DEFAULT_PERSON_ID : availableResumeEntries[0].personId
+}
+
+function getAvailablePeople(): ResumePerson[] {
+  const ids = Array.from(new Set(availableResumeEntries.map((entry) => entry.personId)))
+  const defaultIndex = ids.indexOf(DEFAULT_PERSON_ID)
+
+  if (defaultIndex > 0) {
+    ids.splice(defaultIndex, 1)
+    ids.unshift(DEFAULT_PERSON_ID)
+  }
+
+  return ids.map((id) => ({
+    id,
+    label: PERSON_PROFILE[id]?.label ?? id,
+  }))
+}
+
+function resolvePreferredLanguageCode(personId = DEFAULT_PERSON_ID): string {
+  const resolvedPersonId = resolvePersonId(personId)
+
   if (typeof navigator !== 'undefined') {
     for (const candidate of navigator.languages ?? []) {
-      const matched = findResumeEntry(candidate, false)
+      const matched = findResumeEntry(candidate, false, resolvedPersonId)
       if (matched) {
         return matched.languageCode
       }
     }
 
     if (navigator.language) {
-      const matched = findResumeEntry(navigator.language, false)
+      const matched = findResumeEntry(navigator.language, false, resolvedPersonId)
       if (matched) {
         return matched.languageCode
       }
@@ -80,17 +158,23 @@ function resolvePreferredLanguageCode(): string {
   return DEFAULT_LANGUAGE_CODE
 }
 
-function findResumeEntry(languageCode: string, isCompact: boolean):
+function findResumeEntry(
+  languageCode: string,
+  isCompact: boolean,
+  personId: string,
+):
   | {
       path: string
       markdown: string
+      personId: string
       languageCode: string
       normalizedLanguageCode: string
       isCompact: boolean
     }
   | undefined {
   const normalizedLanguageCode = languageCode.toLowerCase()
-  const exactMatch = availableResumeEntries.find(
+  const personEntries = availableResumeEntries.filter((entry) => entry.personId === personId)
+  const exactMatch = personEntries.find(
     (entry) =>
       entry.isCompact === isCompact && entry.normalizedLanguageCode === normalizedLanguageCode,
   )
@@ -100,7 +184,7 @@ function findResumeEntry(languageCode: string, isCompact: boolean):
   }
 
   const primaryLanguageCode = normalizedLanguageCode.split('-')[0]
-  const primaryMatch = availableResumeEntries.find(
+  const primaryMatch = personEntries.find(
     (entry) =>
       entry.isCompact === isCompact &&
       (entry.normalizedLanguageCode === primaryLanguageCode ||
@@ -110,22 +194,31 @@ function findResumeEntry(languageCode: string, isCompact: boolean):
   return primaryMatch
 }
 
-function getDefaultResumeEntry(): {
+function getDefaultResumeEntry(personId: string): {
   path: string
   markdown: string
   isCompact: boolean
 } {
+  const personEntries = availableResumeEntries.filter((entry) => entry.personId === personId)
+
   return (
-    availableResumeEntries.find(
+    personEntries.find(
       (entry) =>
         !entry.isCompact && entry.normalizedLanguageCode === DEFAULT_LANGUAGE_CODE.toLowerCase(),
-    ) ?? availableResumeEntries[0]
+    ) ??
+    personEntries.find((entry) => !entry.isCompact) ??
+    personEntries[0] ??
+    availableResumeEntries[0]
   )
 }
 
-function getAvailableLanguageCodes(): string[] {
+function getAvailableLanguageCodes(personId: string): string[] {
   const codes = Array.from(
-    new Set(availableResumeEntries.filter((entry) => !entry.isCompact).map((entry) => entry.languageCode)),
+    new Set(
+      availableResumeEntries
+        .filter((entry) => entry.personId === personId && !entry.isCompact)
+        .map((entry) => entry.languageCode),
+    ),
   )
   const defaultIndex = codes.indexOf(DEFAULT_LANGUAGE_CODE)
 
@@ -135,6 +228,12 @@ function getAvailableLanguageCodes(): string[] {
   }
 
   return codes
+}
+
+function extractPersonId(path: string): string {
+  const match = path.match(/resumes\/([^/]+)\/resume-/)
+
+  return match?.[1] ?? DEFAULT_PERSON_ID
 }
 
 function extractLanguageCode(path: string): string {

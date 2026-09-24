@@ -14,7 +14,15 @@ const selectedLanguageCode = computed(() => {
 
 const isCompactSelected = computed(() => route.query.compact === '1')
 
-const page = computed(() => createResumePageModel(selectedLanguageCode.value, isCompactSelected.value))
+const selectedPersonId = computed(() => {
+  const value = route.query.person
+
+  return typeof value === 'string' && value.trim() ? value : undefined
+})
+
+const page = computed(() =>
+  createResumePageModel(selectedLanguageCode.value, isCompactSelected.value, selectedPersonId.value),
+)
 
 const navigationItems = computed(() =>
   page.value.navigation.map((item, index) => ({
@@ -64,12 +72,27 @@ const compactButtonLabel = computed(() =>
   isPortuguesePage.value ? 'Compacto' : 'Compact',
 )
 
+const personTitleLabel = computed(() =>
+  isPortuguesePage.value ? 'Pessoa' : 'Person',
+)
+
+const personGroupLabel = computed(() =>
+  isPortuguesePage.value ? 'Alternar currículo' : 'Resume switch',
+)
+
+const personItems = computed(() =>
+  page.value.availablePeople.map((person) => ({
+    ...person,
+    active: person.id === page.value.personId,
+  })),
+)
+
 const pdfButtonLabel = computed(() =>
   isPortuguesePage.value ? 'Baixar PDF' : 'Download PDF',
 )
 
 watchEffect(() => {
-  document.title = `${page.value.pageTitle} | ${String(route.meta.title ?? 'Marcos Aurelio Costa de Oliveira')}`
+  document.title = `${page.value.pageTitle} | ${page.value.personDisplayName}`
 
   const description =
     document.head.querySelector<HTMLMetaElement>('meta[name="description"]')
@@ -95,6 +118,22 @@ watchEffect(() => {
     hash: route.hash,
   })
 })
+
+const switchPerson = async (personId: string) => {
+  if (personId === page.value.personId) {
+    return
+  }
+
+  await router.replace({
+    path: route.path,
+    query: {
+      ...route.query,
+      person: personId === 'marcos' ? undefined : personId,
+      lang: page.value.languageCode,
+    },
+    hash: route.hash,
+  })
+}
 
 const switchLanguage = async (languageCode: string) => {
   if (languageCode === page.value.languageCode) {
@@ -137,7 +176,26 @@ const downloadPdf = () => {
         class="resume-nav"
         :aria-label="navAriaLabel"
       >
-        <p class="resume-nav__title">{{ navTitleLabel }}</p>
+        <p class="resume-nav__title">{{ personTitleLabel }}</p>
+        <div
+          v-if="personItems.length > 1"
+          class="resume-nav__language-switch"
+          role="group"
+          :aria-label="personGroupLabel"
+        >
+          <button
+            v-for="item in personItems"
+            :key="item.id"
+            type="button"
+            class="resume-nav__language-button"
+            :class="{ 'resume-nav__language-button--active': item.active }"
+            :aria-pressed="item.active"
+            @click="switchPerson(item.id)"
+          >
+            {{ item.label }}
+          </button>
+        </div>
+        <p class="resume-nav__title resume-nav__title--sections">{{ navTitleLabel }}</p>
         <div
           v-if="languageItems.length"
           class="resume-nav__language-switch"
