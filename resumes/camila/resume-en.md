@@ -1,6 +1,6 @@
 # Camila Costa de Oliveira
 
-### Digital Marketing & Communications Specialist
+### Marketing and Social Media Analyst | Retail
 
 Email: [1994camie@gmail.com](mailto:1994camie@gmail.com) | Phone: [+55 43 99101-0691](tel:+5543991010691)
 
@@ -8,18 +8,19 @@ From: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
 
 ## Summary
 
-My work sits at digital marketing, content, and brand communication, usually close to the store and to the channel where the customer already is. The useful skill is not posting for the sake of posting. It is a calendar, an asset, or a campaign that holds the brand together across wholesale, retail, and social.
+Advertising graduate. Started in store SM (social media) operations and now organize retail digital MKT: content production, long-term planning (annual and quarterly editorial calendar), seasonal campaigns, and POS (point of sale) assets. Objective: Growth Marketing Specialist in social media for retail.
 
-That is the line from advertising school, through social media for a produce shop and a wholesaler, and through communication that also included customer service and office routine. The usual tools are Meta Business Suite, Google Ads, Canva, CapCut, and Illustrator. The question behind a post or a campaign is the same: what this does for the brand after it leaves the draft.
+Tools: Meta Business Suite, Google Ads, Canva, CapCut, Photoshop, and Illustrator.
 
 ## Core Skills
 
-* Marketing and strategy: social media, organic traffic, seasonal campaigns, and trade marketing
-* Content: product photography, reels, video editing, and visual pieces for the store and the feed
-* Communication: copywriting, editorial calendar, institutional content, and internal comms
-* Metrics and media: reach and engagement reporting, Meta Business Suite, and Google Ads
-* Tools: Canva, CapCut, Adobe Illustrator
-* Operations: customer service and administrative routine
+* Long-term planning: editorial calendar, content pillars, and editorial line
+* Content production: briefing, product photo and video, stories, reels, and copy with CTA (call to action)
+* KPI definition (reach, engagement, CTR) and TOV (tone of voice)
+* Always-on and seasonal campaigns, organic traffic and paid media (Google Ads)
+* Trade marketing and POS assets (poster, flyer, merchandising)
+* Community management and digital-channel support
+* Meta Business Suite, Canva, CapCut, Photoshop, Illustrator, and Google Ads
 
 ## Experience
 
@@ -29,12 +30,11 @@ That is the line from advertising school, through social media for a produce sho
 
 <time datetime="2024-09-01"></time> until <time datetime="present"></time>, Londrina, PR, Brazil
 
-Marketing for a wholesale operation, where content has to serve the store and the digital channel at the same time: product, seasonal campaign, and what happens at the point of sale.
+MKT analyst at a B2B wholesaler. Scope: SM, content production, and trade at the POS in the same plan.
 
-* A social and organic-traffic operation built for wholesale, not for a generic retail feed.
-* Product photo and video capture and editing, so the assortment looks like the wholesale floor.
-* Seasonal campaigns with reach and engagement reports, so the next action starts from what actually performed.
-* Visual pieces and trade-marketing support at the stores, so the brand is not only on screen.
+* Long-term planning of the channel mix (IG and FB in Meta Business Suite): editorial calendar, content pillars, and always-on plus seasonal campaigns for the wholesale shopper.
+* End-to-end content production: briefing, photo and video capture and edit, an asset library for catalog, feed, stories, and reels, with copy and CTA.
+* KPI definition (reach, engagement, CTR) and a 360 offer: the same message in the post, the poster, and the POS flyer. The organic report decides what enters the next quarter.
 
 ### Atuação na Área
 
@@ -42,11 +42,10 @@ Marketing for a wholesale operation, where content has to serve the store and th
 
 Londrina, PR, Brazil
 
-Support for institutional communication: what the brand says outside and what the team needs to see inside.
+MKT and communications assistant. Scope: editorial calendar and institutional TOV.
 
-* A publishing calendar and the curation of institutional content.
-* Support on advertising pieces and on internal and external communication flows.
-* Copy for posts and promotional material, treated as part of the plan, not as leftover text at the end.
+* Medium- and long-term publication planning: content pillars and institutional curation, instead of one-off posts.
+* Asset production, copy, and CTA for posts and promotional material, with the same TOV in internal comms and external communication.
 
 ### Hortifruti Villa Real
 
@@ -54,32 +53,16 @@ Support for institutional communication: what the brand says outside and what th
 
 Londrina, PR, Brazil
 
-Social media for a produce shop, with content made for relationship and conversion, not only to fill the grid.
+SM for a B2C produce shop. Scope: profile operations, content production, and community.
 
-* Planning and production of content for people who buy and for people who are only passing through the profile.
-* Customer service on digital channels and metric monitoring, so the next post starts from what the channel already showed.
-
-### Imobiliária Aurora
-
-#### Real Estate Agent
-
-Londrina, PR, Brazil
-
-Prospecting and negotiation, with real-estate marketing in the same job: the property also had to be presented, not only visited.
-
-### Jakali Estruturas Metálicas
-
-#### Secretary
-
-Londrina, PR, Brazil
-
-Administrative routine, customer service, and document control. The base of organization and client conversation that later entered the digital-channel work.
+* A calendar with content pillars (product, seasonality, and offer) for relationship and conversion, not only to fill the grid.
+* Community management on digital channels and a read of KPIs (reach, engagement, saves) for the briefing of the next post.
 
 ## Education
 
 ### Faculdade Pitágoras
 
-Bachelor's Degree in Advertising and Propaganda
+Bachelor's Degree in Advertising
 Londrina, PR
 
 ### SENAI
@@ -91,6 +74,28 @@ Londrina, PR
 
 Technical High School in Administration
 Londrina, PR
+
+## Courses
+
+### Photoshop for Product Photography
+
+Product photo editing for catalog, store, and social media
+
+### Illustrator for Visual Identity
+
+Graphic artwork for brand, store, and social media
+
+### Digital Marketing for Social and Campaigns
+
+Planning of posts and social campaigns
+
+### Writing for Posts and Promotional Material
+
+Texts for posts and promotional materials
+
+### Video and Reels Editing in CapCut
+
+Short video editing for social media
 
 ## Languages
 

@@ -1,6 +1,6 @@
 # Camila Costa de Oliveira
 
-### Digital Marketing & Communications Specialist
+### Marketing and Social Media Analyst | Retail
 
 Email: [1994camie@gmail.com](mailto:1994camie@gmail.com) | Phone: [+55 43 99101-0691](tel:+5543991010691)
 
@@ -8,15 +8,16 @@ Londrina, PR, Brazil
 
 ## Summary
 
-My work sits at digital marketing, content, and brand communication, close to the store and the channel. The useful output is a calendar, an asset, or a campaign that holds the brand across wholesale, retail, and social. Advertising, social media for a produce shop and a wholesaler, and communication that also included customer service. Meta Business Suite, Google Ads, Canva, CapCut, Illustrator.
+Advertising graduate. From SM operations to retail digital MKT: content production, long-term editorial calendar, KPIs, and POS. Objective: Growth Marketing Specialist in SM for retail.
 
 ## Skills
 
-* Marketing: social media, organic traffic, seasonal campaigns, trade marketing
-* Content: product photography, reels, editing, assets for the store and the feed
-* Communication: copywriting, editorial calendar, institutional content, internal comms
-* Media: reach, engagement, Meta Business Suite, Google Ads
-* Tools: Canva, CapCut, Adobe Illustrator
+* Editorial calendar, content pillars, and TOV
+* Content production: briefing, photo, reels, copy, and CTA
+* KPIs: reach, engagement, CTR
+* Always-on, seasonal, organic, and Google Ads
+* Trade and POS assets
+* Meta Business Suite, Canva, CapCut, Photoshop, Illustrator
 
 ## Experience
 
@@ -26,11 +27,11 @@ My work sits at digital marketing, content, and brand communication, close to th
 
 <time datetime="2024-09-01"></time> until <time datetime="present"></time>, Londrina, PR
 
-Wholesale marketing, with content for the store and the digital channel.
+B2B MKT: SM, content, and POS in the same plan.
 
-* A social and organic-traffic operation built for wholesale.
-* Product photo and video, seasonal campaigns, and reach and engagement reports.
-* Visual pieces and trade-marketing support at the point of sale.
+* Long-term editorial calendar (always-on and seasonal) in Meta Business Suite.
+* Content production: briefing, assets, feed, stories, reels, and CTA.
+* KPI definition and a 360 offer (post, poster, and POS flyer).
 
 ### Atuação na Área
 
@@ -38,7 +39,7 @@ Wholesale marketing, with content for the store and the digital channel.
 
 Londrina, PR
 
-Publishing calendar, institutional content, advertising pieces, and copy for posts and promotional material.
+Editorial calendar and TOV. Content pillars, copy, and CTA in internal comms and external communication.
 
 ### Hortifruti Villa Real
 
@@ -46,21 +47,21 @@ Publishing calendar, institutional content, advertising pieces, and copy for pos
 
 Londrina, PR
 
-Content for relationship and conversion, customer service on digital channels, and metric monitoring.
-
-### Imobiliária Aurora / Jakali Estruturas Metálicas
-
-#### Real Estate Agent and Secretary
-
-Londrina, PR
-
-Prospecting, negotiation, and real-estate marketing. Before that, administrative routine, customer service, and documents.
+B2C SM: content pillars, community, and KPIs (reach, engagement) in the briefing of the next post.
 
 ## Education
 
-* Advertising and Propaganda - Faculdade Pitágoras, Londrina, PR
+* Advertising - Faculdade Pitágoras, Londrina, PR
 * Technical Diploma in Industrial Apparel - SENAI, Londrina, PR
 * Technical High School in Administration - C.E. Prof.ª Maria José B. Aguilera
+
+## Courses
+
+* Photoshop for Product Photography
+* Illustrator for Visual Identity
+* Digital Marketing for Social and Campaigns
+* Writing for Posts and Promotional Material
+* Video and Reels Editing in CapCut
 
 ## Languages
 

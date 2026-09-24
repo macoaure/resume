@@ -1,6 +1,6 @@
 # Camila Costa de Oliveira
 
-### Especialista em Marketing Digital & Comunicação
+### Analista de Marketing e Redes Sociais | Varejo
 
 Email: [1994camie@gmail.com](mailto:1994camie@gmail.com) | Telefone: [+55 43 99101-0691](tel:+5543991010691)
 
@@ -8,15 +8,16 @@ Londrina, PR, Brasil
 
 ## Resumo
 
-Meu trabalho fica em marketing digital, conteúdo e comunicação de marca, perto da loja e do canal. O resultado útil é um calendário, uma peça ou uma campanha que segura a marca no atacado, no varejo e nas redes. Publicidade, social media em hortifruti e atacado, e comunicação que também passou por atendimento. Meta Business Suite, Google Ads, Canva, CapCut, Illustrator.
+Graduada em Publicidade. Da operação de SM à gestão de MKT digital de varejo: produção de conteúdo, calendário editorial de longo prazo, KPIs e PDV. Objetivo: Growth Marketing Specialist em SM para varejo.
 
 ## Competências
 
-* Marketing: redes sociais, tráfego orgânico, campanha sazonal, trade marketing
-* Conteúdo: fotografia de produto, reels, edição, peça para PDV e feed
-* Comunicação: copywriting, calendário editorial, conteúdo institucional, endomarketing
-* Mídia: alcance, engajamento, Meta Business Suite, Google Ads
-* Ferramentas: Canva, CapCut, Adobe Illustrator
+* Calendário editorial, pilares de conteúdo e TOV
+* Produção de conteúdo: briefing, foto, reels, copy e CTA
+* KPIs: alcance, engajamento, CTR
+* Always-on, sazonal, orgânico e Google Ads
+* Trade e peças de PDV
+* Meta Business Suite, Canva, CapCut, Photoshop, Illustrator
 
 ## Experiência
 
@@ -26,11 +27,11 @@ Meu trabalho fica em marketing digital, conteúdo e comunicação de marca, pert
 
 <time datetime="2024-09-01"></time> até <time datetime="present"></time>, Londrina, PR
 
-Marketing de atacado, com conteúdo para a loja e para o canal digital.
+MKT B2B: SM, conteúdo e PDV no mesmo plano.
 
-* Operação de redes e tráfego orgânico para o setor atacadista.
-* Foto e vídeo de produto, campanha sazonal e relatório de alcance e engajamento.
-* Peça visual e suporte de trade marketing no PDV.
+* Calendário editorial de longo prazo (always-on e sazonal) no Meta Business Suite.
+* Produção de conteúdo: briefing, assets, feed, stories, reels e CTA.
+* Definição de KPIs e oferta 360 (post, cartaz e encarte de PDV).
 
 ### Atuação na Área
 
@@ -38,7 +39,7 @@ Marketing de atacado, com conteúdo para a loja e para o canal digital.
 
 Londrina, PR
 
-Calendário de publicações, conteúdo institucional, peça publicitária e copy para post e material promocional.
+Calendário editorial e TOV. Pilares de conteúdo, copy e CTA no endomarketing e na comunicação externa.
 
 ### Hortifruti Villa Real
 
@@ -46,21 +47,21 @@ Calendário de publicações, conteúdo institucional, peça publicitária e cop
 
 Londrina, PR
 
-Conteúdo para relacionamento e conversão, atendimento pelos canais digitais e monitoramento de métricas.
-
-### Imobiliária Aurora / Jakali Estruturas Metálicas
-
-#### Corretora de Imóveis e Secretária
-
-Londrina, PR
-
-Prospecção, negociação e marketing imobiliário. Antes disso, rotina administrativa, atendimento e documentos.
+SM B2C: pilares de conteúdo, community e KPIs (alcance, engajamento) no briefing do próximo post.
 
 ## Formação
 
 * Publicidade e Propaganda - Faculdade Pitágoras, Londrina, PR
 * Técnico em Confecção Industrial - SENAI, Londrina, PR
 * Ensino Médio Técnico em Administração - C.E. Prof.ª Maria José B. Aguilera
+
+## Cursos
+
+* Photoshop para Fotografia de Produto
+* Illustrator para Identidade Visual
+* Marketing Digital para Redes e Campanha
+* Redação para Posts e Material Promocional
+* Edição de Vídeo e Reels no CapCut
 
 ## Idiomas
 

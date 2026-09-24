@@ -35,9 +35,9 @@ const PERSON_PROFILE: Record<
     label: 'Camila',
     displayName: 'Camila Costa de Oliveira',
     metaPt:
-      'Currículo de Camila Costa de Oliveira, especialista em marketing digital e comunicação, com foco em conteúdo, redes sociais e trade marketing.',
+      'Currículo de Camila Costa de Oliveira, analista de marketing e redes sociais com experiência em varejo e atacado.',
     metaEn:
-      'Resume for Camila Costa de Oliveira, a digital marketing and communications specialist focused on content, social media, and trade marketing.',
+      'Resume for Camila Costa de Oliveira, a marketing and social media analyst with retail and wholesale experience.',
   },
 }
 

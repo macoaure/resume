@@ -1,6 +1,6 @@
 # Camila Costa de Oliveira
 
-### Especialista em Marketing Digital & Comunicação
+### Analista de Marketing e Redes Sociais | Varejo
 
 Email: [1994camie@gmail.com](mailto:1994camie@gmail.com) | Telefone: [+55 43 99101-0691](tel:+5543991010691)
 
@@ -8,18 +8,19 @@ De: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
 
 ## Resumo Profissional
 
-Meu trabalho fica no cruzamento de marketing digital, conteúdo e comunicação de marca, quase sempre perto do ponto de venda e do canal onde o cliente já está. A habilidade útil não é publicar por publicar. É um calendário, uma peça ou uma campanha que segura a marca no atacado, no varejo e nas redes.
+Graduada em Publicidade e Propaganda. Comecei na operação de SM (social media) de loja e hoje organizo o MKT digital de varejo: produção de conteúdo, planejamento de longo prazo (calendário editorial anual e trimestral), campanha sazonal e material de PDV (ponto de venda). Objetivo: Growth Marketing Specialist em redes sociais para varejo.
 
-Essa é a linha da publicidade, da operação de social media em hortifruti e atacado, e da comunicação que também passou por atendimento e rotina administrativa. As ferramentas mais frequentes são Meta Business Suite, Google Ads, Canva, CapCut e Illustrator. A pergunta por trás de um post ou de uma campanha é a mesma: o que isso faz pela marca depois que sai do rascunho.
+Ferramentas: Meta Business Suite, Google Ads, Canva, CapCut, Photoshop e Illustrator.
 
 ## Principais Competências
 
-* Marketing e estratégia: redes sociais, tráfego orgânico, campanha sazonal e trade marketing
-* Conteúdo: fotografia de produto, reels, edição de vídeo e peça visual para ponto de venda e feed
-* Comunicação: copywriting, calendário editorial, conteúdo institucional e endomarketing
-* Métricas e mídia: acompanhamento de alcance e engajamento, Meta Business Suite e Google Ads
-* Ferramentas: Canva, CapCut, Adobe Illustrator
-* Base de operação: atendimento ao cliente e rotina administrativa
+* Planejamento de longo prazo: calendário editorial, pilares de conteúdo e linha editorial
+* Produção de conteúdo: briefing, foto e vídeo de produto, stories, reels e copy com CTA (chamada para ação)
+* Definição de KPIs (alcance, engajamento, CTR) e TOV (tom de voz)
+* Campanhas always-on e sazonais, tráfego orgânico e mídia paga (Google Ads)
+* Trade marketing e peças de PDV (cartaz, encarte, merchandising)
+* Community management e atendimento em canais digitais
+* Meta Business Suite, Canva, CapCut, Photoshop, Illustrator e Google Ads
 
 ## Experiência Profissional
 
@@ -29,12 +30,11 @@ Essa é a linha da publicidade, da operação de social media em hortifruti e at
 
 <time datetime="2024-09-01"></time> até <time datetime="present"></time>, Londrina, PR, Brasil
 
-Marketing de um atacado, em que o conteúdo precisa servir a loja e o canal digital ao mesmo tempo: produto, campanha da estação e o que acontece no ponto de venda.
+Analista de MKT de um atacado B2B. Atribuição: SM, produção de conteúdo e trade no PDV no mesmo plano.
 
-* Uma operação de redes e tráfego orgânico pensada para o setor atacadista, não para um feed genérico de varejo.
-* Captação e edição de foto e vídeo de produto, para o sortimento aparecer com a cara do atacado.
-* Campanhas sazonais com relatório de alcance e engajamento, para a próxima ação partir do que de fato performou.
-* Peças visuais e suporte de trade marketing nos PDVs, para a comunicação da marca não ficar só na tela.
+* Planejamento de longo prazo do mix de canais (IG e FB no Meta Business Suite): calendário editorial, pilares de conteúdo e campanhas always-on mais sazonais para o shopper do atacado.
+* Produção de conteúdo de ponta a ponta: briefing, captação e edição de foto e vídeo, banco de assets para catálogo, feed, stories e reels, com copy e CTA.
+* Definição de KPIs (alcance, engajamento, CTR) e da oferta 360: o mesmo recado no post, no cartaz e no encarte do PDV. O relatório do orgânico define o que entra no próximo trimestre.
 
 ### Atuação na Área
 
@@ -42,11 +42,10 @@ Marketing de um atacado, em que o conteúdo precisa servir a loja e o canal digi
 
 Londrina, PR, Brasil
 
-Apoio à comunicação institucional: o que a marca diz para fora e o que o time precisa ver por dentro.
+Auxiliar de MKT e comunicação. Atribuição: calendário editorial e TOV institucional.
 
-* Um calendário de publicações e a curadoria do conteúdo institucional.
-* Suporte em peça publicitária e nos fluxos de comunicação interna e externa.
-* Textos para post e material promocional, com o copy como parte do planejamento, não como texto solto no fim.
+* Planejamento de médio e longo prazo das publicações: pilares de conteúdo e curadoria institucional, em vez de post avulso.
+* Produção de peças, copy e CTA para posts e material promocional, com o mesmo TOV no endomarketing e na comunicação externa.
 
 ### Hortifruti Villa Real
 
@@ -54,26 +53,10 @@ Apoio à comunicação institucional: o que a marca diz para fora e o que o time
 
 Londrina, PR, Brasil
 
-Social media de um hortifruti, com conteúdo feito para relacionamento e conversão, não só para preencher a grade.
+SM de um hortifruti B2C. Atribuição: operação do perfil, produção de conteúdo e community.
 
-* Planejamento e produção de conteúdo com foco em quem compra e em quem só está passando pelo perfil.
-* Atendimento pelos canais digitais e monitoramento de métricas, para o próximo post partir do que o canal já mostrou.
-
-### Imobiliária Aurora
-
-#### Corretora de Imóveis
-
-Londrina, PR, Brasil
-
-Prospecção e negociação, com marketing imobiliário no mesmo ofício: o imóvel também precisava ser apresentado, não só visitado.
-
-### Jakali Estruturas Metálicas
-
-#### Secretária
-
-Londrina, PR, Brasil
-
-Rotina administrativa, atendimento ao cliente e controle de documentos. A base de organização e de conversa com cliente que depois entrou no trabalho de canal digital.
+* Calendário com pilares de conteúdo (produto, sazonalidade e oferta) para relacionamento e conversão, não só para preencher a grade.
+* Community management nos canais digitais e leitura de KPIs (alcance, engajamento, salvamentos) para o briefing do próximo post.
 
 ## Formação Acadêmica
 
@@ -91,6 +74,28 @@ Londrina, PR
 
 Ensino Médio Técnico em Administração
 Londrina, PR
+
+## Cursos
+
+### Photoshop para Fotografia de Produto
+
+Edição de fotos de produto para catálogo, loja e redes
+
+### Illustrator para Identidade Visual
+
+Artes gráficas para marca, loja e redes
+
+### Marketing Digital para Redes e Campanha
+
+Planejamento de publicações e campanhas nas redes
+
+### Redação para Posts e Material Promocional
+
+Textos para posts e materiais de divulgação
+
+### Edição de Vídeo e Reels no CapCut
+
+Edição de vídeos curtos para as redes
 
 ## Idiomas
 
