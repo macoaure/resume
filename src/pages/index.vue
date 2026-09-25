@@ -72,21 +72,6 @@ const compactButtonLabel = computed(() =>
   isPortuguesePage.value ? 'Compacto' : 'Compact',
 )
 
-const personTitleLabel = computed(() =>
-  isPortuguesePage.value ? 'Pessoa' : 'Person',
-)
-
-const personGroupLabel = computed(() =>
-  isPortuguesePage.value ? 'Alternar currículo' : 'Resume switch',
-)
-
-const personItems = computed(() =>
-  page.value.availablePeople.map((person) => ({
-    ...person,
-    active: person.id === page.value.personId,
-  })),
-)
-
 const pdfButtonLabel = computed(() =>
   isPortuguesePage.value ? 'Baixar PDF' : 'Download PDF',
 )
@@ -118,22 +103,6 @@ watchEffect(() => {
     hash: route.hash,
   })
 })
-
-const switchPerson = async (personId: string) => {
-  if (personId === page.value.personId) {
-    return
-  }
-
-  await router.replace({
-    path: route.path,
-    query: {
-      ...route.query,
-      person: personId === 'marcos' ? undefined : personId,
-      lang: page.value.languageCode,
-    },
-    hash: route.hash,
-  })
-}
 
 const switchLanguage = async (languageCode: string) => {
   if (languageCode === page.value.languageCode) {
@@ -176,26 +145,7 @@ const downloadPdf = () => {
         class="resume-nav"
         :aria-label="navAriaLabel"
       >
-        <p class="resume-nav__title">{{ personTitleLabel }}</p>
-        <div
-          v-if="personItems.length > 1"
-          class="resume-nav__language-switch"
-          role="group"
-          :aria-label="personGroupLabel"
-        >
-          <button
-            v-for="item in personItems"
-            :key="item.id"
-            type="button"
-            class="resume-nav__language-button"
-            :class="{ 'resume-nav__language-button--active': item.active }"
-            :aria-pressed="item.active"
-            @click="switchPerson(item.id)"
-          >
-            {{ item.label }}
-          </button>
-        </div>
-        <p class="resume-nav__title resume-nav__title--sections">{{ navTitleLabel }}</p>
+        <p class="resume-nav__title">{{ navTitleLabel }}</p>
         <div
           v-if="languageItems.length"
           class="resume-nav__language-switch"

@@ -34,7 +34,7 @@ public/
 ## Content
 
 - Add or edit the default resume by creating/updating `resumes/resume-{langCode}.md`
-- Add a separate person under `resumes/{person}/resume-{langCode}.md` (Camila: `?person=camila`)
+- Add a separate person under `resumes/{person}/resume-{langCode}.md` (Camila is hidden from the nav and opens only with `?person=camila`)
 - Add or edit a compact resume by creating/updating `resume-compact-{langCode}.md` in the same folder
 - The web view switches language via the `?lang=` query parameter, falling back to `pt-BR`
 - Compact mode uses `?compact=1` and falls back to the full file when a compact file is missing
