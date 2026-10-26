@@ -4,8 +4,7 @@
 
 Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [https://www.linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
-Phone: [+55 43 9 99123-6680](tel:+55439991236680) | From: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
-
+Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Address: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
 
 ## Summary
 
@@ -50,7 +49,7 @@ Senior backend on a GovTech product where old government systems and newer serve
 
 ### UniFil – Centro Universitário Filadélfia
 
-#### Computer Science and Software Engineering Professor
+#### Computer Science Professor | Software Engineering
 
 <time datetime="2025-07-01"></time> until <time datetime="2026-04-01"></time>, on-site, Londrina, Paraná, Brazil
 
@@ -125,22 +124,22 @@ Features, fixes, and integrations on about 300 Magento 1/2 and PHP stores, next 
 ### UEL – Universidade Estadual de Londrina
 
 Master’s Degree in Computer Science (in progress)
-<time datetime="2025-01-01"></time>
+Since <time datetime="2025-01-01"></time>
 
 ### UEL – Universidade Estadual de Londrina
 
 Postgraduate Specialization in Software Engineering (completed)
-<time datetime="2023-03-01"></time> * <time datetime="2024-12-01"></time>
+<time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
 
 ### SENAI, Londrina
 
 Technical Diploma in Information Systems and Programming (completed)
-<time datetime="2017-01-01"></time> * <time datetime="2019-01-01"></time>
+<time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
 
 ### Faculdade Pitágoras
 
 Communication, Advertising, and Marketing (completed)
-<time datetime="2014-01-01"></time> * <time datetime="2017-12-01"></time>
+<time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
 
 ## Certifications and Further Courses
 
@@ -157,4 +156,4 @@ Communication, Advertising, and Marketing (completed)
 ## Languages
 
 * Portuguese (Native)
-* English (Professional Working Proficiency)
+* English (Intermediate Professional)

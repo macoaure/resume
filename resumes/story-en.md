@@ -6,7 +6,7 @@ What I love most is that the challenge is almost never starting over: it's helpi
 
 Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [https://www.linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
-Phone: [+55 43 9 99123-6680](tel:+55439991236680) | From: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
+Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Address: [Londrina, Paraná, Brazil](https://maps.app.goo.gl/DBFNTkS95afu2i7A9)
 
 ## 2018
 
@@ -161,4 +161,4 @@ The Master's keeps going.
 ## Languages
 
 * Portuguese (Native)
-* English (Professional Working Proficiency)
+* English (Intermediate Professional)
