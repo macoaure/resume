@@ -112,7 +112,7 @@
   }
 
   .resume-layout {
-    @apply mx-auto grid w-full max-w-[210mm] items-start justify-center gap-4;
+    @apply mx-auto grid w-full max-w-[210mm] grid-cols-[minmax(0,1fr)] items-start justify-center gap-4;
   }
 
   .resume-sheet {
@@ -120,7 +120,11 @@
   }
 
   .resume-content {
-    @apply max-w-none;
+    @apply max-w-none break-words;
+  }
+
+  .resume-content a {
+    overflow-wrap: anywhere;
   }
 
   .resume-content--print-only {
@@ -370,12 +374,12 @@
 
   .soft-grid {
     @apply m-0 grid list-none gap-4 p-0;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
   }
 
   .soft-card {
     --hex: var(--color-lime-600);
-    @apply flex gap-4 rounded-2xl border border-stone-300/60 bg-stone-50/60 p-5;
+    @apply flex flex-col gap-3 rounded-2xl border border-stone-300/60 bg-stone-50/60 p-4 sm:flex-row sm:gap-4 sm:p-5;
     transition: border-color 250ms ease, background-color 250ms ease, box-shadow 250ms ease;
   }
 
@@ -420,7 +424,7 @@
   }
 
   .tech-family--featured {
-    @apply p-6;
+    @apply p-4 sm:p-6;
   }
 
   .tech-family:hover {
@@ -444,7 +448,7 @@
 
   /* Featured technology */
   .tech-head {
-    @apply flex gap-5;
+    @apply flex flex-col gap-3 sm:flex-row sm:gap-5;
   }
 
   .tech-head__mark {
@@ -504,7 +508,7 @@
 
   .tech-members {
     @apply m-0 grid list-none gap-3 p-0;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
   }
 
   .tech-member {
