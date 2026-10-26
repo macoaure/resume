@@ -10,7 +10,7 @@ Telefone: [+55 43 9 99123-6680](tel:+55439991236680) | Endereço: [Londrina, Par
 
 Meu trabalho fica no cruzamento de arquitetura de software, engenharia backend e liderança técnica, quase sempre em sistema que já está em produção. A habilidade útil não é começar de novo. É desenhar uma fronteira, uma API ou um caminho de entrega que deixe a plataforma mudar sem derrubar a operação.
 
-Esse é o fio da implementação em Magento e PHP, da liderança de engenharia numa plataforma de e-commerce com muitos clientes, da conta ponta a ponta de uma loja AgTech inclusive a infraestrutura, e do backend sênior atual em GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes, MySQL e Redis são as ferramentas. A pergunta por trás de um desenho continua a mesma: o que acontece depois que isso entra no ar.
+Esse é o fio da implementação em Magento e PHP, da liderança de engenharia numa plataforma de e-commerce com muitos clientes, da conta ponta a ponta de uma loja AgTech inclusive a infraestrutura, e do backend sênior mais recente em GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes, MySQL e Redis são as ferramentas. A pergunta por trás de um desenho continua a mesma: o que acontece depois que isso entra no ar.
 
 ## Principais Competências
 
@@ -26,7 +26,7 @@ Esse é o fio da implementação em Magento e PHP, da liderança de engenharia n
 
 #### Senior Backend Software Engineer | GovTech
 
-<time datetime="2025-10-01"></time> até <time datetime="present"></time>, remoto, Londrina, PR, Brasil
+<time datetime="2025-10-01"></time> até <time datetime="2026-08-01"></time>, remoto, Londrina, PR, Brasil
 
 Backend sênior num produto GovTech em que sistema de governo antigo e workload serverless novo precisam caber no mesmo ciclo de entrega. PHP, Laravel, Symfony, Go, AWS e AWS Lambda.
 

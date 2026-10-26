@@ -24,7 +24,7 @@ Meu trabalho fica em arquitetura de software, engenharia backend e liderança t�
 
 #### Senior Backend Software Engineer | GovTech
 
-<time datetime="2025-10-01"></time> ate <time datetime="present"></time>, remoto
+<time datetime="2025-10-01"></time> ate <time datetime="2026-08-01"></time>, remoto
 
 Backend sênior num produto GovTech em que legado e serverless cabem no mesmo ciclo. PHP, Laravel, Symfony, Go, AWS, AWS Lambda.
 

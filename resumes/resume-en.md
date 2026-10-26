@@ -11,7 +11,7 @@ Phone: [+55 43 9 99123-6680](tel:+55439991236680) | From: [Londrina, Paraná, Br
 
 My work sits at the intersection of software architecture, backend engineering, and technical leadership, almost always on systems that are already in production. The useful skill is not starting over. It is drawing a boundary, an API, or a delivery path that lets a live platform change without taking the operation down with it.
 
-That is the line from Magento and PHP implementation, through leading engineering on a multi-tenant commerce platform, to owning an AgTech store including its infrastructure, and now senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes, MySQL, and Redis are the tools. The question behind a design is still the same: what happens after this ships.
+That is the line from Magento and PHP implementation, through leading engineering on a multi-tenant commerce platform, to owning an AgTech store including its infrastructure, and most recently senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes, MySQL, and Redis are the tools. The question behind a design is still the same: what happens after this ships.
 
 ## Core Skills
 
@@ -27,7 +27,7 @@ That is the line from Magento and PHP implementation, through leading engineerin
 
 #### Senior Backend Software Engineer | GovTech
 
-<time datetime="2025-10-01"></time> until <time datetime="present"></time>, remote, Londrina, Paraná, Brazil
+<time datetime="2025-10-01"></time> until <time datetime="2026-08-01"></time>, remote, Londrina, Paraná, Brazil
 
 Senior backend on a GovTech product where old government systems and newer serverless workloads have to live in the same delivery cycle. PHP, Laravel, Symfony, Go, AWS, and AWS Lambda.
 

@@ -8,7 +8,7 @@ Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Londrina, Paraná, Brazil
 
 ## Summary
 
-My work sits at software architecture, backend engineering, and technical leadership on systems that are already in production. The useful output is a boundary, an API, or a delivery path that lets a live platform change. That line runs from Magento and PHP, through leading engineering on a platform with about 1,200 live projects, to owning an AgTech store including its infrastructure, and now senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes.
+My work sits at software architecture, backend engineering, and technical leadership on systems that are already in production. The useful output is a boundary, an API, or a delivery path that lets a live platform change. That line runs from Magento and PHP, through leading engineering on a platform with about 1,200 live projects, to owning an AgTech store including its infrastructure, and most recently senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes.
 
 ## Skills
 
@@ -24,7 +24,7 @@ My work sits at software architecture, backend engineering, and technical leader
 
 #### Senior Backend Software Engineer | GovTech
 
-<time datetime="2025-10-01"></time> until <time datetime="present"></time>, remote
+<time datetime="2025-10-01"></time> until <time datetime="2026-08-01"></time>, remote
 
 Senior backend on a GovTech product where legacy systems and serverless workloads share one delivery cycle. PHP, Laravel, Symfony, Go, AWS, AWS Lambda.
 
