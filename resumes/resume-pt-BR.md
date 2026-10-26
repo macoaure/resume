@@ -24,7 +24,7 @@ Liderei uma organização de engenharia de cerca de 40 pessoas, com contrataçã
 
 ## Experiência Profissional
 
-### SaaS de gestão de escritórios de contabilidade
+### Contar - SaaS de gestão de escritórios de contabilidade
 
 #### Sócio e Desenvolvedor-Fundador
 

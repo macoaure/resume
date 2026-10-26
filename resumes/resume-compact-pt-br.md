@@ -20,7 +20,7 @@ Meu trabalho fica em arquitetura de software, engenharia backend e lideran√ßa t√
 
 ## Experiencia
 
-### SaaS de gestao de escritorios de contabilidade
+### Contar - SaaS de gestao de escritorios de contabilidade
 
 #### Socio e Desenvolvedor-Fundador
 
