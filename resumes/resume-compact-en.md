@@ -1,6 +1,6 @@
 # Marcos Aurelio Costa de Oliveira
 
-### Software Architect | Senior Backend Engineer | Tech Lead | Backend & Cloud
+### Engineering Manager | Software Architect | Tech Lead | Senior Backend Engineer
 
 Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
@@ -8,7 +8,7 @@ Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Londrina, Paraná, Brazil
 
 ## Summary
 
-My work sits at software architecture, backend engineering, and technical leadership on systems that are already in production. The useful output is a boundary, an API, or a delivery path that lets a live platform change. That line runs from Magento and PHP, through leading engineering on a platform with about 1,200 live projects, to owning an AgTech store including its infrastructure, and most recently senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes.
+My work sits at software architecture, backend engineering, and technical leadership on systems that are already in production. The useful output is a boundary, an API, or a delivery path that lets a live platform change. That line runs from Magento and PHP, through leading engineering on a platform with about 1,200 live projects, to owning an AgTech store including its infrastructure, and most recently senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes. I led about 40 people, with hiring and budget. I am a partner and founding developer of a SaaS for accounting-firm management.
 
 ## Skills
 
@@ -20,6 +20,16 @@ My work sits at software architecture, backend engineering, and technical leader
 
 ## Experience
 
+### SaaS for accounting-firm management
+
+#### Partner and Founding Developer
+
+Since <time datetime="2023-11-01"></time>, in operation, remote
+
+Own product on Laravel for accounting firms.
+
+* About 30 accounting firms as customers and more than 200 users (accountants).
+
 ### 1Doc
 
 #### Senior Backend Software Engineer | GovTech
@@ -28,8 +38,9 @@ My work sits at software architecture, backend engineering, and technical leader
 
 Senior backend on a GovTech product where legacy systems and serverless workloads share one delivery cycle. PHP, Laravel, Symfony, Go, AWS, AWS Lambda.
 
-* New APIs and service boundaries so a feature no longer required touching half the application.
+* New APIs and service boundaries for three systems (two for official public-notice documents, one WhatsApp messaging), with newer frameworks and faster onboarding.
 * Root-cause work on recurring incidents until the fix was a design change, using MySQL, Redis, and caching.
+* A method for using coding agents across Engineering and QA, adopted by about 90 people.
 
 ### UniFil - Centro Universitario Filadelfia
 
@@ -61,7 +72,7 @@ End-to-end ownership of an AgTech Magento 2 / PHP store: product, infrastructure
 
 Architecture for a shared platform used by about 1,200 live projects and about 40 developers.
 
-* A target architecture and the move from AWS to Huawei Cloud, with the trade-offs written down.
+* I planned and executed the move from AWS to Huawei Cloud (a leadership decision), with the trade-offs written down.
 * Platform standards and GitOps with Argo CD. Release failures fell by about 40%; downtime by about 15%.
 
 #### Engineering Manager
@@ -70,6 +81,7 @@ Architecture for a shared platform used by about 1,200 live projects and about 4
 
 An engineering organization of about 40 people, where planned work, incidents, and customer requests shared the same people.
 
+* Hiring and dismissal of about 30 people, with the engineering budget and cloud cost.
 * Five workstreams with owners and SLAs. Planned work that actually shipped rose from about 60% to more than 80%.
 
 #### Technical Lead / Software Engineer
@@ -80,10 +92,10 @@ From Magento/PHP work on about 300 stores to leading about 20 developers. A new 
 
 ## Education
 
-* Master's Degree in Computer Science - UEL, <time datetime="2025-01-01"></time>
-* Postgraduate Specialization in Software Engineering - UEL, <time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
-* Technical Diploma in Information Systems - SENAI, <time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
-* Communication, Advertising, and Marketing - Faculdade Pitagoras, <time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
+* Master's Degree in Computer Science (in progress) - UEL, since <time datetime="2025-01-01"></time>
+* Postgraduate Specialization in Software Engineering (completed) - UEL, <time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
+* Technical Diploma in Information Systems (completed) - SENAI, <time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
+* Communication, Advertising, and Marketing (completed) - Faculdade Pitagoras, <time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
 
 ## Languages
 

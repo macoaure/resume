@@ -1,6 +1,6 @@
 # Marcos Aurelio Costa de Oliveira
 
-### Software Architect | Senior Backend Engineer | Tech Lead | Backend & Cloud
+### Engineering Manager | Software Architect | Tech Lead | Senior Backend Engineer
 
 Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [https://www.linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
@@ -13,6 +13,8 @@ My work sits at the intersection of software architecture, backend engineering, 
 
 That is the line from Magento and PHP implementation, through leading engineering on a multi-tenant commerce platform, to owning an AgTech store including its infrastructure, and most recently senior backend work in GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes, MySQL, and Redis are the tools. The question behind a design is still the same: what happens after this ships.
 
+I led an engineering organization of about 40 people, with hiring, budget, and cloud cost under my responsibility. I am a partner and founding developer of a SaaS for accounting-firm management, in operation.
+
 ## Core Skills
 
 * Software architecture: target architecture, service boundaries, platform standards, and the decision of what not to rewrite
@@ -23,6 +25,17 @@ That is the line from Magento and PHP implementation, through leading engineerin
 
 ## Experience
 
+### SaaS for accounting-firm management
+
+#### Partner and Founding Developer
+
+Since <time datetime="2023-11-01"></time>, in operation, remote
+
+Own product built on Laravel for accounting firms to manage their clients, companies and legal entities.
+
+* About 30 accounting firms as customers and more than 200 active users (accountants).
+* Product, backend, and operations as a founding partner, from the first version to production.
+
 ### 1Doc
 
 #### Senior Backend Software Engineer | GovTech
@@ -31,9 +44,9 @@ That is the line from Magento and PHP implementation, through leading engineerin
 
 Senior backend on a GovTech product where old government systems and newer serverless workloads have to live in the same delivery cycle. PHP, Laravel, Symfony, Go, AWS, and AWS Lambda.
 
-* New APIs and service boundaries for modules that could not change on their own, so a feature no longer required touching half the application.
+* New APIs and service boundaries for three systems: two for official public-notice document management and one WhatsApp messaging system. Development moved to newer frameworks with less effort and clearer code, and onboarding of new people got faster.
 * Root-cause work on recurring incidents and slow paths, using MySQL, Redis, and caching, until the fix was a design change and not another patch.
-* A working method for Engineering and QA to use coding agents (Cursor, Claude Code, Codex) inside specification, tests, and review, instead of as a side experiment.
+* A working method for Engineering and QA to use coding agents (Cursor, Claude Code, Codex) inside specification, tests, and review, instead of as a side experiment. The method was adopted by about 90 people.
 
 ### UniFil – Centro Universitário Filadélfia
 
@@ -66,7 +79,7 @@ End-to-end ownership of an AgTech commerce product on Magento 2 and PHP: catalog
 
 Cross-cutting architecture for a shared platform used by about 1,200 live projects and about 40 developers. The job was to give the portfolio one direction instead of one decision per application.
 
-* A target architecture and the migration of workloads from AWS to Huawei Cloud, with scale, cost, and availability written down as trade-offs, not implied.
+* The migration of workloads from AWS to Huawei Cloud was a leadership decision; planning and execution were mine: a target architecture with scale, cost, and availability written down as trade-offs, not implied.
 * Platform standards, design reviews, and GitOps with Argo CD on dozens of applications. Release-related failures fell by about 40%; unavailability by about 15%.
 * A rule for technology choice: Go, Node.js, Symfony, Laravel, or Rails according to the workload and the team's ability to operate it.
 
@@ -76,6 +89,7 @@ Cross-cutting architecture for a shared platform used by about 1,200 live projec
 
 Engineering organization of about 40 people on the same 1,200-project platform. The constraint was no longer a single design. It was how planned work, incidents, and customer requests shared the same people.
 
+* Hiring and dismissal of about 30 people, with responsibility for the engineering budget and cloud cost.
 * Five workstreams (support, implementation, integrations, maintenance, urgent work), each with an owner, an SLA, and an escalation path.
 * A delivery model that raised the share of planned work that actually shipped from about 60% to more than 80%, together with Docker and GitLab CI/CD that cut manual release steps by about 80%.
 
@@ -110,23 +124,35 @@ Features, fixes, and integrations on about 300 Magento 1/2 and PHP stores, next 
 
 ### UEL – Universidade Estadual de Londrina
 
-Master’s Degree in Computer Science
+Master’s Degree in Computer Science (in progress)
 <time datetime="2025-01-01"></time>
 
 ### UEL – Universidade Estadual de Londrina
 
-Postgraduate Specialization in Software Engineering
+Postgraduate Specialization in Software Engineering (completed)
 <time datetime="2023-03-01"></time> * <time datetime="2024-12-01"></time>
 
 ### SENAI, Londrina
 
-Technical Diploma in Information Systems and Programming
+Technical Diploma in Information Systems and Programming (completed)
 <time datetime="2017-01-01"></time> * <time datetime="2019-01-01"></time>
 
 ### Faculdade Pitágoras
 
-Communication, Advertising, and Marketing
+Communication, Advertising, and Marketing (completed)
 <time datetime="2014-01-01"></time> * <time datetime="2017-12-01"></time>
+
+## Certifications and Further Courses
+
+* Software Architecture & Technology of Large-Scale Systems (Udemy, 2026)
+* Microservices Software Architecture: Patterns and Techniques (Udemy, 2026)
+* Kubernetes Certified Application Developer (CKAD) preparatory course (Udemy, 2026)
+* Backend Master Class: Golang, Postgres, Kubernetes and gRPC (Udemy, 2025)
+* Magento 2 Module Development (Udemy, 2023)
+* PHP and Clean Architecture; Microservices design patterns (Alura, 2021–2022)
+* GitLab CI and Docker: continuous delivery pipeline (Alura, 2021); Docker (Udemy, 2022)
+* Go: REST API with Gin and the Go language (Alura/Udemy, 2024)
+* Mastering MySQL databases (Udemy, 2024)
 
 ## Languages
 

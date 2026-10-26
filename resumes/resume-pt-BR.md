@@ -1,6 +1,6 @@
 # Marcos Aurelio Costa de Oliveira
 
-### Software Architect | Senior Backend Engineer | Tech Lead | Backend & Cloud
+### Engineering Manager | Software Architect | Tech Lead | Senior Backend Engineer
 
 Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [https://www.linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
 
@@ -12,6 +12,8 @@ Meu trabalho fica no cruzamento de arquitetura de software, engenharia backend e
 
 Esse é o fio da implementação em Magento e PHP, da liderança de engenharia numa plataforma de e-commerce com muitos clientes, da conta ponta a ponta de uma loja AgTech inclusive a infraestrutura, e do backend sênior mais recente em GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes, MySQL e Redis são as ferramentas. A pergunta por trás de um desenho continua a mesma: o que acontece depois que isso entra no ar.
 
+Liderei uma organização de engenharia de cerca de 40 pessoas, com contratação, orçamento e custo de cloud sob minha responsabilidade. Sou sócio e desenvolvedor-fundador de um SaaS de gestão de escritórios de contabilidade, em operação.
+
 ## Principais Competências
 
 * Arquitetura de software: arquitetura-alvo, fronteira de serviço, padrão de plataforma e a decisão de o que não reescrever
@@ -22,6 +24,17 @@ Esse é o fio da implementação em Magento e PHP, da liderança de engenharia n
 
 ## Experiência Profissional
 
+### SaaS de gestão de escritórios de contabilidade
+
+#### Sócio e Desenvolvedor-Fundador
+
+Desde <time datetime="2023-11-01"></time>, em operação, remoto.
+
+Produto próprio em Laravel para escritórios de contabilidade gerirem seus clientes, empresas e pessoas jurídicas.
+
+* Cerca de 30 escritórios clientes e mais de 200 usuários (contadores) em uso ativo.
+* Produto, backend e operação como sócio-fundador, da primeira versão ao produto em produção.
+
 ### 1Doc
 
 #### Senior Backend Software Engineer | GovTech
@@ -30,9 +43,9 @@ Esse é o fio da implementação em Magento e PHP, da liderança de engenharia n
 
 Backend sênior num produto GovTech em que sistema de governo antigo e workload serverless novo precisam caber no mesmo ciclo de entrega. PHP, Laravel, Symfony, Go, AWS e AWS Lambda.
 
-* APIs e fronteiras de serviço novas para módulos que não conseguiam mudar sozinhos, para uma funcionalidade deixar de exigir mexer em metade da aplicação.
+* APIs e fronteiras de serviço novas para três sistemas: dois de gestão de documentos de edital oficial e um de mensageria via WhatsApp. O desenvolvimento passou a usar frameworks mais novos, com menos esforço e código mais claro, e o onboarding de novas pessoas ficou mais rápido.
 * Análise de causa em incidente recorrente e caminho lento, com MySQL, Redis e cache, até o conserto ser mudança de desenho e não mais um remendo.
-* Um método de trabalho para Engenharia e QA usarem agente de código (Cursor, Claude Code, Codex) dentro de especificação, teste e revisão, e não como experimento à parte.
+* Um método de trabalho para Engenharia e QA usarem agente de código (Cursor, Claude Code, Codex) dentro de especificação, teste e revisão, e não como experimento à parte. O método foi adotado por cerca de 90 pessoas.
 
 ### UniFil – Centro Universitário Filadélfia
 
@@ -65,7 +78,7 @@ Conta ponta a ponta de um produto de e-commerce AgTech em Magento 2 e PHP: catá
 
 Arquitetura transversal de uma plataforma compartilhada usada por cerca de 1.200 projetos no ar e cerca de 40 desenvolvedores. O trabalho era dar um rumo ao portfólio, em vez de uma decisão por aplicação.
 
-* Uma arquitetura-alvo e a migração de workloads da AWS para a Huawei Cloud, com escala, custo e disponibilidade escritos como troca, não implícitos.
+* A migração de workloads da AWS para a Huawei Cloud foi decisão da diretoria. O planejamento e a execução ficaram comigo: arquitetura-alvo, com escala, custo e disponibilidade escritos como troca, não implícitos.
 * Padrão de plataforma, design review e GitOps com Argo CD em dezenas de aplicações. Falha ligada a release caiu cerca de 40%; indisponibilidade, cerca de 15%.
 * Uma regra de escolha de tecnologia: Go, Node.js, Symfony, Laravel ou Rails conforme o workload e a capacidade do time de operar o resultado.
 
@@ -75,6 +88,7 @@ Arquitetura transversal de uma plataforma compartilhada usada por cerca de 1.200
 
 Organização de engenharia com cerca de 40 pessoas na mesma plataforma de 1.200 projetos. O limite já não era um desenho só. Era como trabalho planejado, incidente e pedido de cliente dividiam as mesmas pessoas.
 
+* Contratação e desligamento de cerca de 30 pessoas, com responsabilidade sobre orçamento da engenharia e custo de cloud.
 * Cinco workstreams (suporte, implementação, integrações, manutenção, demanda urgente), cada um com dono, SLA e caminho de escalonamento.
 * Um modelo de entrega em que a fatia de trabalho planejado que de fato saía subiu de cerca de 60% para mais de 80%, junto com Docker e GitLab CI/CD que cortaram passo manual de release em cerca de 80%.
 
@@ -109,23 +123,35 @@ Funcionalidade, correção e integração em cerca de 300 lojas Magento 1/2 e PH
 
 ### UEL – Universidade Estadual de Londrina
 
-Mestrado em Ciência da Computação
-<time datetime="2025-01-01"></time>
+Mestrado em Ciência da Computação (em andamento)
+Desde <time datetime="2025-01-01"></time>
 
 ### UEL – Universidade Estadual de Londrina
 
-Especialização em Engenharia de Software
+Especialização em Engenharia de Software (concluído)
 <time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
 
 ### SENAI, Londrina
 
-Técnico em Sistemas de Informação, Programador
+Técnico em Sistemas de Informação, Programador (concluído)
 <time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
 
 ### Faculdade Pitágoras
 
-Comunicação, Publicidade e Marketing
+Comunicação, Publicidade e Marketing (concluído)
 <time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
+
+## Certificações e Cursos Complementares
+
+* Software Architecture & Technology of Large-Scale Systems (Udemy, 2026)
+* Microservices Software Architecture: Patterns and Techniques (Udemy, 2026)
+* Preparatório Kubernetes Certified Application Developer, CKAD (Udemy, 2026)
+* Backend Master Class: Golang, Postgres, Kubernetes e gRPC (Udemy, 2025)
+* Magento 2 Module Development (Udemy, 2023)
+* PHP e Clean Architecture; Microsserviços: padrões de projeto (Alura, 2021–2022)
+* GitLab CI e Docker: pipeline de entrega contínua (Alura, 2021); Docker (Udemy, 2022)
+* Go: API REST com Gin e linguagem Go (Alura/Udemy, 2024)
+* Dominando Banco de Dados com MySQL (Udemy, 2024)
 
 ## Idiomas
 
