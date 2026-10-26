@@ -30,7 +30,7 @@ const page = computed(() =>
 const languageItems = computed(() =>
   page.value.availableLanguageCodes.map((code) => ({
     code,
-    label: code.toUpperCase(),
+    label: code.split('-')[0].toUpperCase(),
     active: code === page.value.languageCode,
   })),
 )
@@ -140,21 +140,32 @@ const switchLanguage = (languageCode: string) =>
 <template>
   <main class="resume-page" :lang="page.languageCode">
     <nav class="resume-topbar" aria-label="Resume">
+      <div class="resume-topbar__seg" role="group" aria-label="Language">
+        <button
+          v-for="item in languageItems"
+          :key="item.code"
+          type="button"
+          :aria-pressed="item.active"
+          @click="switchLanguage(item.code)"
+        >
+          {{ item.label }}
+        </button>
+      </div>
+      <button type="button" class="resume-topbar__pdf" @click="printPage">
+        <span class="resume-topbar__pdf-icon"><i class="fa-solid fa-download" aria-hidden="true" /></span>
+        <span class="resume-topbar__pdf-text">{{ pdfLabel }}<small>A4 · PDF</small></span>
+      </button>
       <button
-        v-for="item in languageItems"
-        :key="item.code"
         type="button"
-        :aria-pressed="item.active"
-        @click="switchLanguage(item.code)"
+        role="switch"
+        class="resume-topbar__seg resume-topbar__theme"
+        :aria-checked="theme === 'dark'"
+        :aria-label="themeLabel"
+        :title="themeLabel"
+        @click="toggleTheme"
       >
-        {{ item.label }}
-      </button>
-      <span aria-hidden="true">/</span>
-      <button type="button" @click="printPage">
-        <i class="fa-solid fa-file-pdf" aria-hidden="true" />{{ pdfLabel }}
-      </button>
-      <button type="button" class="resume-topbar__theme" @click="toggleTheme">
-        <i class="fa-solid" :class="theme === 'dark' ? 'fa-sun' : 'fa-moon'" aria-hidden="true" />{{ themeLabel }}
+        <span :class="{ 'is-on': theme === 'light' }"><i class="fa-solid fa-sun" aria-hidden="true" /></span>
+        <span :class="{ 'is-on': theme === 'dark' }"><i class="fa-solid fa-moon" aria-hidden="true" /></span>
       </button>
     </nav>
 

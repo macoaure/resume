@@ -24,6 +24,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
   }
 
   /* Off-white paper in light mode; print stays pure white */
@@ -92,23 +93,64 @@
 
 @layer components {
   .resume-page {
-    @apply min-h-screen px-3 py-4;
+    @apply min-h-screen px-3 pt-24 pb-4 sm:pt-4;
   }
 
   .resume-topbar {
-    @apply fixed top-3 right-4 z-20 flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.18em] text-stone-400 print:hidden;
-  }
-
-  .resume-topbar .resume-topbar__theme {
-    @apply ml-2;
+    @apply fixed inset-x-0 top-0 z-20 flex items-center justify-between gap-1.5 border-b border-stone-200 bg-white px-3 py-2 text-[0.7rem] uppercase tracking-[0.08em] sm:gap-2 sm:tracking-[0.18em] text-stone-400 sm:inset-x-auto sm:top-3 sm:right-4 sm:justify-end sm:border-0 sm:bg-transparent sm:p-0 print:hidden;
   }
 
   .resume-topbar button {
-    @apply cursor-pointer transition-colors hover:text-stone-900;
+    @apply cursor-pointer transition-colors;
   }
 
-  .resume-topbar button[aria-pressed="true"] {
-    @apply text-stone-900;
+  /* The three controls share one language: 36px tall, 1.5px ink border, square, filled = active */
+  .resume-topbar__seg {
+    @apply flex h-9 items-stretch border-[1.5px] border-stone-900 bg-white text-stone-900;
+  }
+
+  .resume-topbar__seg button,
+  .resume-topbar__seg span {
+    @apply grid place-items-center px-2 font-bold sm:px-2.5;
+  }
+
+  .resume-topbar__seg button:not([aria-pressed="true"]):hover,
+  .resume-topbar__theme:hover span:not(.is-on) {
+    @apply bg-stone-100;
+  }
+
+  .resume-topbar__seg i {
+    @apply mr-0;
+  }
+
+  .resume-topbar__seg button[aria-pressed="true"],
+  .resume-topbar__seg span.is-on {
+    @apply bg-stone-900 text-white;
+  }
+
+  .resume-topbar .resume-topbar__pdf {
+    @apply flex h-9 items-stretch border-[1.5px] border-stone-900 bg-white font-bold tracking-[0.12em] text-stone-900 hover:bg-stone-900 hover:text-white;
+  }
+
+  .resume-topbar__pdf-icon {
+    @apply grid place-items-center bg-stone-900 px-2 text-white sm:px-2.5;
+  }
+
+  .resume-topbar .resume-topbar__pdf i {
+    @apply mr-0;
+  }
+
+  .resume-topbar__pdf-text {
+    @apply px-2 text-left leading-tight sm:px-2.5;
+    align-self: center;
+  }
+
+  .resume-topbar__pdf-text small {
+    @apply hidden text-[0.6rem] font-normal sm:block normal-case tracking-[0.08em] text-stone-500;
+  }
+
+  .resume-topbar__pdf:hover .resume-topbar__pdf-text small {
+    @apply text-stone-400;
   }
 
   .resume-layout {
@@ -309,10 +351,6 @@
 
   .resume-content--story a {
     @apply decoration-lime-600/40 hover:text-lime-700 hover:decoration-lime-600;
-  }
-
-  .resume-topbar button[aria-pressed="true"] {
-    @apply text-lime-700;
   }
 
   /* Icons (Font Awesome) */
@@ -778,7 +816,7 @@
 
 @media (max-width: 900px) {
   .resume-page {
-    @apply px-3 py-3;
+    @apply px-3 pt-24 pb-3 sm:pt-3;
   }
 
   .resume-sheet {
