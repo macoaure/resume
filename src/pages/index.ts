@@ -1,5 +1,8 @@
 export type ResumePageModel = {
   renderedHtml: string
+  storyHeaderHtml?: string
+  storyHtml?: string
+  storyRestHtml?: string
   navigation: ResumeNavigationItem[]
   languageCode: string
   availableLanguageCodes: string[]
@@ -50,6 +53,12 @@ const resumeMarkdownModules = import.meta.glob<string>(
   },
 )
 
+const storyMarkdownModules = import.meta.glob<string>('../../resumes/story-*.md', {
+  eager: true,
+  import: 'default',
+  query: '?raw',
+})
+
 const availableResumeEntries = Object.entries(resumeMarkdownModules).map(([path, markdown]) => ({
   path,
   markdown,
@@ -81,8 +90,20 @@ export function createResumePageModel(
   const isPortuguese = isPortugueseLanguageCode(resolvedLanguageCode)
   const profile = PERSON_PROFILE[resolvedPersonId] ?? PERSON_PROFILE[DEFAULT_PERSON_ID]
 
+  const storyMarkdown =
+    resolvedPersonId === DEFAULT_PERSON_ID
+      ? storyMarkdownModules[`../../resumes/story-${resolvedLanguageCode.toLowerCase()}.md`]
+      : undefined
+
+  const storyParts = storyMarkdown
+    ? splitStory(renderMarkdownToHtml(storyMarkdown, resolvedLanguageCode).renderedHtml, isPortuguese)
+    : undefined
+
   return {
     renderedHtml,
+    storyHeaderHtml: storyParts?.header,
+    storyHtml: storyParts?.body,
+    storyRestHtml: storyParts?.rest,
     navigation,
     languageCode: resolvedLanguageCode,
     availableLanguageCodes: getAvailableLanguageCodes(resolvedPersonId),
@@ -93,6 +114,97 @@ export function createResumePageModel(
     pageTitle: isPortuguese ? 'Currículo' : 'Resume',
     metaDescription: isPortuguese ? profile.metaPt : profile.metaEn,
   }
+}
+
+const STORY_SPLIT = '<!--story-split-->'
+
+const STORY_TIMELINE_TITLES = {
+  exp: { en: 'Experience', pt: 'Experiência' },
+  edu: { en: 'Education', pt: 'Educação' },
+}
+
+// Splits the rendered story into the header and the body. Sections titled with a year
+// become rows of one of two timelines: work by default, study with `## 2023 {edu}`.
+// `<h3>Role · Company, details</h3>` + year → `job-company-year`, so other parts of the page can link to the stop.
+function storyStopId(stopHtml: string, year: string): string {
+  const heading = stopHtml.match(/<h3[^>]*>([^<]*)<\/h3>/)?.[1] ?? ''
+  const company = heading.split(' · ')[1]?.trim().split(/[\s,]/)[0] ?? 'stop'
+
+  return `job-${createHeadingId(company, new Map())}-${year}`
+}
+
+function splitStory(
+  html: string,
+  isPortuguese: boolean,
+): { header: string; body: string; rest: string } {
+  const [header, ...sections] = html.split(/(?=<h2 )/)
+  const rows = {
+    exp: new Map<string, string[]>(),
+    edu: new Map<string, string[]>(),
+  }
+  const output: string[] = []
+  let timelineAt = -1
+
+  for (const section of sections) {
+    const match = section.match(/^<h2 id="[^"]*"(?: data-kind="(\w+)")?>(\d{4})[^<]*<\/h2>([\s\S]*)$/)
+
+    if (!match) {
+      output.push(section)
+      continue
+    }
+
+    const kind = match[1] === 'edu' ? 'edu' : 'exp'
+    const stops = rows[kind].get(match[2]) ?? []
+
+    stops.push(`<section class="story-stop"${kind === 'exp' ? ` id="${storyStopId(match[3], match[2])}"` : ''}>${match[3]}</section>`)
+    rows[kind].set(match[2], stops)
+    timelineAt = timelineAt < 0 ? output.length : timelineAt
+    output.push('')
+  }
+
+  const renderTimeline = (kind: 'exp' | 'edu') => {
+    const rowsHtml = Array.from(rows[kind].entries())
+      .sort(([a], [b]) => Number(a) - Number(b))
+      .map(
+        ([year, stops]) =>
+          `<div class="story-row"><h2 class="story-year">${year}</h2><div class="story-col">${stops.join('')}</div></div>`,
+      )
+      .join('')
+
+    return rowsHtml
+      ? `<h2 class="story-timeline-title">${STORY_TIMELINE_TITLES[kind][isPortuguese ? 'pt' : 'en']}</h2>` +
+          `<div class="story-timeline">${rowsHtml}</div>`
+      : ''
+  }
+
+  if (timelineAt >= 0) {
+    output[timelineAt] = renderTimeline('exp') + STORY_SPLIT + renderTimeline('edu')
+  }
+
+  // Work comes first; study and everything after it continues once the extra tools have been shown.
+  const [body, ...rest] = output.join('').split(STORY_SPLIT)
+
+  return { header: splitHeadline(header), body, rest: rest.join('') }
+}
+
+// Wraps each letter of the story headline so CSS can animate them one by one.
+function splitHeadline(header: string): string {
+  return header.replace(/<h1([^>]*)>([^<]*)<\/h1>/, (_, attributes: string, text: string) => {
+    // Keep HTML entities (&#39;) whole, and each word unbreakable so wrapping stays natural.
+    const chars = text.match(/&#?\w+;|./gu) ?? []
+    let index = 0
+    const words = text.split(' ').map((word) => {
+      const wordChars = word.match(/&#?\w+;|./gu) ?? []
+      const letters = wordChars
+        .map((char) => `<span class="story-char" style="--i:${index++}">${char}</span>`)
+        .join('')
+
+      return `<span class="story-word">${letters}</span>`
+    })
+    const letters = words.join(' ')
+
+    return `<h1${attributes} style="--n:${chars.length}" aria-label="${text}"><span aria-hidden="true">${letters}</span></h1>`
+  })
 }
 
 function resolveResumeMarkdown(
@@ -371,7 +483,9 @@ export function renderMarkdownToHtml(
       flushAll()
 
       const level = headingMatch[1].length
-      const content = headingMatch[2] || 'Untitled section'
+      const kindMatch = (headingMatch[2] || '').match(/^(.*?)\s*\{(\w+)\}$/)
+      const content = (kindMatch ? kindMatch[1] : headingMatch[2]) || 'Untitled section'
+      const kindAttribute = kindMatch ? ` data-kind="${kindMatch[2]}"` : ''
       const headingId = createHeadingId(content, headingIds)
       if (level === 2) {
         navigation.push({
@@ -381,7 +495,7 @@ export function renderMarkdownToHtml(
         })
       }
       blocks.push(
-        `<h${level} id="${headingId}">${renderInlineMarkdown(content, languageCode)}</h${level}>`,
+        `<h${level} id="${headingId}"${kindAttribute}>${renderInlineMarkdown(content, languageCode)}</h${level}>`,
       )
       continue
     }
