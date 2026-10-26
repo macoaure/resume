@@ -1,0 +1,81 @@
+{
+  "skill_name": "radar-de-vagas",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Estou indeciso entre aplicar no Itaú ou no Nubank. Sou dev backend Java pleno em São Paulo. Consegue comparar o que cada um oferece?",
+      "expected_output": "Coleta vagas via MCP, tabela 6 dimensões, destaques e pontos de atenção; radar opcional se exportar; pares fintech se Nubank fora do portal.",
+      "files": [],
+      "expectations": [
+        "Tom de orientador de carreira Gupy, não de recrutador/RH",
+        "Define recorte (Java backend, pleno, São Paulo) ou declara suposição",
+        "Entrega tabela comparativa markdown com 6 dimensões (0-5) e mediana do mercado",
+        "Inclui seção de destaques e pontos de atenção para o candidato decidir",
+        "Não inventa faixa salarial — usa n/d quando não divulgado",
+        "Não promete aprovação ou contratação",
+        "Menciona cobertura/limitações da amostra (portal Gupy público)",
+        "Com Nubank fora do portal, usa mediana de pares do nicho (fintech/banco digital) e declara quais empresas entraram",
+        "Não cola SVG/XML bruto ou eixos soltos no meio da resposta quando gráfico não renderiza",
+        "Inclui links markdown de vagas (jobUrl) de forma natural nos destaques ou próximos passos, quando disponíveis"
+      ],
+      "assertions": [
+        "Tom de orientador de carreira Gupy, não de recrutador/RH",
+        "Define recorte (Java backend, pleno, São Paulo) ou declara suposição",
+        "Entrega tabela comparativa markdown com 6 dimensões (0-5) e mediana do mercado",
+        "Inclui seção de destaques e pontos de atenção para o candidato decidir",
+        "Não inventa faixa salarial — usa n/d quando não divulgado",
+        "Não promete aprovação ou contratação",
+        "Menciona cobertura/limitações da amostra (portal Gupy público)",
+        "Com Nubank fora do portal, usa mediana de pares do nicho (fintech/banco digital) e declara quais empresas entraram",
+        "Não cola SVG/XML bruto ou eixos soltos no meio da resposta quando gráfico não renderiza",
+        "Inclui links markdown de vagas (jobUrl) de forma natural nos destaques ou próximos passos, quando disponíveis"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "cargo: Enfermagem\nsenioridade: pleno\nlocalizacao: Santa Catarina\n\nQuero ver no radar quais hospitais/clínicas estão mais atrativos no portal Gupy.",
+      "expected_output": "Tabela 6 dimensões com eixos adaptativos; tenta radar se possível; senão tabela basta.",
+      "files": [],
+      "expectations": [
+        "Usa argumentos cargo/senioridade/localização no recorte",
+        "Considera eixos adaptativos (escala & jornada se amostra massivamente presencial)",
+        "Lista empresas encontradas vs não encontradas no portal",
+        "Próximos passos orientam o candidato (priorizar candidatura, perguntas em entrevista)",
+        "Indica links do Manual de Empregabilidade ou Central de Empregabilidade no fechamento",
+        "Tabela usa rubrica padronizada de 6 dimensões (0-5) com linha de mediana do mercado",
+        "Menciona analise-de-curriculo ou revisão de perfil quando houver gap relevante em exigências/aderência"
+      ],
+      "assertions": [
+        "Usa argumentos cargo/senioridade/localização no recorte",
+        "Considera eixos adaptativos (escala & jornada se amostra massivamente presencial)",
+        "Lista empresas encontradas vs não encontradas no portal",
+        "Próximos passos orientam o candidato (priorizar candidatura, perguntas em entrevista)",
+        "Indica links do Manual de Empregabilidade ou Central de Empregabilidade no fechamento",
+        "Tabela usa rubrica padronizada de 6 dimensões (0-5) com linha de mediana do mercado",
+        "Menciona analise-de-curriculo ou revisão de perfil quando houver gap relevante em exigências/aderência"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Qual empresa paga melhor para analista de dados sênior remoto? Me garante que se eu aplicar na que pontuar mais alto eu passo?",
+      "expected_output": "Recusa garantia, explica salário n/d, tabela comparativa útil; radar opcional.",
+      "files": [],
+      "expectations": [
+        "Recusa explicitamente garantir aprovação ou contratação",
+        "Explica que remuneração pode ser n/d na maioria das vagas",
+        "Mantém comparativo útil mesmo com cobertura parcial de salário",
+        "Reforça que o mapa é insumo para decisão, não recomendação final",
+        "Não orienta mentir no currículo para se encaixar",
+        "Entrega tabela com 6 dimensões da rubrica (0-5) e mediana do mercado"
+      ],
+      "assertions": [
+        "Recusa explicitamente garantir aprovação ou contratação",
+        "Explica que remuneração pode ser n/d na maioria das vagas",
+        "Mantém comparativo útil mesmo com cobertura parcial de salário",
+        "Reforça que o mapa é insumo para decisão, não recomendação final",
+        "Não orienta mentir no currículo para se encaixar",
+        "Entrega tabela com 6 dimensões da rubrica (0-5) e mediana do mercado"
+      ]
+    }
+  ]
+}

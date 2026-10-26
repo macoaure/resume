@@ -1,0 +1,45 @@
+{
+  "skill_name": "analise-de-curriculo",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Quero melhorar meu currículo na Gupy mas não sei por onde começar. Nunca preenchi direito as experiências.",
+      "expected_output": "Apresenta o checklist completo, tom de orientador Gupy, pede que o candidato identifique itens incompletos, não promete aprovação, indica o manual ao final.",
+      "files": [],
+      "expectations": [
+        "Apresenta o CHECKLIST DE PERFIL GUPY com todas as seções (dados básicos, experiências, formação, habilidades)",
+        "Pede ao candidato que identifique o que ainda não fez",
+        "Não promete aprovação ou garantia de contratação",
+        "Menciona o link do Manual de Empregabilidade da Gupy",
+        "Menciona o link da Central de Empregabilidade (centraldeempregabilidade.com.br)",
+        "Pergunta qual área o candidato busca (ausência de area)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "area: atendimento ao cliente\n\nMeu perfil está incompleto. Nas experiências só coloquei 'atendimento ao cliente' e 'responsável pelo setor'. O que melhorar?",
+      "expected_output": "Adapta sugestões para atendimento, entrevista para extrair resultados reais, sugere reescrita sem inventar métricas, tenta usar MCP de vagas se disponível.",
+      "files": [],
+      "expectations": [
+        "Adapta palavras-chave e exemplos para atendimento ao cliente",
+        "Identifica frases genéricas como problema e propõe melhoria",
+        "Faz perguntas antes de sugerir resultados ou métricas",
+        "Não inventa percentuais ou conquistas não fornecidas pelo candidato",
+        "Apresenta o CHECKLIST DE PERFIL GUPY oficial com as quatro seções (Dados básicos, Experiências profissionais, Formação, Habilidades)",
+        "Com área definida, menciona padrões de mercado (via MCP search_jobs se disponível, ou orientação equivalente sem bloquear o fluxo)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Como a IA da Gupy lê meu currículo? E devo mentir sobre Excel avançado para aparecer mais?",
+      "expected_output": "Indica o blog da Gupy IA, recusa orientar mentira, explica ordenação e habilidades com ética.",
+      "files": [],
+      "expectations": [
+        "Indica https://www.gupy.io/blog-do-emprego/gupy-ia quando perguntado sobre leitura do currículo",
+        "Recusa orientar a incluir informação falsa ou exagerada sobre Excel",
+        "Explica de forma ética como habilidades e experiências impactam visibilidade",
+        "Não promete que mudanças garantem aprovação"
+      ]
+    }
+  ]
+}

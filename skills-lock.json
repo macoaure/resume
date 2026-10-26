@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "analise-de-curriculo": {
+      "source": "gupy-io/gupy-skills-candidato",
+      "sourceType": "github",
+      "skillPath": "skills/analise-de-curriculo/SKILL.md",
+      "computedHash": "50252bb22877e0a7275ba9a5c00b4fcd7e0ac493e186a3bc67428169402fb094"
+    },
+    "guia-de-triagem": {
+      "source": "gupy-io/gupy-skills-candidato",
+      "sourceType": "github",
+      "skillPath": "skills/guia-de-triagem/SKILL.md",
+      "computedHash": "f6fabd70bff2b523a6d717d003439dd7056ae7fa4c62f8c9749da2120263a577"
+    },
+    "radar-de-vagas": {
+      "source": "gupy-io/gupy-skills-candidato",
+      "sourceType": "github",
+      "skillPath": "skills/radar-de-vagas/SKILL.md",
+      "computedHash": "ef3e0c11d4b1250d83eb045cc2c6f3ebc54d228e096f4f8b8c19529621263a37"
+    }
+  }
+}

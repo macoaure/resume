@@ -1,0 +1,82 @@
+[
+  {
+    "query": "to indeciso entre a vaga de engenheiro de dados senior no Itaú e uma fintech que apareceu no Gupy — consegue montar um comparativo de salário, benefícios e remoto?",
+    "should_trigger": true
+  },
+  {
+    "query": "quero um mapa de atratividade das vagas de product designer pleno em SP, focando iFood vs Nubank vs mediana do mercado",
+    "should_trigger": true
+  },
+  {
+    "query": "tenho duas ofertas na mesa e preciso decidir: uma é híbrida com VR alto, outra 100% remota com salário menor. faz sentido comparar pelo portal?",
+    "should_trigger": true
+  },
+  {
+    "query": "qual empresa paga melhor para dev backend Java pleno em Minas? quero ver pacote completo, não só salário base",
+    "should_trigger": true
+  },
+  {
+    "query": "me ajuda a entender se vale candidatar na Ambev ou na Heineken — mesma senioridade, mesma stack de dados",
+    "should_trigger": true
+  },
+  {
+    "query": "preciso de um radar comparando 3 vagas de enfermagem que achei no portal, principalmente benefícios e exigências",
+    "should_trigger": true
+  },
+  {
+    "query": "estou olhando vagas de analista financeiro júnior remoto — onde compensa mais aplicar segundo o que tem aberto agora?",
+    "should_trigger": true
+  },
+  {
+    "query": "compare oportunidades de QA automation sênior para mim: empresa A, B e C. quero tabela com as 6 dimensões que vocês usam",
+    "should_trigger": true
+  },
+  {
+    "query": "não sei se aceito essa vaga híbrida 3x/semana — consegue cruzar com o que o mercado oferece pra cargo parecido?",
+    "should_trigger": true
+  },
+  {
+    "query": "to vendo vaga de coordenador de RH numa indústria grande vs consultoria — qual tem melhor pacote de benefícios?",
+    "should_trigger": true
+  },
+  {
+    "query": "melhora meu currículo pra essa vaga de engenheiro de software que coloquei abaixo",
+    "should_trigger": false
+  },
+  {
+    "query": "preciso otimizar a descrição dessa vaga pro LinkedIn pra atrair mais candidatos qualificados",
+    "should_trigger": false
+  },
+  {
+    "query": "sou recrutador: monta um benchmark salarial interno das vagas que abrimos vs concorrentes",
+    "should_trigger": false
+  },
+  {
+    "query": "me prepara para entrevista técnica de system design amanhã, foco em APIs",
+    "should_trigger": false
+  },
+  {
+    "query": "aplica automaticamente em todas as vagas de frontend pleno que encontrar no Gupy",
+    "should_trigger": false
+  },
+  {
+    "query": "recebi proposta de 18k CLT fechada — como negociar contra essa oferta?",
+    "should_trigger": false
+  },
+  {
+    "query": "lista todas as vagas abertas de cientista de dados em São Paulo, só quero os links",
+    "should_trigger": false
+  },
+  {
+    "query": "explica o que é um mapa de calor de turnover no time de engenharia (contexto de gestão de pessoas)",
+    "should_trigger": false
+  },
+  {
+    "query": "quero comparar meu salário atual com a mediana do mercado — sou CLT 12k como analista de dados pleno",
+    "should_trigger": false
+  },
+  {
+    "query": "monta um dashboard de funil de recrutamento das vagas que publiquei este mês",
+    "should_trigger": false
+  }
+]

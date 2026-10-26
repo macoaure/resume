@@ -1,0 +1,62 @@
+{
+  "skill_name": "guia-de-triagem",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Eu não estou passando em nenhum processo seletivo na Gupy, será que a IA da Gupy está me recusando automaticamente?",
+      "expected_output": "Acolhe a frustração, nega claramente que a IA reprova sozinha, explica ordenação e decisão humana, não especula motivo individual, indica suporte e não promete aprovação.",
+      "files": [],
+      "expectations": [
+        "Acolhe a frustração do candidato",
+        "Responde claramente que a IA não reprova ou elimina candidatos sozinha",
+        "Explica que a IA ordena por compatibilidade e que a decisão de avanço é humana",
+        "Não confirma que houve eliminação injusta pela IA",
+        "Não especula o motivo específico das reprovações deste candidato",
+        "Menciona o link de suporte https://suporte-candidatos.gupy.io/s/",
+        "Não promete que melhorias no perfil garantem aprovação",
+        "Não abre checklist completo de perfil",
+        "Resposta sucinta (aproximadamente 350 palavras ou menos)",
+        "Menciona a skill analise-de-curriculo para revisão de perfil"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Como funciona a triagem da Gupy? A inteligência artificial lê meu currículo?",
+      "expected_output": "Explica leitura de experiências/habilidades, comparação com requisitos, ordenação e papel humano; indica blog da Gupy IA.",
+      "files": [],
+      "expectations": [
+        "Explica que a IA lê experiências, formações e habilidades",
+        "Menciona comparação com requisitos da vaga e ordenação por compatibilidade",
+        "Deixa claro que a decisão de avanço é das pessoas recrutadoras",
+        "Indica https://www.gupy.io/blog-do-emprego/gupy-ia",
+        "Menciona a skill analise-de-curriculo para revisão de perfil",
+        "Resposta sucinta (aproximadamente 300 palavras ou menos)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A IA da Gupy descarta currículo pela minha idade ou pelo bairro onde moro?",
+      "expected_output": "Esclarece que dados sensíveis não entram na ordenação; foco profissional; tom transparente.",
+      "files": [],
+      "expectations": [
+        "Afirma que idade e localização de origem não são usadas para julgar na ordenação",
+        "Menciona que o foco é estritamente profissional (experiências e habilidades)",
+        "Não promete aprovação com mudanças no perfil",
+        "Resposta sucinta (aproximadamente 300 palavras ou menos)"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Foi a IA que me reprovou? Quem decide se eu passo de fase?",
+      "expected_output": "Nega reprovação automática pela IA, explica ordenação vs. decisão humana, sem endossar injustiça.",
+      "files": [],
+      "expectations": [
+        "Esclarece que a IA não reprova candidatos sozinha",
+        "Explica que recrutadores da empresa decidem quem avança",
+        "Não confirma que a reprovação foi injusta",
+        "Não especula critérios internos da empresa",
+        "Resposta sucinta (aproximadamente 300 palavras ou menos)"
+      ]
+    }
+  ]
+}

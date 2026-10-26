@@ -1,0 +1,46 @@
+<!--
+Exportação opcional do radar (Chart.js). Use quando o ambiente permitir salvar/abrir arquivo.
+A resposta no chat deve priorizar a tabela markdown; não cole este HTML na mensagem.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <title>Mapa de oportunidades — radar</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1.5rem; }
+    .legend { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 12px; font-size: 12px; color: #4b5563; }
+    .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 4px; }
+    canvas { max-width: 100%; }
+    .caption { font-size: 12px; color: #6b7280; margin-top: 8px; }
+  </style>
+</head>
+<body>
+  <div class="legend">
+    <span><span class="swatch" style="background:#534AB7"></span>LABEL_ALVO</span>
+    <span><span class="swatch" style="background:#1D9E75"></span>Mediana do mercado</span>
+  </div>
+  <div style="position:relative;width:100%;max-width:520px;height:380px">
+    <canvas id="radar"></canvas>
+  </div>
+  <p class="caption">CAPTION_AQUI</p>
+  <script>
+  new Chart(document.getElementById('radar'), {
+    type: 'radar',
+    data: {
+      labels: ['Remuneração','Modalidade & flexibilidade','Benefícios','Aderência da exigência','Desenvolvimento de carreira','Cultura, inclusão & clareza'],
+      datasets: [
+        { label: 'LABEL_ALVO', data: DATA_ALVO, borderColor: '#534AB7', backgroundColor: 'rgba(83,74,183,0.15)', borderWidth: 2, pointBackgroundColor: '#534AB7', pointRadius: 4 },
+        { label: 'Mediana do mercado', data: DATA_MED, borderColor: '#1D9E75', backgroundColor: 'rgba(29,158,117,0.12)', borderWidth: 2, borderDash: [5,4], pointBackgroundColor: '#1D9E75', pointRadius: 4 }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: { r: { min: 0, max: 5, ticks: { stepSize: 1 } } }
+    }
+  });
+  </script>
+</body>
+</html>
