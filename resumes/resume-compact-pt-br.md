@@ -2,102 +2,133 @@
 
 ### Engineering Manager | Software Architect | Tech Lead | Senior Backend Engineer
 
-Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure)
+Email: [macosaures@gmail.com](mailto:macosaures@gmail.com) | LinkedIn: [linkedin.com/in/macoaure](https://www.linkedin.com/in/macoaure) | GitHub: [github.com/macoaure](https://github.com/macoaure)
 
 Telefone: [+55 43 9 99123-6680](tel:+55439991236680) | Londrina, PR, Brasil
 
-## Resumo
+## Objetivo
 
-Meu trabalho fica em arquitetura de software, engenharia backend e liderança técnica, em sistema que já está em produção. O resultado útil é uma fronteira, uma API ou um caminho de entrega que deixe a plataforma mudar. Esse fio vai do Magento e PHP, pela liderança de engenharia numa plataforma com cerca de 1.200 projetos no ar, pela conta ponta a ponta de uma loja AgTech inclusive a infra, até o backend sênior atual em GovTech. PHP, Go, Laravel, Symfony, AWS, Kubernetes. Liderei cerca de 40 pessoas, com contratação e orçamento. Sou sócio e desenvolvedor-fundador de um SaaS de gestão de escritórios de contabilidade.
+Busco atuar como desenvolvedor sênior em engenharia backend, com foco em sistemas que já operam em produção. Tenho sólida experiência em PHP (Magento, Laravel, Symfony, Hyperf e Swoole), Go, AWS, Huawei Cloud e Kubernetes, e liderei uma equipe de até 40 desenvolvedores. Atualmente aplico desenvolvimento agêntico (SDD, Claude, Codex e Cursor), automações e integração com IA, e pesquiso blockchain e privacidade de dados no mestrado.
 
-## Competencias
+## Competências
 
-* Arquitetura de software: arquitetura-alvo, fronteira de serviço, padrão de plataforma
-* Engenharia backend: PHP, Go, Laravel, Symfony, APIs REST, integração no caminho crítico
-* Liderança técnica: tech lead, gestão de engenharia, design review, mentoria, contratação
-* Cloud e entrega: AWS, Kubernetes, Docker, CI/CD, GitOps
-* Operação: MySQL, Redis, observabilidade, incidente que vira mudança de desenho
+* Arquitetura de software: arquitetura-alvo, divisão em serviços, padrões de plataforma
+* Engenharia backend: PHP, Go, Laravel, Hyperf, Swoole, Symfony, Laminas/Zend, Lumen, Node.js, APIs REST e GraphQL, integrações essenciais ao negócio
+* Liderança técnica: liderança técnica, gestão de engenharia, revisão de projetos, mentoria, contratação
+* Nuvem e entrega: AWS, Huawei Cloud, Kubernetes (K8s), Docker, CI/CD, GitOps, Serverless
+* Operação: MySQL, Redis, ELK Stack, Grafana, Prometheus, Loki, análise de incidentes recorrentes
+* Testes: PHPUnit, Pest e Cypress
+* Web3 e pesquisa: blockchain, Solidity, Hyperledger, criptografia aplicada
+* Outras: Magento 1 e 2, WordPress, Ruby on Rails, Vue.js, Python, TypeScript, Rust, Arduino, Java (Android), Dart, C e C#
 
-## Experiencia
+## Experiência
 
-### Contar - SaaS de gestao de escritorios de contabilidade
+### Contar - SaaS de gestão de escritórios de contabilidade
 
-#### Socio e Desenvolvedor-Fundador
+#### Sócio e Desenvolvedor-Fundador
 
-Desde <time datetime="2023-11-01"></time>, em operacao, remoto
+Desde <time datetime="2023-11-01"></time>, em operação, remoto
 
-Produto proprio em Laravel para escritorios de contabilidade.
+Criei e mantenho, com Laravel, um sistema próprio para escritórios de contabilidade, em nuvem com AWS, Huawei Cloud e Kubernetes (K8s, ferramenta que mantém aplicações em execução em contêineres).
 
-* Cerca de 30 escritorios clientes e mais de 200 usuarios (contadores).
+* Atendo cerca de 30 escritórios clientes, com mais de 200 usuários (contadores).
 
 ### 1Doc
 
 #### Senior Backend Software Engineer | GovTech
 
-<time datetime="2025-10-01"></time> ate <time datetime="2026-08-01"></time>, remoto
+<time datetime="2025-10-01"></time> até <time datetime="2026-08-01"></time>, remoto
 
-Backend sênior num produto GovTech em que legado e serverless cabem no mesmo ciclo. PHP, Laravel, Symfony, Go, AWS, AWS Lambda.
+Atuo como engenheiro backend sênior em um produto para o setor público, no qual sistemas legados e serverless coexistem. Uso PHP, Laravel, Hyperf, Swoole, Symfony e Go (Golang), com AWS, AWS Lambda, Huawei Cloud e Kubernetes (K8s), e pratico desenvolvimento agêntico.
 
-* APIs e fronteiras de serviço novas para três sistemas (dois de documentos de edital oficial e um de mensageria via WhatsApp), com frameworks mais novos e onboarding mais rápido.
-* Análise de causa em incidente recorrente até o conserto ser mudança de desenho, com MySQL, Redis e cache.
-* Método de uso de agentes de código em Engenharia e QA, adotado por cerca de 90 pessoas.
+* Projetei novas APIs e reorganizei três sistemas (dois de documentos de editais oficiais e um de mensageria via WhatsApp), com tecnologias mais atuais e integração mais rápida de novos profissionais.
+* Conduzi a análise de causa raiz de um incidente recorrente e implementei uma solução estrutural, com MySQL, Redis e cache.
+* Pratico desenvolvimento agêntico com SDD (especificação primeiro, código gerado por IA depois), usando Claude, Codex e Cursor. Criei um método para Engenharia e testes (QA), adotado por cerca de 90 pessoas.
+* Criei automações e integrei recursos de IA aos sistemas do produto.
 
-### UniFil - Centro Universitario Filadelfia
+### UniFil - Centro Universitário Filadélfia
 
-#### Professor de Ciencia da Computacao
+#### Professor de Ciência da Computação
 
-<time datetime="2025-07-01"></time> ate <time datetime="2026-04-01"></time>, Londrina, PR
+<time datetime="2025-07-01"></time> até <time datetime="2026-04-01"></time>, Londrina, PR
 
-Engenharia de Software e backend para mais de 60 alunos, Java e Spring Boot, em problema com cara de produto.
+Lecionei Engenharia de Software e backend para mais de 60 alunos, com Java (linguagem de programação) e Spring Boot (framework para criar sistemas backend e APIs), orientação a objetos e desenvolvimento web com MVC, em situações de um produto real.
 
-* Cerca de 20 projetos em equipe no ciclo inteiro e mais de 100 revisões, com Git e pull request na disciplina.
+* Acompanhei cerca de 20 projetos em equipe do início ao fim e realizei mais de 100 revisões, com Git e pull requests na disciplina.
 
-### Farmbits, Grupo Belagricola
+### MACO Studios
+
+#### Fundador | Consultoria e Desenvolvimento
+
+Desde <time datetime="2024-11-01"></time>, remoto
+
+Entrego soluções digitais sob medida, automação e modernização de infraestrutura para clientes de e-commerce e SaaS, com backend em Go (Golang) e PHP.
+
+* Integrei APIs, projetei arquiteturas distribuídas, migrei sistemas para Docker e capacitei equipes em GitOps, nuvem, testes e microsserviços.
+
+### PHP - Contribuidor de Código Aberto
+
+Desde 2020
+
+* Colaborei ocasionalmente com o núcleo do PHP (php-src) e com o php-web, com melhorias e correções de código.
+
+### Farmbits, Grupo Belagrícola
 
 #### Engenheiro de Produto
 
-<time datetime="2024-04-01"></time> ate <time datetime="2025-08-01"></time>, Londrina, PR
+<time datetime="2024-04-01"></time> até <time datetime="2025-08-01"></time>, Londrina, PR
 
-Conta ponta a ponta de loja AgTech em Magento 2 e PHP: produto, infraestrutura e produção.
+Fui responsável por todo o ciclo de vida de uma loja do agronegócio em Magento 2, PHP e Go (Golang), da arquitetura à operação, com AWS, Huawei Cloud e Kubernetes (K8s).
 
-* Infra nova em AWS e Kubernetes. Incidente caiu mais de 90%; disponibilidade em 99,9%.
-* Pipeline com GitHub Actions, GitOps e Argo CD. Deploy de cerca de 40 minutos para 12.
-* Integrações que movem dinheiro: Magento com Bling, CORBAN, Santander e Itau.
+* Projetei uma nova infraestrutura em AWS e Kubernetes (K8s): incidentes críticos caíram mais de 90% e a disponibilidade chegou a 99,9%.
+* Construí pipelines com GitHub Actions, GitOps e Argo CD: a publicação passou de cerca de 40 para 12 minutos.
+* Implantei observabilidade com Grafana, Loki, Prometheus e AlertManager, reduzindo o MTTR de 2 horas para menos de 6 minutos.
+* Integrei o Magento ao Bling (gestão e notas fiscais), ao CORBAN (plataforma de correspondentes bancários para crédito) e aos bancos Santander e Itaú.
+* Escrevi testes automatizados (PHPUnit, Pest e Cypress) e executei mais de 70 sprints no Jira, com ganho superior a 40% de eficiência e versões críticas sem indisponibilidade.
 
 ### Bis2Bis E-commerce
 
 #### Arquiteto de Software
 
-<time datetime="2022-03-01"></time> ate <time datetime="2024-04-01"></time>, Londrina, PR
+<time datetime="2022-03-01"></time> até <time datetime="2024-04-01"></time>, Londrina, PR
 
-Arquitetura de plataforma compartilhada usada por cerca de 1.200 projetos no ar e cerca de 40 desenvolvedores.
+Liderei a evolução da arquitetura e a modernização tecnológica de uma plataforma usada por cerca de 1.200 projetos em produção e cerca de 40 desenvolvedores, com AWS, Huawei Cloud e Kubernetes (K8s), reportando-me à diretoria.
 
-* Planejei e executei a saída da AWS para a Huawei Cloud (decisão da diretoria), com as trocas escritas.
-* Padrão de plataforma e GitOps com Argo CD. Falha de release caiu cerca de 40%; indisponibilidade, cerca de 15%.
+* Planejei e executei a migração da AWS para a Huawei Cloud (decisão da diretoria), com redução de custos e ganho de desempenho.
+* Usei Hyperf e Swoole (PHP de alto desempenho) em serviços que exigiam mais velocidade, e também Go (Golang).
+* Introduzi Go e Ruby on Rails, criei ferramentas internas e documentei a parte técnica.
+* Estabeleci o padrão de plataforma e o GitOps com Argo CD. As falhas em novas versões caíram cerca de 40% e a indisponibilidade, cerca de 15%.
 
 #### Gerente de Engenharia
 
-<time datetime="2021-03-01"></time> ate <time datetime="2022-03-01"></time>, Londrina, PR
+<time datetime="2021-03-01"></time> até <time datetime="2022-03-01"></time>, Londrina, PR
 
-Organização de cerca de 40 pessoas, em que trabalho planejado, incidente e pedido de cliente dividiam as mesmas pessoas.
+Conduzi uma equipe unificada de cerca de 40 pessoas sobre cerca de 1.500 projetos, com AWS, Huawei Cloud e Kubernetes (K8s).
 
-* Contratação e desligamento de cerca de 30 pessoas, com orçamento e custo de cloud.
-* Cinco workstreams com dono e SLA. Trabalho planejado que de fato saía subiu de cerca de 60% para mais de 80%.
+* Contratei e desliguei cerca de 30 pessoas e respondi pelo orçamento e pelo custo de nuvem.
+* Organizei cinco frentes de trabalho, cada uma com responsável e prazo combinado (SLA). A parcela do trabalho planejado efetivamente concluído subiu de cerca de 60% para mais de 80%.
+* Criei programas de treinamento para novos membros do time.
 
-#### Lider Tecnico / Engenheiro de Software
+#### Líder Técnico / Engenheiro de Software
 
-<time datetime="2018-09-01"></time> ate <time datetime="2021-03-01"></time>, Londrina, PR
+<time datetime="2018-09-01"></time> até <time datetime="2021-03-01"></time>, Londrina, PR
 
-Da implementação Magento/PHP em cerca de 300 lojas à liderança de cerca de 20 desenvolvedores. Um modelo de operação novo baixou uma fila de cerca de 900 chamados para cerca de 300. Módulo compartilhado no lugar de customização copiada. Corsair, ambiente interno em Docker, cortou o setup local de horas para menos de 30 minutos.
+Trabalhei com Magento, PHP e Laravel em cerca de 300 lojas, com integrações a ERPs, gateways de pagamento, sistemas de frete e e-mails. Depois liderei cerca de 20 desenvolvedores: criei um novo modelo de atendimento que reduziu a fila de cerca de 900 para cerca de 300 chamados e troquei trabalho duplicado por módulos compartilhados. Criei módulos de pagamento, envio e cupons, defini padrões técnicos e estruturei pipelines de desenvolvimento. Co-criei o Corsair, ambiente interno em Docker que reduziu a configuração local de 3 horas para menos de 20 minutos.
 
-## Formacao
+## Projetos
 
-* Mestrado em Ciencia da Computacao (em andamento) - UEL, desde <time datetime="2025-01-01"></time>
-* Especializacao em Engenharia de Software (concluido) - UEL, <time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
-* Tecnico em Sistemas de Informacao (concluido) - SENAI, <time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>
-* Comunicacao, Publicidade e Marketing (concluido) - Faculdade Pitagoras, <time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
+* Proof of Erasure (desde <time datetime="2025-08-01"></time>): arquitetura distribuída com Prova de Apagamento para conciliar a imutabilidade do blockchain com a LGPD e o GDPR
+* Veritas (2025): plataforma experimental de provas de conhecimento zero em rede P2P, com TypeScript e Rust
+* Multitenancy no Magento (Bis2Bis): prova de conceito que permitiu a mais de 1.000 projetos operar sobre um único código-base
+
+## Formação
+
+* Mestrado em Ciência da Computação (em andamento) - UEL, <time datetime="2025-01-01"></time> - <time datetime="2026-12-01"></time>. Dissertação sobre o direito ao esquecimento em blockchain.
+* Especialização em Engenharia de Software (concluído) - UEL, <time datetime="2023-03-01"></time> - <time datetime="2024-12-01"></time>
+* Técnico em Sistemas de Informação (concluído) - SENAI, <time datetime="2017-01-01"></time> - <time datetime="2019-01-01"></time>. Oficina de Arduino e IoT para análise da qualidade da água.
+* Comunicação, Publicidade e Marketing (concluído) - Faculdade Pitágoras, <time datetime="2014-01-01"></time> - <time datetime="2017-12-01"></time>
 
 ## Idiomas
 
-* Portugues nativo
-* Ingles profissional intermediario
+* Português nativo
+* Inglês profissional intermediário
