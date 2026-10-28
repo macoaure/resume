@@ -8,7 +8,7 @@ Telefone: [+55 43 9 99123-6680](tel:+55439991236680) | Londrina, PR, Brasil
 
 ## Objetivo
 
-Busco atuar como desenvolvedor sênior em engenharia backend, com foco em sistemas que já operam em produção. Tenho sólida experiência em PHP (Magento, Laravel, Symfony, Hyperf e Swoole), Go, AWS, Huawei Cloud e Kubernetes, e liderei uma equipe de até 40 desenvolvedores. Atualmente aplico desenvolvimento agêntico (SDD, Claude, Codex e Cursor), automações e integração com IA, e pesquiso blockchain e privacidade de dados no mestrado.
+Busco atuar como desenvolvedor sênior em engenharia backend, em times que valorizam qualidade, entrega contínua e boas decisões de arquitetura em sistemas que já operam em produção. Tenho sólida experiência em PHP (Magento, Laravel, Symfony, Hyperf e Swoole), Go, AWS, Huawei Cloud e Kubernetes, liderei uma equipe de até 40 desenvolvedores e sou sócio-fundador de um SaaS em operação. Hoje aplico desenvolvimento agêntico (SDD, Claude, Codex e Cursor), automações e integração com IA, e pesquiso blockchain e privacidade de dados no mestrado.
 
 ## Competências
 

@@ -8,9 +8,9 @@ Telefone: [+55 43 9 99123-6680](tel:+55439991236680) | Endereço: [Londrina, Par
 
 ## Objetivo
 
-Busco atuar como desenvolvedor sênior em engenharia backend, com foco em sistemas que já operam em produção. Tenho sólida experiência no ecossistema PHP (Magento, Laravel, Symfony, Hyperf e Swoole), em Go e em infraestrutura nativa de nuvem (AWS, Huawei Cloud, Kubernetes, CI/CD e GitOps), além de contribuições esporádicas ao código do PHP. Liderei uma equipe de até 40 desenvolvedores e programas de modernização que alcançaram mais de 1.000 projetos.
+Busco atuar como desenvolvedor sênior em engenharia backend, em times que valorizam qualidade, entrega contínua e boas decisões de arquitetura em sistemas que já operam em produção. Tenho sólida experiência no ecossistema PHP (Magento, Laravel, Symfony, Hyperf e Swoole), em Go e em infraestrutura nativa de nuvem (AWS, Huawei Cloud, Kubernetes, CI/CD e GitOps), com contribuições esporádicas ao código do PHP.
 
-Atualmente aplico desenvolvimento agêntico (SDD, Claude, Codex e Cursor), automações e integração com IA para elevar a velocidade e a qualidade das entregas. Em paralelo, pesquiso no mestrado o direito ao esquecimento em blockchain, tema que une segurança da informação, privacidade de dados e sistemas descentralizados.
+Combino a base técnica com liderança e comunicação: conduzi uma equipe de até 40 desenvolvedores e programas de modernização que alcançaram mais de 1.000 projetos, e sou sócio-fundador de um SaaS em operação. Hoje aplico desenvolvimento agêntico (SDD, Claude, Codex e Cursor), automações e integração com IA para elevar a velocidade e a qualidade das entregas, e pesquiso no mestrado o direito ao esquecimento em blockchain, que une segurança da informação, privacidade de dados e sistemas descentralizados.
 
 ## Principais Competências
 
@@ -321,6 +321,10 @@ Comunicação estratégica, marketing digital e UX, aproximando os domínios té
 * Docker: ferramenta essencial para desenvolvedores; GitLab CI: pipelines, entrega e implantação contínuas (Udemy)
 * Web Design completo: HTML5, CSS3 e JS, com 5 projetos (Udemy)
 * Blockchain Programming (Udemy)
+* Liderança e gestão de pessoas: Ferramentas Práticas de Liderança (JCI Brasil e Dale Carnegie Training, 2020); Programa de Desenvolvimento de Líderes (Unopar/Pitágoras e Prefeitura de Londrina, 2021); Elevando a Competência da Equipe para a Alta Performance (ACIL, 2023); Gestão de Pessoas: Seja um Líder Estratégico (ACIL, 2024); Desafios da Liderança: da Contratação à Alta Performance (ACIL, 2024); Liderança, Bem-Estar e Segurança Psicológica no Trabalho (ACIL, 2024)
+* Comunicação: Técnicas de Oratória e Persuasão (Sesc e Sebrae, 2022); Workshop de Comunicação Assertiva (Empreenda+ Londrina, 2022); Vendas e Atendimento por WhatsApp (ACIL, 2023); Oratória de Alto Nível para Líderes e Gestores (ACIL e Vox2You, 2023); Comunicação Interna Eficiente para Impulsionar o Potencial dos Colaboradores (ACIL, 2024)
+* Desenvolvimento pessoal: Motivação e Metas: Qual Seu Propósito para 2024? (ACIL, 2024)
+* Pessoas e organizações: RH Baseado em Dados (SESCAP-LDR, 2024); Power Skills nas Organizações (Cogna/Anhanguera, 2024); Psicologia Organizacional: Saúde Mental e Desenvolvimento de Pessoas (SESCAP-LDR, 2024)
 
 ## Idiomas
 

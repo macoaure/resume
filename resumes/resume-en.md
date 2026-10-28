@@ -8,9 +8,9 @@ Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Address: [Londrina, Paraná,
 
 ## Objective
 
-I seek a senior developer role in backend engineering, focused on systems that already run in production. I have solid experience in the PHP ecosystem (Magento, Laravel, Symfony, Hyperf, and Swoole), in Go, and in cloud-native infrastructure (AWS, Huawei Cloud, Kubernetes, CI/CD, and GitOps), along with occasional contributions to the PHP source code. I have led a team of up to 40 developers and modernization programs that reached more than 1,000 projects.
+I seek a senior developer role in backend engineering, on teams that value quality, continuous delivery, and sound architecture decisions in systems that already run in production. I have solid experience in the PHP ecosystem (Magento, Laravel, Symfony, Hyperf, and Swoole), in Go, and in cloud-native infrastructure (AWS, Huawei Cloud, Kubernetes, CI/CD, and GitOps), along with occasional contributions to the PHP source code.
 
-Today I apply agentic development (SDD, Claude, Codex, and Cursor), automations, and AI integration to raise the speed and quality of delivery. In parallel, my Master's research covers the right to be forgotten in blockchain, a topic that joins information security, data privacy, and decentralized systems.
+I combine the technical base with leadership and communication: I led a team of up to 40 developers and modernization programs that reached more than 1,000 projects, and I am a founding partner of a SaaS in operation. Today I apply agentic development (SDD, Claude, Codex, and Cursor), automations, and AI integration to raise the speed and quality of delivery, and my Master's research covers the right to be forgotten in blockchain, which joins information security, data privacy, and decentralized systems.
 
 ## Core Skills
 
@@ -321,6 +321,10 @@ Strategic communication, digital marketing, and UX, bridging the technical and b
 * Docker: essential tool for developers; GitLab CI: pipelines, continuous delivery and deployment (Udemy)
 * Complete Web Design: HTML5, CSS3, and JS, with 5 projects (Udemy)
 * Blockchain Programming (Udemy)
+* Leadership and people management: Practical Leadership Tools (JCI Brasil and Dale Carnegie Training, 2020); Leader Development Program (Unopar/Pitágoras and Londrina City Hall, 2021); Raising Team Competence for High Performance (ACIL, 2023); People Management: Be a Strategic Leader (ACIL, 2024); Leadership Challenges: from Hiring to High Performance (ACIL, 2024); Leadership, Well-Being, and Psychological Safety at Work (ACIL, 2024)
+* Communication: Public Speaking and Persuasion Techniques (Sesc and Sebrae, 2022); Assertive Communication Workshop (Empreenda+ Londrina, 2022); Sales and Customer Service on WhatsApp (ACIL, 2023); High-Level Public Speaking for Leaders and Managers (ACIL and Vox2You, 2023); Efficient Internal Communication to Boost Employee Potential (ACIL, 2024)
+* Personal development: Motivation and Goals: What Is Your Purpose for 2024? (ACIL, 2024)
+* People and organizations: Data-Driven HR (SESCAP-LDR, 2024); Power Skills in Organizations (Cogna/Anhanguera, 2024); Organizational Psychology: Mental Health and People Development (SESCAP-LDR, 2024)
 
 ## Languages
 

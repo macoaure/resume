@@ -8,7 +8,7 @@ Phone: [+55 43 9 99123-6680](tel:+55439991236680) | Londrina, Paraná, Brazil
 
 ## Objective
 
-I seek a senior developer role in backend engineering, focused on systems that already run in production. I have solid experience in PHP (Magento, Laravel, Symfony, Hyperf, and Swoole), Go, AWS, Huawei Cloud, and Kubernetes, and I have led a team of up to 40 developers. Today I apply agentic development (SDD, Claude, Codex, and Cursor), automations, and AI integration, and my Master's research covers blockchain and data privacy.
+I seek a senior developer role in backend engineering, on teams that value quality, continuous delivery, and sound architecture decisions in systems that already run in production. I have solid experience in PHP (Magento, Laravel, Symfony, Hyperf, and Swoole), Go, AWS, Huawei Cloud, and Kubernetes, I led a team of up to 40 developers, and I am a founding partner of a SaaS in operation. Today I apply agentic development (SDD, Claude, Codex, and Cursor), automations, and AI integration, and my Master's research covers blockchain and data privacy.
 
 ## Skills
 
